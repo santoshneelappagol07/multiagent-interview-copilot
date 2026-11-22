@@ -1,11 +1,11 @@
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from app.routing.strategy import AnswerMode
 
 class ContextManager:
     """
     Manages prompt construction, candidate persona grounding, and context synthesis.
-    Embeds Santosh Neelappagol's real background (~4 years Python Full Stack + AI)
-    and formats answers using proven interview structures.
+    Embeds Santosh Neelappagol's real background (~4 years Python Full Stack + AI),
+    preserves multi-turn interview memory (last 2-3 Q&A pairs), and formats answers.
     """
 
     @staticmethod
@@ -34,10 +34,10 @@ You are currently answering real-time technical interview questions. You must sp
 3. **AXA Insurance Document & Claims Processing**:
    - Document extraction (PDFs, claims, forms) using PyMuPDF and OCR, automated validation, and FastAPI backend microservices.
 
-### SPEAKING STYLE & TONE GUIDELINES:
+### SPEAKING STYLE & MULTI-TURN CONVERSATION RULES:
 - **First Person**: Always use "I designed...", "In my project...", "Coming to my role in this...", "When it comes to...".
-- **Structured & Natural**: Use clear spoken signposts ("When it comes to...", "Coming to the backend implementation...", "In my projects...", "One challenge we faced...", "In short...").
-- **Grounded in Real Engineering**: Explain architectural trade-offs (e.g., why Kafka for async queue, why Postgres + Mongo hybrid, why Redis caching, why async/await vs multiprocessing, why RAG over fine-tuning).
+- **Multi-Turn Continuity**: The interviewer may ask follow-up questions referencing what you just discussed (e.g., "And how did you handle rate limiting in that project?", "Can you write code for that?", "Why didn't you use Celery instead?"). Build directly and consistently upon your previous answers without contradicting earlier statements.
+- **Structured Spoken Signposts**: Use spoken signposts ("When it comes to...", "Coming to the backend implementation...", "In my projects...", "One challenge we faced...", "In short...").
 - **Never Break Character**: Never mention you are an AI, an LLM, or reading from prompt context. Speak as the actual experienced candidate."""
 
     @staticmethod
@@ -46,10 +46,11 @@ You are currently answering real-time technical interview questions. You must sp
         conversation_context: List[str],
         document_chunks: List[Dict[str, Any]],
         mode: str,
+        recent_qa_turns: Optional[List[Dict[str, Any]]] = None,
     ) -> str:
         prompt_parts = []
 
-        # 1. Mandatory Document Knowledge Context (Candidate's actual past transcripts & notes)
+        # 1. Mandatory Document Knowledge Context (Resume & Past Interview Transcripts)
         if document_chunks:
             prompt_parts.append("### MANDATORY CANDIDATE KNOWLEDGE BASE (YOUR RESUME & PAST INTERVIEW EXPERIENCE):")
             prompt_parts.append("Integrate facts from these references directly into your response as YOUR OWN actual experience:")
@@ -61,29 +62,42 @@ You are currently answering real-time technical interview questions. You must sp
         else:
             prompt_parts.append("### CANDIDATE KNOWLEDGE BASE:\nRely on your core experience at True Blue Technology, Nexuvo, and AXA Insurance.\n")
 
-        # 2. Recent Conversation Context
+        # 2. Previous 2-3 Questions & Answers Context (Multi-Turn Continuity)
+        if recent_qa_turns:
+            prompt_parts.append("### PREVIOUS CONVERSATION CONTEXT (YOUR RECENT Q&A EXCHANGES IN THIS INTERVIEW):")
+            prompt_parts.append("The interviewer is conversing with you continuously. Maintain strict alignment and continuity with these previous answers:")
+            for idx, turn in enumerate(recent_qa_turns, 1):
+                q = turn.get("question", "").strip()
+                a = turn.get("answer", "").strip()
+                # Keep up to 180 words of previous answer for prompt conciseness
+                a_words = a.split()
+                a_preview = " ".join(a_words[:180]) + ("..." if len(a_words) > 180 else "")
+                prompt_parts.append(f"**Interviewer Q{idx}**: {q}\n**Your Answer {idx}**: {a_preview}\n")
+            prompt_parts.append("")
+
+        # 3. Raw Speech Transcript Context (if any extra turns exist)
         if conversation_context:
-            prompt_parts.append("### RECENT INTERVIEW DIALOGUE:")
-            for turn in conversation_context[-4:]:
+            prompt_parts.append("### RECENT AUDIO TRANSCRIPT:")
+            for turn in conversation_context[-3:]:
                 prompt_parts.append(f"- {turn}")
             prompt_parts.append("")
 
-        # 3. Target Question
-        prompt_parts.append(f"### INTERVIEWER'S QUESTION:\n{question}\n")
+        # 4. Target Question
+        prompt_parts.append(f"### CURRENT INTERVIEWER'S QUESTION:\n{question}\n")
 
-        # 4. Mode-specific Formatting & Delivery Instructions
+        # 5. Mode-specific Formatting & Delivery Instructions
         if mode == "fast":
             prompt_parts.append(
                 "### DELIVERY FORMAT (FAST MODE - SUB-2s REAL-TIME VOICE ANSWER):\n"
+                "- If this is a follow-up to a previous answer, acknowledge the previous topic immediately in your first sentence.\n"
                 "- Provide a crisp, spoken response (under 120-150 words) that can be delivered naturally out loud.\n"
-                "- Begin directly with a strong 1-sentence definition/answer.\n"
                 "- Follow with 2-3 concise bullet points with bold headers (e.g. **When it comes to...**, **In my project...**).\n"
                 "- Conclude with a quick summary sentence (**In short...**)."
             )
         elif mode == "reasoning":
             prompt_parts.append(
                 "### DELIVERY FORMAT (REASONING MODE - IN-DEPTH ARCHITECTURE & CODING):\n"
-                "- Provide a structured, senior-level response explaining architecture, trade-offs, and implementation details.\n"
+                "- Seamlessly link to your previous answers if this question deepens an earlier topic.\n"
                 "- Structure into clear sections:\n"
                 "  1. **Core Concept / Problem Statement**: Clear high-level explanation.\n"
                 "  2. **Architecture & Implementation**: How you build it in FastAPI, PostgreSQL, Kafka, or React.\n"

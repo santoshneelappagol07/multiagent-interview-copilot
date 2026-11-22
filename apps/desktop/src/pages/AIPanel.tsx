@@ -75,15 +75,33 @@ export const AIPanel: React.FC = () => {
               (Press <kbd className="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 font-mono text-slate-300">Ctrl+Enter</kbd> to generate)
             </span>
           </label>
-          {selectedQuestion && (
+          <div className="flex items-center gap-3">
             <button
               type="button"
-              onClick={() => setSelectedQuestion(null)}
-              className="text-xs text-slate-500 hover:text-slate-300 transition-colors"
+              onClick={async () => {
+                try {
+                  await api.resetConversationHistory();
+                  clearCurrent();
+                  toast.success('Conversation memory reset for new session');
+                } catch {
+                  toast.error('Failed to reset memory');
+                }
+              }}
+              className="text-[11px] text-slate-500 hover:text-amber-400 transition-colors"
+              title="Clears multi-turn context memory for the previous questions"
             >
-              Clear selection
+              Reset Session Memory
             </button>
-          )}
+            {selectedQuestion && (
+              <button
+                type="button"
+                onClick={() => setSelectedQuestion(null)}
+                className="text-xs text-slate-500 hover:text-slate-300 transition-colors"
+              >
+                Clear selection
+              </button>
+            )}
+          </div>
         </div>
 
         <Input

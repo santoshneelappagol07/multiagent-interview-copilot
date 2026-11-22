@@ -43,9 +43,16 @@ export const AnswerPanel: React.FC = () => {
               {isGenerating ? 'Streaming Answer...' : 'Generated Interview Response'}
             </span>
             {latestAnswer && (
-              <Badge variant="info">
-                {latestAnswer.provider.toUpperCase()} • {latestAnswer.latencyMs}ms
-              </Badge>
+              <>
+                <Badge variant="info">
+                  {latestAnswer.provider.toUpperCase()} • {latestAnswer.latencyMs}ms
+                </Badge>
+                {latestAnswer.contextCarriedCount ? (
+                  <Badge variant="success">
+                    {latestAnswer.contextCarriedCount} Prior Q&A Linked
+                  </Badge>
+                ) : null}
+              </>
             )}
           </div>
 

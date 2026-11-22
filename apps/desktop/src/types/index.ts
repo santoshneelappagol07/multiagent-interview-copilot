@@ -18,6 +18,7 @@ export interface GeneratedAnswer {
   model: string;
   latencyMs: number;
   sources: string[];
+  contextCarriedCount?: number;
   createdAt: string;
 }
 

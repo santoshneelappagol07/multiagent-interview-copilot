@@ -122,4 +122,15 @@ export const api = {
     if (!res.ok) throw new Error('Failed to fetch LLM providers');
     return res.json();
   },
+
+  async getConversationHistory(): Promise<{ turns: Array<{ question: string; answer: string; mode: string }>; totalCount: number }> {
+    const res = await fetch(`${API_BASE}/api/conversation/history`);
+    if (!res.ok) throw new Error('Failed to load conversation history');
+    return res.json();
+  },
+
+  async resetConversationHistory(): Promise<void> {
+    const res = await fetch(`${API_BASE}/api/conversation/history`, { method: 'DELETE' });
+    if (!res.ok) throw new Error('Failed to reset conversation history');
+  },
 };

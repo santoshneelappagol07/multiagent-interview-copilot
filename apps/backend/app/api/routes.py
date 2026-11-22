@@ -3,7 +3,7 @@ from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 import json
 import logging
 
@@ -15,6 +15,7 @@ from app.routing.strategy import AnswerMode
 from app.llm.factory import llm_factory
 from app.monitoring.metrics import metrics_collector
 from app.transcripts.manager import transcript_manager
+from app.context.memory import memory_manager
 
 logger = logging.getLogger("ai_voice_copilot.api.routes")
 router = APIRouter()
@@ -22,6 +23,7 @@ router = APIRouter()
 class GenerateAnswerRequest(BaseModel):
     question: str
     mode: str = "fast"
+    history: Optional[List[Dict[str, Any]]] = None
 
 class GenerateAnswerResponse(BaseModel):
     id: str
@@ -32,27 +34,31 @@ class GenerateAnswerResponse(BaseModel):
     model: str
     latencyMs: float
     sources: List[str]
+    contextCarriedCount: int = 0
     createdAt: str
 
 @router.post("/generate-answer", response_model=GenerateAnswerResponse)
 async def generate_answer(req: GenerateAnswerRequest):
     """
-    Primary endpoint triggered by the desktop 'Generate Answer' button.
-    Executes mandatory RAG, routes to fastest available LLM, and logs performance.
+    Primary endpoint for answer generation.
+    Carries the context of the previous 2-3 questions & answers for multi-turn conversational relevance.
     """
     try:
         mode_enum = AnswerMode(req.mode.lower())
     except ValueError:
         mode_enum = AnswerMode.FAST
 
-    result = await orchestrator.process_question(question=req.question, mode=mode_enum)
+    result = await orchestrator.process_question(
+        question=req.question,
+        mode=mode_enum,
+        history_override=req.history
+    )
     return result
 
 @router.post("/generate-answer-stream")
 async def generate_answer_stream(req: GenerateAnswerRequest):
     """
-    Server-Sent Events (SSE) streaming endpoint for real-time token delivery.
-    Delivers sub-second first-token response to the desktop frontend.
+    Server-Sent Events (SSE) streaming endpoint with multi-turn context carrying.
     """
     try:
         mode_enum = AnswerMode(req.mode.lower())
@@ -60,10 +66,32 @@ async def generate_answer_stream(req: GenerateAnswerRequest):
         mode_enum = AnswerMode.FAST
 
     async def event_generator():
-        async for event in orchestrator.process_question_stream(question=req.question, mode=mode_enum):
+        async for event in orchestrator.process_question_stream(
+            question=req.question,
+            mode=mode_enum,
+            history_override=req.history
+        ):
             yield f"data: {json.dumps(event)}\n\n"
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
+
+@router.get("/conversation/history")
+async def get_conversation_history(count: int = 5):
+    """
+    Returns the recent Q&A history currently maintained in the conversation memory.
+    """
+    return {
+        "turns": memory_manager.get_recent_turns(count=count),
+        "totalCount": memory_manager.get_turn_count()
+    }
+
+@router.delete("/conversation/history")
+async def reset_conversation_history():
+    """
+    Clears the Q&A conversation history to begin a new interview session.
+    """
+    memory_manager.clear()
+    return {"status": "cleared", "message": "Conversation context reset"}
 
 @router.get("/documents")
 async def list_documents(db: AsyncSession = Depends(get_db)):
@@ -106,9 +134,6 @@ async def upload_document(file: UploadFile = File(...), db: AsyncSession = Depen
 
 @router.post("/documents/reindex")
 async def reindex_documents(db: AsyncSession = Depends(get_db)):
-    """
-    Indexes all files currently in storage/documents/originals (such as candidate transcripts).
-    """
     count = await document_manager.reindex_all_existing_documents(db)
     return {"status": "reindexed", "filesProcessed": count}
 
@@ -151,4 +176,5 @@ async def get_system_status():
         "database": "sqlite_async",
         "vector_store": "chromadb_local",
         "persona": "Santosh Neelappagol (~4y Python Full Stack & AI)",
+        "context_memory_turns": memory_manager.get_turn_count(),
     }

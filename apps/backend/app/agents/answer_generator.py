@@ -3,7 +3,7 @@ from app.context.manager import context_manager
 from app.routing.router import model_router
 from app.routing.strategy import AnswerMode
 from app.llm.base import LLMResponse
-from typing import Dict, Any, List, AsyncGenerator
+from typing import Dict, Any, List, Optional, AsyncGenerator
 import time
 import logging
 
@@ -22,15 +22,17 @@ class AnswerGenerationAgent(BaseAgent):
         conversation_context: List[str],
         document_chunks: List[Dict[str, Any]],
         mode: AnswerMode,
+        recent_qa_turns: Optional[List[Dict[str, Any]]] = None,
     ) -> LLMResponse:
         start_time = time.perf_counter()
 
-        # Build prompt incorporating mandatory knowledge base
+        # Build prompt incorporating mandatory knowledge base and previous 2-3 Q&A pairs
         prompt = context_manager.build_generation_prompt(
             question=question,
             conversation_context=conversation_context,
             document_chunks=document_chunks,
             mode=mode.value,
+            recent_qa_turns=recent_qa_turns,
         )
         system_prompt = context_manager.get_system_prompt()
 
@@ -59,6 +61,7 @@ class AnswerGenerationAgent(BaseAgent):
         conversation_context: List[str],
         document_chunks: List[Dict[str, Any]],
         mode: AnswerMode,
+        recent_qa_turns: Optional[List[Dict[str, Any]]] = None,
     ) -> AsyncGenerator[Dict[str, Any], None]:
         """
         Streams answer tokens one by one with metadata events for real-time UI rendering.
@@ -72,6 +75,7 @@ class AnswerGenerationAgent(BaseAgent):
             conversation_context=conversation_context,
             document_chunks=document_chunks,
             mode=mode.value,
+            recent_qa_turns=recent_qa_turns,
         )
         system_prompt = context_manager.get_system_prompt()
 
@@ -87,6 +91,7 @@ class AnswerGenerationAgent(BaseAgent):
             "provider": provider_name,
             "model": model_name,
             "sources": sources,
+            "contextCarriedTurns": len(recent_qa_turns) if recent_qa_turns else 0,
         }
 
         try:
@@ -100,7 +105,6 @@ class AnswerGenerationAgent(BaseAgent):
                 yield {"type": "token", "token": chunk}
         except Exception as e:
             logger.warning(f"Streaming failed with {provider_name}: {e}. Attempting fallback...")
-            # Yield error token
             yield {"type": "token", "token": f"\n\n*[Streaming error from {provider_name}: {str(e)}]*"}
 
         total_latency = (time.perf_counter() - start_time) * 1000.0
