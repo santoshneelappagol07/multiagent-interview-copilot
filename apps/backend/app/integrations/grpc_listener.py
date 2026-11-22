@@ -25,7 +25,7 @@ async def start_grpc_listener():
             import grpc
             # Import generated proto stubs if available
             try:
-                from proto import audio_service_pb2, audio_service_pb2_grpc
+                from stt_proto import audio_service_pb2, audio_service_pb2_grpc
                 has_stubs = True
             except ImportError:
                 has_stubs = False

@@ -1,4 +1,4 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
 from pathlib import Path
 import os
@@ -8,6 +8,12 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 STORAGE_DIR = PROJECT_ROOT / "storage"
 
 class Settings(BaseSettings):
+    model_config = SettingsConfigDict(
+        env_file=str(PROJECT_ROOT / ".env"),
+        env_file_encoding="utf-8",
+        extra="ignore"
+    )
+
     # API Keys (Free Tier)
     gemini_api_key: str = Field(default="", alias="GEMINI_API_KEY")
     groq_api_key: str = Field(default="", alias="GROQ_API_KEY")
@@ -60,10 +66,5 @@ class Settings(BaseSettings):
         default="wG5iN9qWcW9t6uW-4uK-5H5T4V_w5O-0Y8_Z9L8_M6c=",
         alias="API_KEY_ENCRYPTION_KEY"
     )
-
-    class Config:
-        env_file = str(PROJECT_ROOT / ".env")
-        env_file_encoding = "utf-8"
-        extra = "ignore"
 
 settings = Settings()
