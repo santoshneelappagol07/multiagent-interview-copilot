@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package audio_service;
+
+service AudioService {
+  rpc StreamTranscriptions (EmptyRequest) returns (stream TranscriptionEvent);
+  rpc GetStatus (EmptyRequest) returns (EngineStatusResponse);
+  rpc StartCapture (StartCaptureRequest) returns (StartCaptureResponse);
+  rpc StopCapture (EmptyRequest) returns (StopCaptureResponse);
+  rpc ListDevices (EmptyRequest) returns (DeviceListResponse);
+}
+
+message EmptyRequest {}
+
+message TranscriptionEvent {
+  string text = 1;
+  bool is_partial = 2;
+  uint64 timestamp_ms = 3;
+  float confidence = 4;
+  string language = 5;
+}
+
+message EngineStatusResponse {
+  bool is_running = 1;
+  string device_name = 2;
+  uint32 sample_rate = 3;
+  uint64 uptime_ms = 4;
+}
+
+message StartCaptureRequest {
+  string device_id = 1;
+  uint32 sample_rate = 2;
+}
+
+message StartCaptureResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message StopCaptureResponse {
+  bool success = 1;
+}
+
+message DeviceListResponse {
+  repeated AudioDevice devices = 1;
+}
+
+message AudioDevice {
+  string id = 1;
+  string name = 2;
+  bool is_default = 3;
+}

@@ -1,0 +1,2477 @@
+Transcripts:
+Q1: Five two three four, and one. Yeah. I wanted to just sort the I don't want you to use any built in functions. Generative pathologic what is the flow that you will be considering to do that? Can we do it and walk in... Have you would have come across the time complexity. Right?
+Q2: Yeah. Can we do it in o of n instead of o I of n square? Yes, center. So what about the I'd like to walk in if you are Yeah. Go ahead. No, Santosh. I meant you should doing it in half e n. You are writing two for loop here that will come two of n square. Right? But in complexity, you have... They will come across that. The amount of it's that big. Five. I... Big connotations we would have come across, right, in DSA? So, Tush, I go to what you are saying for the walk in and the logic whatever you said will definitely work because that's a standard algorithm. Right? Can we do it in walk in? Yeah. So that would be a opt... Sorry to interrupt, Santosh. The logic is very... Is very simple, Santosh. If you see, the first and the last element are only not sorted. So if you just swap it, right, that will be sorted, Santosh.
+Q3: Yeah. So swapping will work there. Audit. Right? Yeah. Can you get to the log in for data code? Don't be nervous on those. It is... That simple swapping. Right? Yeah. Yeah. I believe about who are in some course. The logic I have said. Right? It is just simple. Just swap the first and the last element. And the list will be sorted. Because if you see the list,
+Q4: No. Santosh, Again, you're writing a file loop. I meant swapping. Swapping, I meant if you take the first element, So in the numbers of one, right, in line at index one word, will be the data be there? Do not print that answers one minute. What you are... Right? What exactly you are doing there? No. Just a minute. If you see the logic, what you have written is not swapping some source. You are just assigning the last element value number one in the place of number five. So if you print it right, what will that... You... Your expect? Is output? Do not print it. Just tell me the work test. What what what would be the output?
+Q5: Yeah. Yeah. So we should swap it. Right? Yeah. With addressing follow-up. I have... I've got you the logic. In the chat, Santosh. Can you copy paste that? No. With the list available. You remove the list and control that. And just give me one logic second line. Copy paste it and print it... Print the number there. No. Ah, yes. On social, you can just ensure this logic for... Just give me a second. Whatever the code you have written in the second, and that will swap it. So this is a code. You should print it because that's... That will not show the output. Right? Yeah. Without for loop also. Right? Here, what is the time complexity or some
+Q6: So you have mentioned Cheniere prompt engineering and all those things. Right? Definitely, you would have come across a transformers model. So what is the main difference between encoder block and the decoder block, and why do we use it?
+Q7: Not exactly sensors. Because if you see output top in encoder, will be passed as an input to a decoder block. Right?
+Q8: Masking. If it is masking, how will that block know this is the word?
+Q9: People think got the question. Yeah. Yes, Santosh. So in the decoder block, let's say, you say, I love coding in Python. Now the word Python is must be here. Okay? How will block to the word should... The word that is master is Python. And who will tell that? What is the computation? It takes into consideration.
+Q10: And you are saying all the possible words how to how do a a block or algorithm know what are the possible words there?
+Q11: You're getting it. Right? No. Not exactly, Santos, because you consider the vocabulary, whatever you are saying, right, set up words while training. But if you see, I love coding in Python. Definitely, many would have said, I love coding. I love coding in Java too. So with the group of probability, Python and Java would definitely... Fifty fifty, it would come. If we reconsider. But but whatever sentence you have given is, I love coding in Python only. Right? So, definitely, you will expect Python, not Java there. What will exactly happen? Right? If you see, I love coding in Python. There are how many words I... Coding in Python? Five to six words. So these are... They are tokens. Every time I predict a word, I check. Okay. I put Python here, what is the probability? If I put Java here, not not Java, whatever the words available in the given sentence, only those will be cons... Taking the probability. Getting it. Right?
+Q12: Yeah. That's how that's how it works. Yeah. That's how it works. So... Yeah. So in pandas side, what does the main difference between private label and group by?
+Q13: The end of the day, Yeah. So you are saying cost table and end of the day, you get aggregates only. Right?
+Q14: Both actually does same thing. The main difference is that pivot table, if you see, you get to decide what column name should be, what groups should come in the column column names. Okay? But in the group, it is not that. You just go ahead, and you get column names as your... I will get functions whatever you are passing. Okay?
+Q15: Yeah. And those will be your column names there. Okay? Yeah. So mentioned the Generative also. Right? What is the difference between Generate and Gong team, Harry?
+Q16: So in the 30, it's all about content generation.
+Q17: What is the main what is the main difference?
+Q18: So by the way, you are you are saying in the general, so we just pass a question and we get the answer. Right? But informed user also, just pass a question and get the answer.
+Q19: Not exactly sensors. If you see the rate, and the form considering the different data rate, Generative generate a text. To generate a text, you use a technique called prompting. Okay? There is no difference. Just to make sure you know all these terms. Right? Difference... The difference are differences. It is a technique used in generating the text step. That is a part of day. The big one, Generate, you using from engineering. That's simple. Okay?
+Q20: Have you used the the few short prompting technique?
+Q21: Okay, Sintosh. Got it. Let's consider a scenario. When a user asks a question, and the question is related to Python code generation, Okay? Python code generation or let... I I would just read from the patient better. Let's consider the scenario here. User ask... User is asking a question, and that question can be done using Python code. Now how how will LLM or any agent will decide whether to come up with the code and execute it or just generate a text. You are getting it. Right? Let's say, for an example, if I pay $20.23 into 23, that can be easily done using Python code. That's... There is no text generation or whatever fancy fancy words. Not required. So how will this agent decide?
+Q22: Can you open an online compiler or just write a code code? How do you create a tool in... Tool using line chain? How do you... How do LLM agent know what are the tools that are available
+Q23: The code part. Right?
+Q24: Not Santosh. What I meant. Right? Whatever you said, we create a tool using our decorator. And how do I LLM the service set of tools available so I can call it for later. And we should tell to an LLM. Right? How do you tell that?
+Q25: Yeah. Yeah. Yeah. If you are okay, with that, we'll just go ahead. If not, whatever you are saying. Right? I got it. I full and you define a function there. Yeah. So you were saying you pass whatever available tools as a... In a prompt. Right?
+Q26: Oh, you said the... What... You pass whatever the available tools you... So when I asked how do how do you tell an LLM that it not available tools, said we pass as... Pass it as a prompt. As part of prompt saying that these are the available tools. This a description for those, and you get to know what they are doing. Right?
+Q27: No. Yeah. Sorry. Interrupt centers. So sorry. Sorry to interrupt. We let's consider a scenario where you have added under the... You have created the under tools. Later later item, add some more tools. How should I go back and every time I change the prompt because we write the prompt, right, end of the day? So should we change it?
+Q28: Definitely, you should change it. Not exactly, Santosh. What we do is, right, whatever the tools we write, we have an LLM. Right? We bind that tools created to an LLM. We have something called binded tool. LLM dot bind tool, unless we pass if you don't come across the code.
+Q29: Yeah. Because, definitely, we'll not pass it in prompt. And do we pass it in a prompt in a sense that when we have very less number of tools And in the future, we add any number of tools. Right? Then only we will pass it as part of prompt. Yeah. Yeah. So
+Q30: So, definitely, he would have come across the the same CP server. Right? So what exactly those are?
+Q31: Yeah. So why can't you... We go ahead and connect to an extra source instead of having an MCP server. Let's consider the scenario. I will... I have a drive. I have Google Drive. I have Microsoft Drive. Okay? Now I wanted to connect to those. I can directly go ahead and connect. Right? Why why I need MCV server there?
+Q32: Yeah. Okay. Got it. Many projects totally have done? Yeah. What about the term? What exactly? Yeah. So in the project one, you have mentioned you are under the news. Right? So what exactly you were concentrating on? Let's say, those articles you meant in article, what exactly Whether the article or title, the description or something. What was the flow? When you come up with the output. Right? Well, output time and the dashboard. What actually you are showing to the end user? Whether you are showing that... On the short disk or the summary or something like that.
+Q33: Oh, Santosh. Sorry to interrupt. Analyzing the news you meant, what you are analyzing there. Because if you see Insure app right Inserts app, what it is doing, it will take a huge text, put it in a summary with our title had... With a title added. Yeah. Exactly. Title only. You are saying you are analyzing what you are analyzing there.
+Q34: So you will... Whether you... Are you the stock, whether it would be bullish bearish, or whatever it is, whether showing that also.
+Q35: Do you have some guardrails implemented in this project?
+Q36: Got it. Okay. Got it. Got it. So if the guardrail, what I you are doing with it? You are using some prompts or what exactly? When you said content filtering, those things are... How are you doing that?
+Q37: Okay. So that's what it... Let go back to Python coding here because... Apologies. You was concentrating more on Python coding. Right? He was testing there. Yeah.
+Q38: Let's consider a question. If a user gives a list, okay. I put it... User gives a list and the number saying that I wanted to know whether the given list is divisible or whatever the numbers that you are present in this list. Are divisible, completely divisible by a given number or not. So for this get me a quote for this, please.
+Q39: And less than the number is given. Wanted you to find whether the given number divides all the given numbers in the list completely. Yeah. Take for now. Take it. No. I don't get you. Just take a number, let's say, three. A number three. Three, four, four. Nine, So take a number number number as two. Yeah. Division number as two. Oh, yeah. Now you get me whether the given numbers, whatever mentioned in numbers is visible completely by the given device, sir. It depends on logic. How do you do it? Yeah. Okay. Okay. So I just got it. Yeah. Yeah. Got it. Got it.
+Q40: For the lang chain. Right? Yeah. Yeah. I can hear you, In the language, I wanted to write a quote for writing a few short prompting technique. Yeah. I know.
+Q41: Thing. Also, things we do testing the LLM's on the agenda with the things. But just to make sure, you know, what exactly to be passed or
+Q42: Yeah. Yeah. Writing would be great. So just because we were testing there. Right?
+Q43: Okay. Okay. Yeah. Yeah. Hey. You can just write the code because all those camel cases, all those things, right, we will not care. Auto completion is there. So... Yeah. I just wanted to know whether for the prompt template, let's say, what are you passing and why are you passing? We should know that. Right? And those are many very... Yeah. So If you want, you can refer documentation to Santos that will that should help you. Right? We can have a documentation. Language and documentation if you need. No. No. No, Santosh. I meant you can record documentation to get the code or whatever the functions you wanted there. Yeah. Yeah. You pass a template there and do work. Yeah. Got it. Got it. It. Yeah. That's what I thought. Yeah. Can you go back to Yeah. Yeah. So that's what I got. So I got it. Have you come across vector databases? Yeah. In a vector
+Q44: So you have a question? You have a data there, the embedded data you store it and you check that. Right? So when you are checking, when you are checking... When I say... When I'm checking something, how do I check it? You... End of the day, we use clarity. We pass a question, and we do that. Yeah. But how do... How how the logic? This exact logic
+Q45: Compare your question, whatever they invited to all the back available, check vectors, or what exactly you Okay. Okay. Yeah. How do Yeah. Yeah. That I got it, Santosh. Say you are comparing. Right? When you're comparing with what you are comparing, you are comparing with everything, all available vectors in the vector database or how.
+Q46: Let's see. I have... On that page document, you have you have stored it in vector database. The the the meeting is ready. Now I have give a question to you. Whether you will compare with all the vectors that it has created in vector or what exactly will you do there. Because it is... Definitely, it's very time consuming. Right? We could compare with all available vectors in the vector with the question we have. So what exactly will happen there?
+Q47: Ah, exactly. Yeah. Yeah. Exactly. It will Yeah. I got it. Recorded answers. What exactly it happens? Right? Let's say I have 10 vectors. While storing only while storing only, the way I will store this type, first vector. Consider first and next. We just needed to this next vector. I will put the... In a link list, you would have come across. The link... The next address. So next address. So one one random vector to that, what... Whichever is near, I'll put everything within near that. So whenever a new question comes and which is very near to that, I will directly go ahead and go there on the line. So we'll create a cluster. As you said, we use different algorithms. I... Yeah. And then it just w something there. Okay? Yeah. What have you used any re rankers? What exactly re ranker is?
+Q48: Why do we need it re rank up? Because end of the day, right, you get a similarity search, you are that directly... I mean, definitely, you are researching for a very nearest thing there. Okay. Now you you... Whatever you have, what is definitely it is true that it is very near. Now why do we need read every again there? It is... It... Tell you if you see it is not... Somewhere, it is not correlating. In the box, is not fitting. You are putting extra thing there without a date, something like that. Why do we need it exactly there?
+Q49: So you are saying the most relevant only I needed. If not, I would... The other things, whatever I have retrieved.
+Q50: Yeah. Sure,. Thank you. Hi,. Yeah. So this... From front end side, like, what are your roles and responsibilities in your project?
+Q51: Yeah. Okay. Have you... Is there any libraries? There?
+Q52: Like, That's good. Okay. Fine, Santosh. Start with the JavaScript, then we will go to React. Yeah. Yeah.
+Q53: What is the hosting in JavaScript?
+Q54: Hoisting. Yeah. Okay. What is function carrying? Function.
+Q55: What is event loop in JavaScript?
+Q56: Okay. What is the promise?
+Q57: Macro task queue.
+Q58: What is debouncing and throttling?
+Q59: And what is the main difference between, throttling and debouncing?
+Q60: Okay. Can you explain of the features introduced in ES six? ES six. E s six new features are introduced in JavaScript. Right?
+Q61: Yeah. Okay. What is spread down to stop later?
+Q62: Okay. Can you explain deep copy and shallow copy?
+Q63: Good. What is this keyword in JavaScript?
+Q64: Yeah. Okay. Okay. Oh, coming to React. What is the reconciliation algorithm in React?
+Q65: Okay. Is the difference between state and props?
+Q66: In the extra drops of drilling,
+Q67: It looks good. Drop the drilling. Yeah.
+Q68: Yep. Crop Sterling means, like, if you want to pass the data from one component to another component, by using properly, you can pass rate. Yeah.
+Q69: Okay. Is there any issue with this profit, really?
+Q70: Okay. Toward this problem, do we have any techniques or any libraries?
+Q71: Okay. Okay. Oh, is the difference between use memo hook and use callback hook?
+Q72: Okay. Oh, you explain useEffect hook and its life cycle method?
+Q73: Okay. Yeah. Is the importance of using keys in React list?
+Q74: Like, we have an list. In that list, we have 10 items. Like, if we change the, like, sixth item, or seventh item, it will impact in the rendering process or will happen?
+Q75: What are the hierarchical components
+Q76: Higher order components.
+Q77: Hi, Radul. Yeah. Okay. Redux toolkit flow, like, how to the data from the slides and how to update data present in the slice. Can you explain this flow?
+Q78: What is the difference between store and slice?
+Q79: Okay. Optimization techniques have you... Is it in your application?
+Q80: Okay. Like, we have virtualization. Can you explain about virtualization in React?
+Q81: Yeah. Can I explain lazy loading in React?
+Q82: Yeah. What is the difference between use effect hook and use layout effect
+Q83: Can you share your screen? Okay. Can you open Notepad? Yeah. Okay. Here, like, we have an API. In that API, you're having some user information, like, like name is something. So now I want you to write a component this one. We have to fetch the API and display the details.
+Q84: Yeah. Actually, in order to write everything, just to create... I mean, how you'll fix the data. We have an API just to just to fetch the data from the API and display it. That's it only.
+Q85: Yeah. Okay. Or you can name it as API or something. Fine. Yeah. Can you read the return? Statement? So this this one is fine. Use different to look rate. Just to your fetching the data only after fetching the data, you have set it to the user's state. That's the data we need to do. Right? Kevin, in the user per click, we are fetching the data. And after fetching the data, we have set this data to the two variables then set users. Yeah. Okay. What is the difference between a flex and grid in CSS?
+Q86: Okay. Have you used any cases frameworks
+
+Answers:
+Answer 1:
+Question:
+- Tell me about yourself, and include that your main work is around **Azure**
+
+Answer:
+- Sure, I am Santosh, and I have around **4 years of experience** in **Python Full Stack and AI development**, mainly working on backend services, frontend integration, and AI-based automation solutions.
+
+**Coming to my background**
+- I started my career working on **Python**, **Django**, and later moved more into **FastAPI** based microservices, so I got good hands-on in building REST APIs and backend logic.
+- Along with backend, I also worked on **React.js**, **JavaScript**, **HTML5**, **CSS3**, and **Redux Toolkit**, so I can support frontend side also when needed.
+- My work has been mostly around building scalable applications, integrating APIs, handling data flow, and making sure system is stable in production.
+
+**In the AI and data side**
+- I have worked on **Generative AI**, **LLMs**, **RAG**, **Prompt Engineering**, **LangChain**, and **LangGraph**, so I am comfortable in building intelligent features on top of business applications.
+- I also used **NLP**, **Pandas**, **NumPy**, and **Scikit-learn** for text processing, classification, and analysis type of work.
+- So basically I am not only doing normal application development, but also adding AI layer where business needs smarter automation and better insights.
+
+**Coming to databases and backend engineering**
+- I have worked with **PostgreSQL**, **MongoDB**, **MySQL**, **SQLAlchemy**, and also on **query optimization** and **indexing**, so I understand both relational and document data handling.
+- I have used **Apache Kafka** and **Redis** in event-driven and low-latency use cases, where performance and asynchronous processing are important.
+- I am also comfortable with **REST APIs**, **microservices**, **structured logging**, **exception handling**, and **unit testing** using **PyTest**.
+
+**On deployment and delivery**
+- I have worked with **Docker**, **Jenkins**, **CI/CD pipelines**, **Git**, and **GitHub**, so I understand end-to-end delivery flow from development to deployment.
+- My main work is around **Azure**, so I have good exposure in cloud deployment, environment handling, and production support there.
+- In my roles, I usually collaborate with developers, QA, and business teams, and I follow **Agile** and **Scrum** process.
+
+**What I bring to the team**
+- I am basically a hands-on engineer who can work on backend, AI integration, and also support frontend if required.
+- I like to understand business problem first, then design proper solution, and then implement in a clean and maintainable way.
+- So overall, I would say my strength is combining **Python backend development** with **AI-driven features** and delivering practical production solutions.
+
+Answer 2:
+Question:
+- Tell me about your latest project, **Nexuvo AI Chatbot**, in detail with the problem statement
+
+Answer:
+- Sure, in **Nexuvo AI Chatbots**, the main problem was to automate user interactions and business workflows, so users can get faster responses and backend actions can happen in a more intelligent way.
+
+**So first, the problem statement**
+- Earlier, many user requests were handled manually or through separate backend flows, so it was taking more time and sometimes conversation was not smooth.
+- The business needed a chatbot which can understand user intent, give proper response, and also trigger internal or external system actions when required.
+- So the goal was to build a scalable conversational service which can support automation, real-time data retrieval, and workflow processing.
+
+**Coming to my role in this project**
+- I worked as **Full Stack / AI Backend Developer**, so I was handling both backend service side and chatbot logic side.
+- My work was mainly around **Python**, **FastAPI**, **REST APIs**, **React.js**, **PostgreSQL**, **MongoDB**, **Generative AI / LLM APIs**, **RAG**, and **Prompt Engineering**.
+- I also worked on **Docker**, **Azure**, and CI/CD related deployment flow, so I was involved in development as well as support side.
+
+**How we designed it**
+- We used **FastAPI microservices** for backend, because it was good for building lightweight and scalable APIs.
+- For chatbot intelligence, we used **LLM-based response generation** with **RAG** and **Prompt Engineering**, so responses can be more relevant and business specific.
+- We stored structured data in **PostgreSQL** and conversational session data in **MongoDB**, because both data types were different in nature.
+
+**How the implementation went**
+- First, we built the **REST APIs** in **FastAPI** for user requests, conversation handling, and backend workflow triggers.
+- Then we connected the chatbot with internal and external systems, so it can fetch real-time data and process user requests properly.
+- After that, we added **RAG** flow, where relevant context is retrieved before generating response, and that helped in improving answer accuracy.
+- We also used **Prompt Engineering** to control response style and make output more aligned with business use case.
+
+**What I handled in day-to-day work**
+- I worked on request validation, exception handling, and logging, so API behavior stays stable.
+- I also supported unit and integration testing, debugging, and production issue fixing.
+- Since it was deployed on **Azure** with **Docker**, I also worked around environment readiness and deployment support.
+
+**What was the impact**
+- The project helped in improving user interaction automation and reduced manual effort in handling routine requests.
+- It also improved reliability because we had proper logging, monitoring, and response management in place.
+- So overall, it was a chatbot platform where we combined **workflow automation** and **Generative AI** to make user experience better and backend processing faster.
+
+**In short**
+- **User request** → **FastAPI service** → **RAG and LLM response** → **workflow trigger** → **data stored in PostgreSQL / MongoDB** → **deployed on Azure**
+
+Answer 3:
+Question:
+- Tell me about your projects **Trade News Analyser** and **AXA Insurance** in detail with problem statement
+
+Answer:
+- Sure, both projects were quite different, one was more on **financial news intelligence** and another was on **insurance workflow and claims management**, so I will explain both with problem statement and what I did there.
+
+**Coming to Trade News Analyser, the problem statement**
+- In financial markets, news comes very fast from multiple sources, and traders or analysts need to understand impact quickly.
+- The problem was that raw news is too much, and it is difficult to manually read, classify, and judge whether it affects stocks, commodities, currencies, or other instruments.
+- So the goal was to build an **AI-powered platform** which can collect news in real time, process it, and give useful insights like summary, sentiment, key entities, and trend related view.
+
+**How Trade News Analyser was designed**
+- We used **Python FastAPI microservices** for backend, because we needed scalable APIs for ingestion and analysis.
+- For frontend, we used **React.js**, so users can view analysed news in a simple dashboard.
+- For data storage, we used **PostgreSQL** for structured data and **MongoDB** for raw unstructured news content.
+- We also used **Redis** for caching and **Apache Kafka** for event-driven ingestion, because news processing had to be fast and asynchronous.
+
+**What I did in Trade News Analyser**
+- I worked on backend APIs, news processing flow, and integration with data extraction pipelines using **BeautifulSoup** and **Requests**.
+- I also worked on **NLP**, **Generative AI / LLM APIs**, **LangChain**, **Pandas**, and **Scikit-learn** for summarization, entity extraction, sentiment analysis, classification, and trend prediction.
+- I supported **Docker**, **Azure deployment**, and **Git / Jenkins CI/CD** flow, so the system could move smoothly across environments.
+
+**Impact of Trade News Analyser**
+- It helped traders and financial analysts quickly gauge the potential impact of breaking news on financial instruments.
+- We also improved API response times using **Redis** and optimized backend performance through monitoring and log analysis.
+- So overall, it was a real-time AI news intelligence platform with both automation and prediction support.
+
+**Coming to AXA Insurance, the problem statement**
+- In insurance domain, quotation, policy issuance, premium calculation, and claims handling are usually heavy and document driven.
+- The problem was that a lot of manual review was needed, especially in claims and document analysis, which was slowing down operations.
+- So the goal was to build an **enterprise insurance management system** which can support end-to-end lifecycle and reduce manual effort in processing policies and claims.
+
+**How AXA Insurance system was designed**
+- We used **React.js** for agents and administrators, so they can work on a proper web interface.
+- Backend was built using **Python FastAPI microservices**, with **REST APIs** for business operations.
+- We used **PostgreSQL** for customer, policy, and claims data, and **Apache Kafka** for event-driven communication and asynchronous processing.
+- For document analysis and claim summarization, we used **AI / LLM services**, because insurance documents need quick extraction of key information.
+
+**What I did in AXA Insurance**
+- I worked on API development, business logic, and integration of claim and policy workflows.
+- I also worked on **PyTest** for unit and integration testing, and used **Swagger / OpenAPI** and **Postman** for API validation.
+- I participated in **Agile**, peer code reviews, QA and UAT support, and also helped in production support when issues came.
+
+**Impact of AXA Insurance**
+- It reduced manual review time through AI-based document analysis and claim summarization.
+- It improved reliability through request validation, exception handling, and structured logging.
+- So overall, it was a proper enterprise system for insurance operations with automation and better workflow control.
+
+**In short**
+- **Trade News Analyser** was about real-time financial news intelligence.
+- **AXA Insurance** was about insurance lifecycle automation and claims processing.
+- In both projects, my role was mainly around **Python**, **FastAPI**, **AI integration**, **backend services**, and **production support**.
+
+Answer 4:
+Question:
+- How would you sort the numbers **5, 2, 3, 4, 1** without using built-in functions, and what flow and time complexity would you consider?
+
+Answer:
+- Yes, we can do it manually, basically by using a simple sorting logic like **bubble sort** or **selection sort**, and then I will explain the flow and time complexity.
+
+**Coming to the flow**
+- First I will take the array as **[5, 2, 3, 4, 1]** and compare elements one by one.
+- If I use **bubble sort**, then I compare adjacent elements and swap if left side is bigger.
+- So after first pass, biggest element goes to end, then second pass, next biggest goes to correct place, like that.
+
+**If I explain with bubble sort**
+- Compare **5 and 2**, swap, so array becomes **[2, 5, 3, 4, 1]**.
+- Compare **5 and 3**, swap, so array becomes **[2, 3, 5, 4, 1]**.
+- Compare **5 and 4**, swap, so array becomes **[2, 3, 4, 5, 1]**.
+- Compare **5 and 1**, swap, so array becomes **[2, 3, 4, 1, 5]**.
+- Then next pass continues until full array becomes sorted.
+
+**Coming to time complexity**
+- For **bubble sort**, worst case time complexity is **O(n²)**, because for each element we may compare with many other elements.
+- Best case can be **O(n)** if array is already sorted and we use a flag to stop early.
+- Space complexity is **O(1)** because sorting is done in-place.
+
+**If interviewer asks for better option**
+- I can also say **selection sort**, where I find minimum element and place it in correct position.
+- That also has **O(n²)** time complexity, but number of swaps is less compared to bubble sort.
+- So if simplicity is needed, bubble sort is easy to explain; if fewer swaps are needed, selection sort is better.
+
+**In interview flow**
+- I would say, first I choose a simple manual sorting method, then explain step by step swapping, and finally mention **time complexity** and **space complexity** clearly.
+
+Answer 5:
+Question:
+- Can we sort it in **O(n)** instead of **O(n²)**, and if only first and last elements are unsorted, can we just swap them?
+
+Answer:
+- Yes, if the problem is only that **first and last elements** are misplaced, then one swap is enough and that becomes **O(1)** for that specific case.
+- But if it is a general sorting problem, then no, we cannot sort any random array in **O(n)** using normal comparison-based sorting.
+
+**When it comes to general sorting**
+- For a normal unsorted array, comparison-based sorting has a lower bound of **O(n log n)**, so we cannot go to **O(n)** in general.
+- So if interviewer asks about full sorting, I should say **bubble sort** or **selection sort** are **O(n²)**, and better algorithms like **merge sort** or **quick sort** are used for faster sorting.
+- But those also are not **O(n)**, they are usually **O(n log n)**.
+
+**Coming to your specific observation**
+- If only **first** and **last** elements are wrong, then yes, we can just compare them and swap if needed.
+- In that case, we are not really sorting the full array, we are just fixing one misplaced pair.
+- So that logic is valid, but only for that special condition.
+
+**If interviewer asks about complexity**
+- For that special case, time complexity is **O(1)** because only one comparison and one swap.
+- If we need to check whether array is already sorted except first and last, then we may need one full scan, so that becomes **O(n)**.
+- But full sorting of arbitrary array cannot be done in **O(n)** with comparison-based method.
+
+**How I would answer in interview**
+- I would say, “If only first and last elements are unsorted, then yes, I can fix it in constant time by swapping them. But if it is a general sorting problem, then no, we need at least **O(n log n)** for comparison-based sorting.”
+
+Answer 6:
+Question:
+- If only first and last elements are misplaced, can we just swap them and sort the list?
+
+Answer:
+- Yes, if that is the only issue, then simple **swap** of first and last element will sort it.
+
+**When it comes to this case**
+- Here the assumption is very specific, only **first** and **last** elements are out of place.
+- So we do one comparison and one swap, nothing more.
+- That is why this is not full sorting logic, it is just fixing a special case.
+
+**Why this works**
+- If middle part is already in correct order, then only boundary elements are disturbing the sequence.
+- So after swapping them, the order becomes correct.
+- This is basically a **constant time** operation.
+
+**What I would say in interview**
+- I would say, “Yes, for this specific input pattern, swapping first and last element is enough.”
+- “But if array is not in that special form, then we need proper sorting algorithm.”
+- So I will always first check the condition before deciding the logic.
+
+Answer 7:
+Question:
+- If I assign last element value into first position, what will be the output, and what exactly is happening there?
+
+Answer:
+- If I only do assignment like `a[0] = a[n-1]`, then it is **not swapping**.
+- It will just **overwrite** first element with last element value, and original first value will be lost.
+
+**What is happening here**
+- Suppose array is **[5, 2, 3, 4, 1]**.
+- If I do only `a[0] = a[4]`, then array becomes **[1, 2, 3, 4, 1]**.
+- So first value **5** is gone, and now **1** is present in two places.
+
+**Why this is not swap**
+- In swap, we need to exchange both values.
+- So first value should go to last place, and last value should come to first place.
+- For that we need a temporary variable, otherwise one value will be lost.
+
+**Correct swap flow**
+- Store first element in temp.
+- Put last element into first position.
+- Put temp into last position.
+- Then output becomes **[1, 2, 3, 4, 5]**.
+
+**So the expected output**
+- If only assignment is done, output will be **[1, 2, 3, 4, 1]**.
+- If proper swap is done, output will be **[1, 2, 3, 4, 5]**.
+
+Answer 8:
+Question:
+- If we do proper swap without using a loop, what is the time complexity?
+
+Answer:
+- Yes, if it is just swapping two elements, then time complexity is **O(1)**.
+
+**When it comes to swap**
+- We are only touching **two positions** in array.
+- So no matter list size is big or small, work remains same.
+- That is why it is constant time.
+
+**Why not O(n)**
+- In **O(n)**, we normally scan whole list.
+- Here we are not scanning anything, only exchanging two values.
+- So loop is not needed at all.
+
+**What about space**
+- If we use a **temp variable**, then space is **O(1)**.
+- If we do it with normal swap logic, still extra space is constant only.
+- So both time and space are very small here.
+
+**So final answer**
+- Time complexity is **O(1)**.
+- Space complexity is also **O(1)**.
+
+Answer 9:
+Question:
+- What is main difference between **encoder block** and **decoder block** in **Transformer**, and why we use them?
+
+Answer:
+- Yes, basically **encoder** is for understanding input, and **decoder** is for generating output.
+
+**When it comes to encoder**
+- Encoder takes full input sentence and builds contextual representation.
+- It uses **self-attention** so each word can look at other words in same input.
+- In encoder, all input tokens are available at same time, so it can learn full context.
+
+**Coming to decoder**
+- Decoder generates output token by token.
+- It uses **masked self-attention**, so current token cannot see future tokens.
+- It also uses **cross-attention** to attend encoder output, so generation is based on input context.
+
+**Here the main difference is**
+- Encoder is mainly for **representation learning**.
+- Decoder is mainly for **sequence generation**.
+- Encoder sees full input, decoder predicts next token step by step.
+
+**Why we use them**
+- We use encoder when task is like classification, embedding, understanding text.
+- We use decoder when task is like translation, summarization, chatbot response generation.
+- In many **LLM** and **RAG** type work, decoder side is very important because output is generated autoregressively.
+
+**In my understanding**
+- In **Transformer** architecture, encoder and decoder together help in sequence-to-sequence tasks.
+- Encoder captures meaning, decoder converts that meaning into required output.
+
+Answer 10:
+Question:
+- In Transformer, encoder output is passed as input to decoder block, right?
+
+Answer:
+- Yes, correct. Encoder output is given to decoder through **cross-attention**.
+
+**When it comes to encoder output**
+- Encoder produces contextual vectors for full input sequence.
+- These vectors carry meaning of input tokens after **self-attention** and feed-forward layers.
+- So it becomes like memory for decoder.
+
+**Coming to decoder input**
+- Decoder does not take raw input directly as main context.
+- It takes previous generated tokens, and also attends to encoder output.
+- So decoder uses **masked self-attention** for its own tokens and **cross-attention** for encoder memory.
+
+**Why this is useful**
+- This helps decoder generate output based on input sentence, not only on previous output tokens.
+- For example in translation, encoder reads source language, decoder generates target language using that encoded context.
+- So yes, encoder output is passed to decoder, but through attention mechanism, not as simple direct replacement.
+
+**So the main point**
+- Encoder output acts like context source.
+- Decoder uses that context to produce final sequence step by step.
+
+Answer 11:
+Question:
+- If we use **masking**, how will decoder know which word to predict?
+
+Answer:
+- It will not know future word directly, that is the whole point of **masking**.
+
+**When it comes to masking**
+- In decoder, mask blocks future tokens from being seen.
+- So at time of predicting one word, model can only use previous words.
+- This prevents cheating during training.
+
+**How prediction happens**
+- Decoder gets input tokens shifted right, like previous correct words.
+- Then **masked self-attention** allows only past positions, not future positions.
+- After that, model gives probability for next token, and highest score token is selected.
+
+**Why this works**
+- During training, we already know full target sentence, so mask controls visibility.
+- During inference, model generates one token, then that token becomes input for next step.
+- So it learns step by step, same way real generation happens.
+
+**So simply**
+- Masking does not tell the word directly.
+- It only controls what decoder is allowed to see before predicting next word.
+
+Answer 12:
+Question:
+- In decoder block, if sentence is like “I love coding in Python”, how does model know next word should be **Python**, and what computation decides that?
+
+Answer:
+- Yes, so model does not know it directly. It computes probability for every possible next word, and **Python** gets highest score if context matches.
+
+**When it comes to decoder computation**
+- Decoder first takes previous tokens like **I**, **love**, **coding**, **in**.
+- Then **masked self-attention** looks only at these previous tokens, not future one.
+- After that, it creates one hidden representation for current position.
+
+**Coming to how next word is chosen**
+- That hidden vector goes through a final linear layer and **softmax**.
+- Softmax gives probability for each word in vocabulary.
+- So model compares all words, and the word with highest probability becomes output, here maybe **Python**.
+
+**What decides Python**
+- It is not rule-based, it is learned from training data.
+- During training, model sees many examples where context like “coding in” is followed by **Python**.
+- So weights get adjusted in a way that **Python** score becomes high for similar context.
+
+**So basically**
+- Computation is: context vector → linear projection → **softmax** → next-token probability.
+- The model is learning statistical pattern, not manually told that Python must come there.
+
+Answer 13:
+Question:
+- How does decoder know what are all possible words in vocabulary?
+
+Answer:
+- It knows from the fixed **vocabulary** created during training.
+
+**When it comes to vocabulary**
+- Before training, tokenizer builds a list of all tokens from training data.
+- This list becomes the model vocabulary.
+- So model does not search random words, it only chooses from that fixed set.
+
+**Coming to the computation**
+- Each token in vocabulary has one index.
+- Decoder output vector is compared against all vocabulary entries through final **linear layer**.
+- Then **softmax** gives probability for each token index.
+
+**Why this is limited**
+- If a word is not in vocabulary, tokenizer breaks it into subwords or pieces.
+- So model still works with known tokens, not with unlimited raw words.
+- That is why tokenization is very important.
+
+**So simply**
+- The possible words are already defined by tokenizer and vocabulary.
+- Decoder only scores those known tokens and picks the best one.
+
+Answer 14:
+Question:
+- In a sentence like “I love coding in Python”, how does model decide among words like **Python** and **Java** using probability from context?
+
+Answer:
+- Yes, exactly, model uses the **context of whole sentence** and gives probability based on that context, not just one word in isolation.
+
+**When it comes to token prediction**
+- Each position in decoder sees previous tokens and builds a context vector.
+- So for the last position, it understands pattern like **I love coding in**.
+- Then it scores all candidate tokens from vocabulary for next output.
+
+**Coming to why Python gets higher score**
+- During training, model learns that after this kind of context, **Python** is more likely than **Java** in many cases.
+- So if sentence context strongly matches Python-related pattern, its probability becomes higher.
+- It is not fixed 50-50, because full context changes the score.
+
+**What actually happens in computation**
+- Decoder output goes through **linear layer** and **softmax**.
+- Softmax gives one probability distribution over all vocabulary tokens.
+- So every token gets a score, but only the most suitable one gets highest probability.
+
+**So simply**
+- Yes, model checks probability for all possible next tokens.
+- But that probability is based on full sentence context, not only on the last word.
+
+Answer 15:
+Question:
+- In **pandas**, what is the main difference between **pivot_table** and **groupby**?
+
+Answer:
+- Yes, basically both are used for aggregation, but **pivot_table** gives more of a cross-tab style summary, and **groupby** is more general for grouping and then applying operations.
+
+**When it comes to groupby**
+- We use **groupby** when we want to split data by one or more columns and then apply aggregation like **sum**, **mean**, **count**.
+- It is more flexible, because after grouping we can do custom operations also.
+- Example, group by **customer_id** and calculate total amount.
+
+**Coming to pivot_table**
+- We use **pivot_table** when we want a table format, like rows and columns both, similar to Excel pivot.
+- It is very useful for summary reports, where one field becomes index and another field becomes columns.
+- It also supports aggregation, and default is usually **mean** if not specified.
+
+**Here the main difference is**
+- **groupby** is for grouping and then processing, while **pivot_table** is for reshaping data into matrix-like summary.
+- So if I want just aggregation, I go with **groupby**.
+- If I want report-style table with row-column layout, I go with **pivot_table**.
+
+Answer 16:
+Question:
+- So at the end, both **pivot_table** and **groupby** give aggregates only, right?
+
+Answer:
+- Yes, mostly both are used for aggregation, but output shape is different.
+
+**When it comes to groupby**
+- **groupby** first splits data into groups, then we apply aggregation or custom function.
+- Output can be a Series, DataFrame, or even custom result, so it is not only one fixed format.
+- It is more general purpose.
+
+**Coming to pivot_table**
+- **pivot_table** also aggregates, but it arranges result in a table form with **index** and **columns**.
+- So it is more like summary matrix, and it is easier for reporting.
+- It is basically a higher-level wrapper over grouping plus reshaping.
+
+**Here the main difference is**
+- Both can show aggregates, yes.
+- But **groupby** is for grouping logic, and **pivot_table** is for grouped summary in a cross-tab format.
+- So if you want flexible processing, use **groupby**; if you want report-style table, use **pivot_table**.
+
+Answer 17:
+Question:
+- So both do similar aggregation, but in **pivot_table** I can choose which column comes as row and which comes as column, while in **groupby** I just get grouped output based on function, right?
+
+Answer:
+- Yes, correct, that is the main practical difference.
+
+**When it comes to pivot_table**
+- Here we can decide **index** and **columns**, so output becomes like a matrix.
+- So one field becomes row labels, another field becomes column labels, and values come in the cells.
+- That is why it is very useful for reporting and summary view.
+
+**Coming to groupby**
+- In **groupby**, we mainly group by one or more columns and then apply function like **sum**, **mean**, **count**.
+- Output is based on grouping keys, not like a row-column pivot layout by default.
+- So it is more for analysis and transformation.
+
+**Here the main difference is**
+- **pivot_table** gives more control on table structure, especially row and column arrangement.
+- **groupby** gives grouped result and then we decide what aggregation or function to apply.
+- So yes, both aggregate, but **pivot_table** is more presentation-style and **groupby** is more processing-style.
+
+Answer 18:
+Question:
+- What is the difference between **generate** and **transform** in pandas?
+
+Answer:
+- Yes, basically **generate** creates new data, and **transform** changes data but keeps same shape as original.
+
+**When it comes to generate**
+- If you mean **generate** in general, it is about creating new output from input data.
+- In pandas, we usually say **apply** or custom logic for generating new values.
+- So here result can be new rows, new columns, or completely new structure.
+
+**Coming to transform**
+- **transform** is used when we want output aligned back to original index.
+- It keeps same length as input, so each row gets transformed value.
+- This is useful when we want group-wise calculation but still keep original row structure.
+
+**Here the main difference is**
+- **generate** is broader, it can create new output in different shape.
+- **transform** is shape-preserving, so output size stays same as input.
+- If you meant some other pandas function, tell me the exact name, because “generate” is not a standard pandas method.
+
+Answer 19:
+Question:
+- What is the difference between **Generative AI** and **Prompt Engineering**?
+
+Answer:
+- Yes, basically **Generative AI** is the technology, and **Prompt Engineering** is the way we guide that technology.
+
+**When it comes to Generative AI**
+- **Generative AI** means models which can create new content like text, summary, answer, or classification output.
+- In my work, this is usually with **LLM** or **OpenAI API** type services.
+- So the model itself is doing the generation part.
+
+**Coming to Prompt Engineering**
+- **Prompt Engineering** is about writing the input instruction properly so model gives better output.
+- Here we control tone, format, context, and sometimes few-shot examples.
+- It is more like guiding the model, not the model itself.
+
+**Here the main difference is**
+- **Generative AI** is the capability or system.
+- **Prompt Engineering** is the technique we use to get better and more accurate response from that system.
+- In simple words, one is the engine, another one is how we drive it.
+
+Answer 20:
+Question:
+- So in **Generative AI**, it is all about content generation, right?
+
+Answer:
+- Yes, basically that is the main idea, it generates new content from learned patterns.
+
+**When it comes to Generative AI**
+- It can generate **text**, **summary**, **answers**, **classification output**, and even structured response.
+- In my projects, we used it for **summarization**, **key information extraction**, and **chatbot responses**.
+- So it is not only content writing, it is more about producing useful output from input context.
+
+**Coming to the practical side**
+- The model learns patterns from training data and then predicts next best output.
+- With proper **prompt engineering** and **RAG**, output becomes more relevant and grounded.
+- That is why in real projects, we combine model plus context plus prompt.
+
+**Here the main point is**
+- Yes, content generation is core part.
+- But in production, we use it for business tasks also, like analysis, extraction, and automation.
+- So it is broader than only writing content.
+
+Answer 21:
+Question:
+- What is the main difference between **Generative AI** and **Prompt Engineering**?
+
+Answer:
+- Main difference is, **Generative AI** is the model or technology that creates output, and **Prompt Engineering** is the method to ask it properly.
+
+**When it comes to Generative AI**
+- It is the actual **LLM** or AI system which generates text, summary, answer, or other content.
+- So basically it is the core capability.
+- In projects, this is the part doing the actual generation work.
+
+**Coming to Prompt Engineering**
+- It is how we frame the input so model gives better result.
+- We use clear instructions, context, format, and sometimes examples.
+- So this is more like controlling the output quality.
+
+**Here the main difference is**
+- **Generative AI** = the engine.
+- **Prompt Engineering** = the driving technique.
+- One creates the response, another one improves how response comes.
+
+Answer 22:
+Question:
+- So you are saying in **Generative AI**, we just pass a question and get the answer, and in a normal system also we pass a question and get the answer, right?
+
+Answer:
+- Yes, but difference is in **normal system** answer is mostly fixed or rule-based, and in **Generative AI** answer is generated dynamically based on context.
+
+**When it comes to normal system**
+- Normally it works on predefined rules, search, or exact mapping.
+- If question matches, then only it gives that answer.
+- So output is limited to what already configured.
+
+**Coming to Generative AI**
+- Here model understands the prompt and generates new response.
+- It can answer in different wording, summarize, explain, or rephrase.
+- So it is not just lookup, it is actual generation.
+
+**Here the main difference is**
+- Normal system gives **static or rule-based output**.
+- **Generative AI** gives **dynamic generated output**.
+- That is why same question can get more natural and context-aware answer in Gen AI.
+
+Answer 23:
+Question:
+- You mean **prompting** is just a technique used in the text generation step, and it is part of **Generative AI**, right?
+
+Answer:
+- Yes, exactly. **Prompting** is one technique inside **Generative AI** workflow, mainly used to guide text generation.
+
+**When it comes to Generative AI**
+- It is the bigger area, where model generates **text**, **summary**, **answer**, or other content.
+- So here the main thing is generation itself.
+- In my understanding, it is the umbrella term.
+
+**Coming to Prompting**
+- It is a way of giving instructions to the model.
+- We use it to control format, context, and quality of generated text.
+- So basically it is one step or one method inside Gen AI.
+
+**Here the main difference is**
+- **Generative AI** is the full capability or field.
+- **Prompting** is the technique used to get better output from it.
+- So yes, prompting is part of the generation process, not separate from it.
+
+Answer 24:
+Question:
+- Have you used **few-shot prompting** technique?
+
+Answer:
+- Yes, I have used **few-shot prompting** in **LLM** based work, mainly to guide model with examples and get more consistent output.
+
+**When it comes to few-shot prompting**
+- Here we give model a few sample input-output pairs before actual question.
+- So model understands expected pattern, format, and style better.
+- This is useful when output needs more consistency.
+
+**Coming to where it helps**
+- I use it when response format is important, like **classification**, **extraction**, or **structured summary**.
+- It reduces ambiguity, because model sees one or two examples first.
+- So output becomes more aligned with what we want.
+
+**In my projects**
+- In **RAG** and **prompt engineering** work, few-shot examples help in making responses more stable.
+- Especially when we want model to follow same tone or same structure for multiple inputs.
+- So yes, it is a practical technique I have used.
+
+Answer 25:
+Question:
+- How will an **LLM** or agent decide whether to generate **Python code** and execute it, or just give a text answer, when user question can be solved by code?
+
+Answer:
+- Yes, basically it decides based on **intent**, **task type**, and **tool routing logic**. If question needs computation or structured action, agent can choose code execution; otherwise it can answer in text.
+
+**When it comes to decision making**
+- First step is to understand user intent, like is it asking for explanation, calculation, or actual execution.
+- If it is simple math or deterministic logic, agent can route it to **Python tool** or **code interpreter**.
+- If it is conceptual or descriptive, then plain text generation is enough.
+
+**Coming to how agent makes that call**
+- Normally there is an **orchestrator** or **router** layer in between.
+- That layer checks the prompt, classifies the task, and decides which tool to use.
+- In many systems, this is done using **function calling** or tool selection logic.
+
+**For example**
+- If user asks `20.23 + 23`, agent can directly send it to Python execution and return `43.23`.
+- If user asks “explain how addition works”, then no code execution is needed, only text answer.
+- So the decision is based on whether output needs computation or just explanation.
+
+**In my understanding**
+- In real LLM agent setup, we usually combine **prompt classification**, **tool selection**, and **fallback to text generation**.
+- So agent does not blindly generate code every time.
+- It chooses code only when that gives more accurate and reliable result.
+
+Answer 26:
+Question:
+- How do you create a tool in **LangChain**, and how does an **LLM agent** know what tools are available?
+
+Answer:
+- Yes, in **LangChain** we define tools explicitly, and then agent gets that tool list in its configuration, so it knows what it can call.
+
+**When it comes to creating a tool**
+- Normally we wrap a Python function with **@tool** decorator or use **StructuredTool**.
+- That function should have clear input and output, because agent will call it based on user need.
+- So basically tool is just a callable capability exposed to agent.
+
+**Coming to how agent knows tools**
+- We pass tool list while creating the agent, like through **initialize_agent** or newer agent setup.
+- Then model sees tool name, description, and input schema.
+- So it can decide which tool matches user query.
+
+**For example**
+- If one tool is for calculator and another is for search, agent reads descriptions and picks correct one.
+- This is why tool description is very important, because routing depends on that.
+- If description is weak, agent may choose wrong tool.
+
+**In my understanding**
+- In my **RAG** and **LLM** work, this is the normal pattern: define tool, register it, and let agent select from available tools.
+- So agent knows tools only because we provide them during setup.
+- It does not discover tools automatically.
+
+Answer 27:
+Question:
+- You mean the **code part** of creating tool in **LangChain**?
+
+Answer:
+- Yes, basically the code part is simple, we define a Python function and expose it as a tool.
+
+**When it comes to tool code**
+- We can use **@tool** decorator from **LangChain**.
+- Or we can use **StructuredTool** if input needs proper schema.
+- So function becomes callable by agent.
+
+**Example**
+- If I want a calculator tool, I write a function like add numbers and return result.
+- Then I register that function in agent tool list.
+- After that agent can call it when user asks calculation.
+
+**In my understanding**
+- The main thing is tool should have clear name, description, and input format.
+- Then agent can understand when to use it.
+- So yes, code part is just defining and registering tool properly.
+
+Answer 28:
+Question:
+- How do we tell the **LLM** what tools are available, so it can call them later?
+
+Answer:
+- Yes, we tell it by passing tool definitions in agent setup, mainly through **tool name**, **description**, and **input schema**.
+
+**When it comes to informing the LLM**
+- LLM does not know tools by itself.
+- We give it the available tools as part of prompt or agent configuration.
+- So it can reason, “this tool is suitable for this user query.”
+
+**Coming to what exactly we pass**
+- We pass **tool name**, **what it does**, and **what input it expects**.
+- In **LangChain**, this is done when we create agent with tool list.
+- If using structured tools, schema also helps model understand arguments properly.
+
+**For example**
+- If tool name is `calculator` and description says “use for arithmetic operations”, model can pick it for math questions.
+- If tool name is `search_docs` and description says “use for internal document lookup”, model can pick it for knowledge retrieval.
+- So description is like instruction to LLM.
+
+**In my understanding**
+- The LLM is not directly connected to tools automatically.
+- We expose tools through agent framework, and framework sends that tool metadata to model.
+- Then model decides which one to call based on user query.
+
+Answer 29:
+Question:
+- So, do we pass available tools in a **prompt** to the LLM?
+
+Answer:
+- Yes, basically tool details are given to the model, but in practice it is usually through **agent setup** and **tool metadata**, not only plain prompt.
+
+**When it comes to prompt**
+- We can mention tool names and descriptions in prompt style, yes.
+- But in real **LangChain** flow, framework also sends tool schema to model.
+- So model gets both instruction and structured tool info.
+
+**Coming to how it works**
+- First we define tool using function or **@tool** decorator.
+- Then we pass that tool list while creating agent.
+- After that agent framework tells LLM what tools are available and what each one does.
+
+**For example**
+- If user asks weather, agent sees weather tool description and selects it.
+- If user asks calculation, agent sees calculator tool and selects that.
+- So model is not guessing blindly, it is guided by tool metadata.
+
+**In my understanding**
+- So yes, you can think of it like prompt plus tool registration together.
+- But technically, better to say we pass tools to agent, and agent exposes them to LLM.
+- That is the correct way to explain it in interview.
+
+Answer 30:
+Question:
+- So when I ask how do we tell LLM about available tools, do we pass that as part of prompt with tool descriptions?
+
+Answer:
+- Yes, that is the idea, but in proper wording I will say we pass **tool metadata** to the agent or model, and prompt contains the instruction part.
+
+**When it comes to prompt**
+- We can mention available tools and their purpose in the prompt.
+- Like tool name, what it does, and when to use it.
+- That helps LLM understand which tool fits which query.
+
+**Coming to the actual flow**
+- First we define tool using function or **@tool** decorator.
+- Then we register those tools in agent setup.
+- Agent framework sends that tool info to LLM during reasoning.
+
+**For example**
+- If tool description says “use for fetching customer order status”, LLM can choose it for order query.
+- If another tool says “use for document search”, LLM can choose it for knowledge lookup.
+- So yes, description is very important for selection.
+
+**In short**
+- You can say “we provide tools and their descriptions to the LLM through prompt or agent configuration.”
+- That is the correct interview answer.
+- So your understanding is right, just use the word **agent configuration** also.
+
+Answer 31:
+Question:
+- If later I add more tools, do I need to change prompt every time?
+
+Answer:
+- No, not every time. Better way is keep tool registration dynamic, so agent picks current tool list from code or config.
+
+**When it comes to prompt**
+- Prompt should stay mostly stable.
+- It should say the model can use available tools when needed.
+- But tool names and descriptions should come from runtime registration, not hardcoded every time.
+
+**Coming to adding new tools**
+- If new tool is added, we update **tool registry** or agent setup.
+- Then framework automatically exposes that new tool to LLM.
+- So no need to rewrite full prompt for every tool change.
+
+**For example**
+- In **LangChain**, you define tools in code and pass the updated list to agent.
+- If tomorrow one more tool comes, just add it in that list.
+- Agent will send updated tool set to model.
+
+**In short**
+- Prompt is for instruction.
+- Tool list is for actual availability.
+- So when tools change, usually update code/config, not full prompt every time.
+
+Answer 32:
+Question:
+- So, when tools are added, do we bind those tools to LLM using **llm.bind_tools**?
+
+Answer:
+- Yes, exactly. In that case we bind tools to LLM, so model knows which tools are available at runtime.
+
+**When it comes to binding**
+- We create tools first, then use **llm.bind_tools()**.
+- That binding attaches tool schema to model call.
+- So model can decide which tool to call based on user query.
+
+**Coming to why this is used**
+- This is better than changing prompt every time.
+- Because tool list stays in code, and LLM gets current tools directly.
+- So if new tool comes, we just bind that new tool also.
+
+**For example**
+- In **LangChain**, if I have search tool and calculator tool, I bind both to LLM.
+- Then model can return tool call for one of them.
+- After that framework executes tool and sends result back.
+
+**In short**
+- Yes, correct term is **bind tools**.
+- So not only prompt, actual runtime binding is what makes tools available to LLM.
+
+Answer 33:
+Question:
+- So if tool count is very less, do we pass tools in prompt, and if tools increase later, do we handle differently?
+
+Answer:
+- Yes, for very small static setup people may mention tools in prompt, but in real implementation better is **tool binding**.
+
+**When it comes to small setup**
+- If only one or two tools and flow is simple, prompt can describe them.
+- But that is more like instruction level, not proper runtime tool management.
+- It is okay for basic demo or very simple agent.
+
+**Coming to production style**
+- In real projects, we use **llm.bind_tools()** or agent tool registration.
+- That way tool schema is attached directly to model.
+- So when tools increase, no need to rewrite prompt again and again.
+
+**Why this is better**
+- Prompt stays clean and stable.
+- Tool availability comes from code, so it is easier to maintain.
+- Also model gets exact tool names, arguments, and descriptions in structured way.
+
+**In short**
+- So yes, prompt-based mention is only for very small or simple cases.
+- For proper agent flow, **bind tools to LLM** is the correct approach.
+
+Answer 34:
+Question:
+- What exactly are **CP server** and related things?
+
+Answer:
+- If you mean **MCP server**, then yes, that is the standard thing used for tool and context integration with LLM.
+
+**When it comes to MCP server**
+- **MCP** means **Model Context Protocol**.
+- It is basically a standard way to connect LLM with external tools, data sources, and actions.
+- So instead of hardcoding every integration, we expose them through MCP server.
+
+**Coming to what it does**
+- MCP server provides tools, resources, and sometimes prompts in a structured way.
+- LLM or agent can discover what is available and call it safely.
+- This makes integration cleaner and more reusable.
+
+**For example**
+- If one server has database query tool and another has file search tool, both can be exposed through MCP.
+- Then client or agent can use them without custom one-off wiring for each tool.
+- So it becomes more modular.
+
+**In short**
+- If you are saying **CP server**, most likely it is **MCP server**.
+- It is used to standardize how model talks to external context and tools.
+
+Answer 35:
+Question:
+- Why do we need an **MCP server** if we can directly connect to Google Drive or Microsoft Drive?
+
+Answer:
+- Direct connection is possible, but **MCP server** gives proper standard layer, so integration becomes cleaner and scalable.
+
+**When it comes to direct connection**
+- Yes, for one source you can directly write API integration.
+- But then every source will have separate auth, separate schema, separate logic.
+- So code becomes tightly coupled with each provider.
+
+**Coming to MCP server**
+- **MCP server** acts like common adapter in between LLM and external systems.
+- It exposes tools in one standard format, so model does not care whether data comes from Drive, SharePoint, or any other source.
+- That separation helps a lot when sources increase.
+
+**Why this is useful**
+- We can reuse same agent flow for multiple systems.
+- Authentication, permissions, and tool definitions stay inside server side.
+- So client side or LLM side remains simpler and easier to maintain.
+
+**For example**
+- If today you connect Google Drive directly, tomorrow Microsoft Drive also comes, then you need new code path.
+- With **MCP server**, you just add another connector behind same protocol.
+- So agent still calls same kind of tool interface.
+
+**In short**
+- Direct connection is okay for small case.
+- But for multi-source, enterprise setup, **MCP server** gives standardization, reusability, and less coupling.
+
+Answer 36:
+Question:
+- In the **Trade News Analyser** project, what exactly were you focusing on in the news articles, and what was shown to end user in dashboard?
+
+Answer:
+- In that project, main focus was on **news title, article content, entities, sentiment, and summary**, and dashboard was showing the processed intelligence, not only raw article.
+
+**When it comes to input news**
+- We were collecting **headline**, **full article text**, source, timestamp, and market-related keywords.
+- So basically title gave quick context, and article body gave full detail for analysis.
+- We used **BeautifulSoup** and **Requests** for extraction from online sources.
+
+**Coming to what we analysed**
+- First we cleaned the article text, then applied **NLP** and **LLM** based processing.
+- Main things were **summarization**, **key entity extraction**, and **sentiment analysis**.
+- For some classification and trend-related work, we also used **Scikit-learn** models.
+
+**What was shown in dashboard**
+- End user was seeing **short summary**, sentiment indication, and important extracted entities.
+- Also the idea was to help traders quickly understand impact on stocks, commodities, currencies, and similar instruments.
+- So dashboard was more like decision support view, not just article reading view.
+
+**In my project flow**
+- Raw news came in from multiple sources, then got stored and processed through backend services.
+- **MongoDB** was used for raw unstructured content, and **PostgreSQL** for structured data.
+- Then frontend in **React.js** showed the analysed output in a clean way for users.
+
+Answer 37:
+Question:
+- In the **Trade News Analyser**, what exactly was being analysed in the news?
+
+Answer:
+- Here we were analysing the **news content itself**, mainly to understand what event happened and what market impact it can create.
+
+**When it comes to the article**
+- We were not only looking at title, actually full **article text** was important.
+- Title gives quick signal, but real meaning comes from body content, company names, products, countries, numbers, and event details.
+- So analysis was on the complete news text, not just headline.
+
+**Coming to what we extracted**
+- We were extracting **key entities** like company names, people, places, financial terms, and market keywords.
+- Then we were doing **sentiment analysis** to see whether news is positive, negative, or neutral.
+- We also used **summarization** so user can read short version quickly.
+
+**What the analysis meant**
+- Basically we were checking whether news can affect **stocks, commodities, currencies**, or broader market sentiment.
+- For example, if article talks about earnings, policy change, merger, or macro event, system highlights that type of impact.
+- So the output was more like market intelligence from raw news text.
+
+**In the dashboard**
+- User could see the **summary**, sentiment, and extracted important points.
+- So instead of reading long article, they get quick actionable view.
+- That was the main purpose of the analyser.
+
+Answer 38:
+Question:
+- In the **Trade News Analyser**, were you also showing whether stock impact is bullish or bearish?
+
+Answer:
+- Yes, basically the idea was to give a quick **bullish / bearish / neutral** type signal from the news sentiment and market context.
+
+**When it comes to sentiment**
+- We were using **sentiment analysis** on the article content.
+- So if news had positive business event, it could lean **bullish**.
+- If it had negative event like loss, regulation issue, or bad guidance, it could lean **bearish**.
+
+**Coming to the market view**
+- The system was not doing direct trading decision, but giving an indicative market tone.
+- So user can quickly understand whether news is likely positive or negative for related instrument.
+- That is why sentiment and key entities were important.
+
+**How it was shown**
+- In dashboard, we were showing the **summary**, **sentiment label**, and important extracted points.
+- So end user can read one glance and understand the possible impact.
+- It was more like decision support, not final buy or sell recommendation.
+
+**In my project**
+- We used **LLM-based summarization** and **Scikit-learn** based classification support for this flow.
+- Then backend in **FastAPI** served the analysed result to **React.js** dashboard.
+- So overall output was news intelligence with market direction hint.
+
+Answer 39:
+Question:
+- In the **Trade News Analyser**, did you implement any guardrails?
+
+Answer:
+- Yes, some basic **guardrails** were there, mainly to keep output safe, relevant, and not too noisy.
+
+**When it comes to input control**
+- We were validating incoming article text and source data before processing.
+- So empty, malformed, or irrelevant content was filtered out early.
+- This helped avoid bad output from the **LLM** pipeline.
+
+**Coming to output control**
+- We were keeping **prompt engineering** tight, so model stays on financial news context only.
+- So it does not drift into unrelated explanation or over-generate.
+- We also used structured response format for summary and sentiment output.
+
+**For reliability**
+- We had **exception handling**, logging, and request validation in **FastAPI**.
+- If article extraction failed or content was incomplete, system handled it gracefully.
+- That way dashboard does not break for end user.
+
+**In my project**
+- Since it was financial news, we were careful that output stays as analysis support, not direct trading advice.
+- So guardrails were more around relevance, formatting, and safe response behavior.
+- This is my practical understanding from the project flow.
+
+Answer 40:
+Question:
+- In the **Trade News Analyser**, how were the guardrails implemented, like using prompts or content filtering?
+
+Answer:
+- Yes, basically it was a mix of **prompt control** and **backend validation**, not only one thing.
+
+**When it comes to prompt control**
+- We were using **prompt engineering** to keep LLM focused on financial news only.
+- So prompt had clear instruction to summarize, extract entities, and give sentiment in fixed format.
+- This reduced irrelevant or open-ended output from model.
+
+**Coming to content filtering**
+- Before sending text to model, we were checking whether article content is valid and usable.
+- So empty text, broken extraction, duplicate noise, or very short content was skipped.
+- This was done in backend flow using **FastAPI** logic before LLM call.
+
+**For structured output**
+- We were asking model to return output in a defined structure like summary, sentiment, and key points.
+- That way frontend can consume it cleanly without parsing confusion.
+- It also acts like a soft guardrail against random model responses.
+
+**In my project**
+- So practically, guardrail was not a separate fancy product, it was implemented through **input validation**, **prompt constraints**, and **response formatting**.
+- This is my understanding from the project implementation.
+
+Answer 41:
+Question:
+- Let’s go back to Python coding and testing, right?
+
+Answer:
+- Yes, basically my main work was in **Python**, **FastAPI**, and also **testing** side, so I was handling both development and validation.
+
+**When it comes to Python coding**
+- I was writing backend logic in **Python** for APIs, business rules, and data processing.
+- So mostly it was clean service code, request handling, and integration with database or AI services.
+- I was also following **OOP** and modular structure where needed.
+
+**Coming to testing**
+- Yes, I was doing **unit testing** and **integration testing** using **PyTest**.
+- So for API flows, I was checking request validation, response format, and exception cases.
+- We also used **Postman** and **Swagger** for manual API verification.
+
+**For reliability**
+- I was focusing on edge cases like invalid input, empty payload, and service failure.
+- That helped us catch issues before QA and UAT.
+- So testing was not separate thing, it was part of development flow itself.
+
+**In my project**
+- In **Enterprise Insurance Management System** and **Nexuvo AI Chatbots**, I worked on backend APIs and test coverage.
+- So yes, Python coding was there, and testing was also a regular part of my work.
+
+Answer 42:
+Question:
+- Given a list of numbers and one divisor, check whether all numbers in list are completely divisible by that divisor or not.
+
+Answer:
+- Yes, I can do that using a simple **Python** loop and **modulo operator**.
+
+**When it comes to the logic**
+- I will take each number from list and check `number % divisor == 0`.
+- If all numbers satisfy that, then answer is divisible, otherwise not divisible.
+- So basically it is a full validation on every element.
+
+**Coming to the code**
+- I can use **all()** for clean check, because it is simple and readable.
+- It returns `True` only when every condition is true.
+- This is a standard way in Python for such list validation.
+
+**Example**
+```python
+numbers = [12, 24, 36]
+divisor = 6
+
+result = all(num % divisor == 0 for num in numbers)
+print(result)  # True
+```
+
+**In interview terms**
+- If list is `[12, 24, 36]` and divisor is `6`, then all are divisible.
+- If even one number fails, like `25 % 6`, then final result becomes `False`.
+
+Answer 43:
+Question:
+- Check whether all numbers in a given list are completely divisible by a given divisor, like `2`.
+
+Answer:
+- Yes, basically I will loop through list and check each number with **modulo operator**.
+
+**When it comes to the logic**
+- For every number, I check `number % divisor == 0`.
+- If all values satisfy this, then list is completely divisible.
+- If even one value fails, then answer is **False**.
+
+**Coming to the Python way**
+- In Python, simplest way is using **all()** with a generator expression.
+- So it is clean, short, and easy to read in interview.
+- This is standard approach for such validation.
+
+**Example**
+```python
+numbers = [3, 4, 9]
+divisor = 2
+
+result = all(num % divisor == 0 for num in numbers)
+print(result)  # False
+```
+
+**If I explain in words**
+- `3 % 2` is not zero, so already it fails.
+- `4 % 2` is zero, `9 % 2` is not zero.
+- So final result is **False** because not all numbers are divisible by `2`.
+
+Answer 44:
+Question:
+- For **LangChain**, can you write a small code for a short **prompting technique**?
+
+Answer:
+- Yes, basically I can show a simple **prompt template** with **LangChain**.
+
+**When it comes to prompting**
+- Here the idea is to give clear instruction to **LLM** so output comes in proper format.
+- So we use **PromptTemplate** for reusable prompt structure.
+- This is useful when same prompt pattern is used again and again.
+
+**Coming to the code**
+- I will keep it simple with one input variable.
+- Then I format prompt and send it to model.
+- This is a standard way in **LangChain** for prompt handling.
+
+**Example**
+```python
+from langchain.prompts import PromptTemplate
+
+template = PromptTemplate(
+    input_variables=["topic"],
+    template="Explain {topic} in simple words."
+)
+
+prompt = template.format(topic="RAG")
+print(prompt)
+```
+
+**In interview terms**
+- This creates a reusable prompt like: `Explain RAG in simple words.`
+- If needed, same pattern can be extended for summarization, Q&A, or classification.
+- So basically this is one short **prompting technique** in **LangChain**.
+
+Answer 45:
+Question:
+- What things we do while testing **LLMs**, and what exactly should be passed to make sure output is correct?
+
+Answer:
+- Yes, basically while testing **LLM**, we check prompt, input context, output quality, and edge cases.
+
+**When it comes to what we pass**
+- We normally pass the **prompt**, required **context**, and any **constraints** like format or tone.
+- If it is **RAG** flow, then we also pass retrieved documents or relevant chunks.
+- So the model gets proper input, not only plain question.
+
+**Coming to testing**
+- I check whether response is correct, complete, and relevant to input.
+- Also I verify hallucination, meaning model should not give wrong extra information.
+- In my kind of projects, this is important for summarization, extraction, and chatbot answers.
+
+**What I usually validate**
+- **Prompt quality**: whether instruction is clear or not.
+- **Output format**: whether response is in expected structure.
+- **Context relevance**: whether model is using given data properly.
+- **Edge cases**: empty input, short input, noisy input, or ambiguous query.
+
+**In practice**
+- For example, if I ask model to summarize a claim document, I pass claim text plus instruction like “give short summary”.
+- Then I check if summary is faithful to source and not adding false details.
+- So basically testing is about input control and output validation.
+
+Answer 46:
+Question:
+- Can you write how you would test an **LLM** prompt or output?
+
+Answer:
+- Yes, basically I will test by giving controlled input and checking output against expected behavior.
+
+**When it comes to test setup**
+- I first keep one fixed **prompt** and one known input text.
+- Then I run model and compare output with expected result.
+- This helps to see whether model is following instruction properly.
+
+**Coming to what I check**
+- I check **relevance**, **accuracy**, and **format** of response.
+- If it is **RAG**, I also check whether answer is grounded in retrieved context.
+- I also verify model is not hallucinating extra facts.
+
+**Example**
+```python
+prompt = "Summarize this claim document in 3 lines."
+input_text = "Customer reported water leakage and submitted repair bill."
+
+# expected: short summary, no extra facts
+```
+
+**In my projects**
+- In chatbot and document-analysis type flows, this kind of testing is useful.
+- We normally validate output manually first, then automate basic checks.
+- So testing is not only code, it is also checking model behavior properly.
+
+Answer 47:
+Question:
+- Have you come across **vector databases**?
+
+Answer:
+- Yes, I have worked with **vector databases** in **RAG** type flows.
+
+**When it comes to why we use it**
+- Basically it stores **embeddings**, so similar text can be searched by meaning.
+- That is useful when exact keyword match is not enough.
+- In chatbot or document search, this gives better relevant results.
+
+**Coming to how it works**
+- First we convert text into **vector embeddings** using an embedding model.
+- Then we store those vectors in a vector store and do similarity search.
+- So when user asks question, we retrieve nearest matching chunks.
+
+**In my projects**
+- In **Nexuvo AI Chatbots** and other **LLM** flows, this kind of retrieval approach is useful.
+- It helps in grounding answer with internal data instead of only model memory.
+- So basically it improves accuracy and reduces hallucination.
+
+Answer 48:
+Question:
+- How do you actually check data in a **vector database**, what is the exact logic behind retrieval?
+
+Answer:
+- Yes, basically logic is: convert query into embedding, compare with stored embeddings, and fetch nearest matches.
+
+**When it comes to the main logic**
+- We take user question and pass through same **embedding model** used for documents.
+- Then query vector is compared with stored vectors using **similarity search**.
+- Most common is **cosine similarity**, because it checks semantic closeness.
+
+**Coming to retrieval**
+- The database returns top matching chunks based on score.
+- Then we keep only relevant chunks and send them to **LLM** as context.
+- So model answers from retrieved data, not from random memory.
+
+**What happens inside**
+- If document is split into chunks, each chunk has its own vector.
+- Query vector is matched against those chunk vectors.
+- Higher similarity score means more relevant chunk for that question.
+
+**In simple words**
+- So first question becomes vector, then database finds nearest vectors, then those texts are used for answer.
+- That is the exact flow in **RAG**.
+- In my projects, this is how we keep answer grounded and more accurate.
+
+Answer 49:
+Question:
+- When you compare a query vector in a **vector database**, do you compare with all available vectors or how exactly it works?
+
+Answer:
+- Yes, conceptually it searches against stored vectors, but in production it does not do a slow full scan every time.
+
+**When it comes to comparison**
+- The query embedding is compared with vectors already stored in the **index**.
+- The system uses an approximate nearest neighbor method, so it is faster than checking one by one.
+- So practically it searches the indexed vector space, not manually all records in a simple loop.
+
+**Coming to how it is done**
+- The vector database keeps vectors in a structure like **HNSW** or similar ANN index.
+- That index helps it jump to nearest candidates quickly.
+- Then it ranks top matches by similarity score.
+
+**Why not full comparison**
+- Full comparison with every vector is too slow when data is large.
+- So indexing is used to reduce search time and keep response fast.
+- That is why vector DB is suitable for production **RAG** systems.
+
+**In simple words**
+- So yes, it is against stored vectors, but through an optimized index.
+- Not like checking each vector manually one by one.
+- That is the main logic behind fast semantic search.
+
+Answer 50:
+Question:
+- If document chunks are already stored in a **vector database**, and I ask one question, will it compare with all vectors or what exactly happens?
+
+Answer:
+- No, in production it normally does not compare with every vector one by one, because that will be too slow.
+
+**When it comes to search**
+- First the question is converted into one **embedding vector**.
+- Then vector DB uses its **ANN index** to search nearest candidates.
+- So it is not a plain brute-force scan in normal usage.
+
+**What actually happens**
+- The database already keeps vectors in an optimized index structure.
+- Based on that index, it quickly narrows down likely matching chunks.
+- Then it calculates similarity only for those candidate vectors.
+
+**Why this is faster**
+- If we compare with all vectors, time will increase a lot as data grows.
+- With indexing, search becomes much faster and suitable for real-time **RAG**.
+- That is why vector DB is used instead of simple list comparison.
+
+**In simple words**
+- So question vector goes in, index finds nearest vectors, then top relevant chunks come out.
+- After that those chunks are passed to **LLM** for final answer.
+- That is the practical flow.
+
+Answer 51:
+Question:
+- What is a **reranker**, and have I used it in vector search or RAG flow?
+
+Answer:
+- Yes, reranker is used after initial retrieval, to reorder top results more accurately.
+
+**When it comes to reranker**
+- First vector DB gives initial top chunks using **embedding similarity**.
+- Then **reranker** takes query and those chunks again, and scores them more carefully.
+- So it improves final relevance, especially when initial retrieval brings mixed results.
+
+**How it works**
+- Initial search is fast, but sometimes not exact enough.
+- Reranker uses a stronger matching model, often **cross-encoder** style.
+- It checks query and chunk together, then gives better ranking.
+
+**Why we use it**
+- It helps when top retrieved chunks are close but not the best answer.
+- So final context to **LLM** becomes cleaner and more relevant.
+- This is useful in **RAG** when accuracy matters more than just speed.
+
+**In my understanding**
+- I have worked mainly with retrieval and prompt flow in **RAG** systems.
+- Reranker concept is basically a second-level ranking step after vector search.
+- So first search is broad, then reranker makes it precise.
+
+Answer 52:
+Question:
+- Why do we need a **reranker** if vector search already gives nearest results?
+
+Answer:
+- Because nearest by embedding is not always the best answer for the exact question.
+
+**When it comes to vector search**
+- Vector search gives fast **top-k** results based on semantic similarity.
+- But sometimes a chunk is close in meaning, still not the best fit for the exact query.
+- So initial retrieval is good for speed, not always perfect for precision.
+
+**Why reranker helps**
+- Reranker checks query and retrieved chunks more deeply.
+- It can catch cases where a chunk is semantically near, but not really answering the question.
+- So it improves final relevance before sending context to **LLM**.
+
+**What problem it solves**
+- In real documents, many chunks look similar.
+- Without reranking, you may pass noisy or partially relevant chunks.
+- That can reduce answer quality and sometimes create wrong response.
+
+**Simple example**
+- Suppose query is about claim settlement date, and retrieved chunk talks about claim process in general.
+- Vector search may mark it close, but reranker can push exact date-related chunk higher.
+- So final answer becomes more accurate.
+
+**In short**
+- Vector search is for fast recall.
+- Reranker is for better precision.
+- That is why both are used together in **RAG**.
+
+Answer 53:
+Question:
+- So you are saying I need only the most relevant chunk, and not the other retrieved chunks?
+
+Answer:
+- Yes, exactly, final context should keep only the most relevant chunks.
+
+**When it comes to retrieval**
+- First search can bring many near chunks, because it is better to keep recall high.
+- But after that, we do not want to send all of them blindly to **LLM**.
+- So we filter and keep only the best matching ones.
+
+**Why not keep everything**
+- If we keep all retrieved chunks, context becomes noisy.
+- Then **LLM** may get confused or pick wrong details.
+- Also token usage increases, so cost and latency both go up.
+
+**What reranker does**
+- It takes the retrieved chunks and sorts them by actual relevance to query.
+- Then top few chunks only are passed forward.
+- So answer quality improves and irrelevant text gets removed.
+
+**In simple words**
+- Retrieval is like collecting candidates.
+- Reranking is like selecting best candidates.
+- So yes, only most relevant content should go ahead.
+
+Answer 54:
+Question:
+- From front end side, what are my roles and responsibilities in project?
+
+Answer:
+- On frontend side, I mainly worked on building user screens, connecting APIs, and handling user interactions.
+
+**When it comes to UI development**
+- I built screens in **React.js** for different flows like forms, dashboards, and data display pages.
+- I made sure UI was responsive using **HTML5**, **CSS3**, and proper component structure.
+- So basically user should get clean and smooth experience in browser.
+
+**Coming to API integration**
+- I connected frontend with backend **REST APIs** using proper request and response handling.
+- I handled loading states, error messages, and validation messages on UI side.
+- In that way user gets clear feedback when something fails or data is not available.
+
+**For state and data handling**
+- I used **Redux Toolkit** where shared state management was needed.
+- I managed API response data, selected records, and user session related UI state.
+- This helped in keeping components clean and avoiding unnecessary prop drilling.
+
+**In my projects**
+- In **Trade News Analyser** and **Nexuvo AI Chatbots**, I worked on frontend screens for data viewing and interaction flows.
+- In **Enterprise Insurance Management System**, I supported agent and admin side screens for quote and claims related operations.
+- So my role was not only UI build, but also making sure frontend talks properly with backend and business flow works smoothly.
+
+Answer 55:
+Question:
+- Have I used any libraries on frontend side?
+
+Answer:
+- Yes, I used a few standard libraries mainly around **React.js** UI, state handling, and API communication.
+
+**When it comes to frontend libraries**
+- I worked with **React.js** as main library for component-based UI.
+- For state management, I used **Redux Toolkit** where shared state was needed.
+- For API testing and validation during development, I used **Postman** from backend side and checked frontend integration accordingly.
+
+**Coming to styling and UI**
+- I used **HTML5**, **CSS3**, and responsive design concepts for layout and screen fit.
+- In some places, I used reusable component patterns so UI stays maintainable.
+- So basically focus was on clean, modular frontend structure.
+
+**For project usage**
+- In **Trade News Analyser** and **Nexuvo AI Chatbots**, frontend was mainly React based.
+- So most of the work was around component rendering, state updates, and API driven screens.
+- That is where these libraries helped me to keep UI stable and easy to maintain.
+
+Answer 56:
+Question:
+- Start with JavaScript, then we will go to React.
+
+Answer:
+- Sure, I can start with **JavaScript** first, then move to **React.js**.
+
+**When it comes to JavaScript**
+- I use **JavaScript** for basic logic, event handling, data manipulation, and API response handling on frontend.
+- It helps me write interactive UI behavior, like button clicks, form validation, and dynamic rendering.
+- So basically it is the base for all frontend work before React comes in.
+
+**Coming to React.js**
+- **React.js** I use for building component-based UI in a structured way.
+- Here I split screens into reusable components, so code becomes easier to maintain.
+- It also helps in updating only required part of UI when state changes.
+
+**How both work together**
+- First I write the logic in **JavaScript**, then I place that logic inside **React components**.
+- For example, form input handling, API call success or failure, and conditional rendering all use JavaScript concepts inside React.
+- So React is the framework style I use for UI, and JavaScript is the core language behind it.
+
+**In my projects**
+- In **Trade News Analyser** and **Nexuvo AI Chatbots**, I used JavaScript concepts inside React screens for user interaction and data display.
+- In **Enterprise Insurance Management System**, same thing, frontend flows were handled through React components with JavaScript logic.
+- So both are connected, but JavaScript is the foundation and React is the way I organize frontend application.
+
+Answer 57:
+Question:
+- What is hosting in JavaScript?
+
+Answer:
+- I think you mean **hoisting** in JavaScript, not hosting.
+
+**When it comes to hoisting**
+- **Hoisting** means declarations are moved to top by JavaScript engine during execution phase.
+- So you can access **function declarations** before actual line in code.
+- But for **let** and **const**, they are also hoisted, but not initialized, so you get **temporal dead zone** error if you access before declaration.
+
+**Coming to function and variable behavior**
+- With **var**, declaration is hoisted and initialized with **undefined**.
+- With **function declaration**, full function body is hoisted, so it works before definition.
+- With **let** and **const**, access before declaration is not allowed.
+
+**For example**
+- If you call a function before its definition, it works in case of function declaration.
+- But if you use a variable before assignment, with **var** you get **undefined**, and with **let/const** you get error.
+
+**In my projects**
+- In **React.js** and **JavaScript** code, I keep this in mind while writing helper functions and variable declarations.
+- So it helps avoid runtime issues and confusion during component rendering.
+
+Answer 58:
+Question:
+- What is function carrying?
+
+Answer:
+- I think you mean **function currying** in JavaScript.
+
+**When it comes to currying**
+- **Currying** means converting one function with multiple arguments into series of functions, each taking one argument.
+- So instead of calling all parameters together, we pass them step by step.
+- It is useful when we want reusable and partially applied logic.
+
+**Coming to why we use it**
+- It helps in code reusability and cleaner function composition.
+- Also it is useful when same base logic is used with different values.
+- In JavaScript, this is common in utility functions and functional style code.
+
+**For example**
+- If a function takes `a`, `b`, `c`, currying makes it like `f(a)(b)(c)`.
+- So each call returns next function until final result comes.
+- That is the main idea behind currying.
+
+**In my projects**
+- In React and JavaScript logic, I use this concept mainly when I want reusable handlers or helper functions.
+- It makes code more modular and easier to maintain.
+
+Answer 59:
+Question:
+- What is event loop in JavaScript?
+
+Answer:
+- **Event loop** is the mechanism which manages execution of synchronous code, callbacks, and async tasks in JavaScript.
+
+**When it comes to execution**
+- JavaScript runs on single thread, so one task at a time only.
+- First **call stack** handles normal synchronous code.
+- Then async callbacks like **setTimeout**, promises, or API responses are handled through event loop.
+
+**Coming to how it works**
+- When call stack becomes empty, event loop checks **callback queue** and **microtask queue**.
+- **Promise callbacks** go to microtask queue, so they get priority over normal timer callbacks.
+- That is why promise output often comes before `setTimeout`.
+
+**For example**
+- If we have synchronous log, then promise, then timeout, output order is usually sync first, then promise, then timeout.
+- So event loop keeps application responsive without blocking main thread.
+- It is very important in frontend and Node.js side.
+
+**In my projects**
+- In **React.js** and **FastAPI** based work, I keep this in mind while handling async API calls and UI updates.
+- It helps me understand response timing and avoid confusion in callback flow.
+
+Answer 60:
+Question:
+- What is a promise in JavaScript?
+
+Answer:
+- **Promise** is an object which represents future result of an async operation.
+
+**When it comes to promise states**
+- It has three states: **pending**, **fulfilled**, and **rejected**.
+- **Pending** means operation is still running.
+- **Fulfilled** means success, and **rejected** means failure.
+
+**Coming to how we use it**
+- We use **.then()** for success handling and **.catch()** for error handling.
+- It helps to write async code in cleaner way compared to nested callbacks.
+- Also we can chain promises when one async step depends on another.
+
+**For example**
+- If API call is happening, promise will resolve when response comes.
+- If something fails, it will reject and go to error block.
+- So it is mainly used for async operations like API calls, file handling, timers.
+
+**In my projects**
+- In **React.js** and **FastAPI** integration, I use promise-based handling for API responses on frontend side.
+- It helps in proper loading, success, and error state management.
+
+Answer 61:
+Question:
+- What is macro task queue in JavaScript?
+
+Answer:
+- **Macro task queue** is the queue where bigger async callbacks wait before event loop takes them to call stack.
+
+**When it comes to macro tasks**
+- Things like **setTimeout**, **setInterval**, UI events, and some I/O callbacks go here.
+- These tasks are handled after current synchronous code and microtasks are completed.
+- So they do not run immediately, they wait for their turn.
+
+**Coming to priority**
+- Event loop first clears **call stack**.
+- Then it processes **microtask queue** like promise callbacks.
+- After that it takes one macro task from macro task queue.
+
+**For example**
+- If we have `console.log`, promise, and `setTimeout`, promise callback comes before timeout callback.
+- That is because timeout is a macro task.
+- So macro task queue is lower priority than microtask queue.
+
+**In my projects**
+- While working with **React.js** and async API flows, this helps me understand why some UI updates or timer callbacks happen later.
+- It is useful for debugging execution order.
+
+Answer 62:
+Question:
+- What is debouncing and throttling?
+
+Answer:
+- **Debouncing** and **throttling** are techniques used to control how often a function gets executed.
+
+**When it comes to debouncing**
+- Here function runs only after user stops triggering event for some time.
+- It is useful in **search input**, **resize**, or **button click** type cases where we want final action only.
+- So basically it waits and then executes once.
+
+**Coming to throttling**
+- Here function runs at fixed interval, even if event keeps firing continuously.
+- It is useful in **scroll**, **mouse move**, or **window resize** where we need regular updates.
+- So it limits execution frequency.
+
+**Here the main difference is**
+- **Debouncing** waits for silence, **throttling** controls rate.
+- Debouncing gives one final call, throttling gives calls at intervals.
+- In simple words, debounce is "after stop", throttle is "during continuous action".
+
+**In my projects**
+- In **React.js** based UI, these are useful for better performance and less unnecessary API calls.
+- For example, search box API can be debounced, and scroll handler can be throttled.
+
+Answer 63:
+Question:
+- What is the main difference between throttling and debouncing?
+
+Answer:
+- Main difference is **debouncing** waits till event stops, but **throttling** allows function at fixed interval while event is still happening.
+
+**When it comes to debouncing**
+- It executes only after no event happens for some time.
+- So it is like final call after user stops typing or stops resizing.
+- This helps avoid extra API calls.
+
+**Coming to throttling**
+- It executes once in a fixed time gap.
+- So even if event is firing continuously, function runs at controlled rate.
+- This is useful for scroll or mouse move type events.
+
+**Here the main difference is**
+- **Debounce** = wait and run once.
+- **Throttle** = run periodically during continuous action.
+- So debounce is for final result, throttle is for regular updates.
+
+Answer 64:
+Question:
+- Can you explain some features introduced in ES6, the new features in JavaScript?
+
+Answer:
+- Yes, **ES6** introduced many useful features in **JavaScript** to make code cleaner and easier to manage.
+
+**When it comes to variable declarations**
+- We got **let** and **const** instead of only **var**.
+- **let** is block scoped, and **const** is used when value should not be reassigned.
+- This helps avoid scope issues in code.
+
+**Coming to functions and syntax**
+- We got **arrow functions**, so writing function becomes shorter.
+- Also **template literals** came, so string interpolation becomes easy using backticks.
+- This makes code more readable.
+
+**For data handling**
+- ES6 introduced **destructuring**, **spread operator**, and **rest operator**.
+- So we can extract values from arrays or objects in a simple way.
+- These features reduce a lot of manual code.
+
+**One more important feature**
+- **Promises** came in ES6 for handling async operations better.
+- Before that callback style was more messy, so promises made flow cleaner.
+- This is very useful in API calls and async logic.
+
+**In my projects**
+- In **React.js** and **JavaScript** work, I use **let/const**, **arrow functions**, **destructuring**, and **spread operator** regularly.
+- It helps in writing cleaner component logic and handling state updates properly.
+
+Answer 65:
+Question:
+- What is spread operator and rest operator?
+
+Answer:
+- Both look same with **three dots (...)**, but use is different.
+
+**When it comes to spread operator**
+- It is used to **expand** array or object values.
+- So basically it copies or spreads existing elements into another place.
+- Example use is combining arrays or cloning object data.
+
+**Coming to rest operator**
+- It is used to **collect** multiple values into one array.
+- So here remaining values are packed together in one variable.
+- Example use is function parameters or extracting remaining items.
+
+**Here the main difference is**
+- **Spread** expands values out.
+- **Rest** collects values in.
+- Syntax looks same, but based on place where we use it, meaning changes.
+
+**In my projects**
+- In **React.js**, I use **spread operator** for updating state objects without mutating old state.
+- And **rest operator** I use in function arguments when I need remaining values together.
+
+Answer 66:
+Question:
+- Can you explain deep copy and shallow copy?
+
+Answer:
+- Yes, main difference is **shallow copy** copies only first level, but **deep copy** copies all nested levels also.
+
+**When it comes to shallow copy**
+- It creates new outer object or array, but inner nested reference still same.
+- So if nested data changes, original also can get affected.
+- In JavaScript, methods like **Object.assign()** or **spread operator** do shallow copy.
+
+**Coming to deep copy**
+- It creates completely new copy for nested objects also.
+- So original and copied data are fully independent.
+- In JavaScript, one common way is **JSON.parse(JSON.stringify())**, though it has limitations.
+
+**Here the main difference is**
+- **Shallow copy** shares nested references.
+- **Deep copy** does not share nested references.
+- So deep copy is safer when object has nested structure and you want full isolation.
+
+Answer 67:
+Question:
+- What is **this** keyword in JavaScript?
+
+Answer:
+- **this** refers to current execution context, but exact value depends on how function is called.
+
+**When it comes to normal function**
+- In normal function, **this** depends on call site.
+- If function is called as object method, then **this** points to that object.
+- If called alone, then value can be global object or **undefined** in strict mode.
+
+**Coming to arrow function**
+- Arrow function does not have its own **this**.
+- It takes **this** from surrounding lexical scope.
+- So here it is useful when we want to keep parent context.
+
+**For example**
+- In object method, `this.name` means current object's name.
+- In event handlers or callbacks, arrow function helps avoid confusion with **this**.
+
+**In my projects**
+- In **React.js**, I mostly use arrow functions, so **this** issue is less compared to old class components.
+- But I understand normal function context also, because in JavaScript it is important for debugging and proper behavior.
+
+Answer 68:
+Question:
+- What is the reconciliation algorithm in React?
+
+Answer:
+- Reconciliation is the process React uses to figure out what changed in UI and update only that part.
+
+**When it comes to reconciliation**
+- React compares new virtual DOM with previous one.
+- Then it finds minimum changes needed for real DOM update.
+- So this makes rendering faster and more efficient.
+
+**Coming to how it works**
+- React uses **diffing algorithm** to compare trees.
+- If element type same, it updates props and children.
+- If type different, it removes old node and creates new one.
+
+**For list rendering**
+- React uses **key** to identify which item changed, added, or removed.
+- So proper key helps React do efficient comparison.
+- Without key, it may re-render more than needed.
+
+**In my projects**
+- In **React.js** screens, I keep keys proper in list rendering and dynamic tables.
+- That helps React update only changed rows or components, so UI stays smooth.
+
+Answer 69:
+Question:
+- What is the difference between **state** and **props** in React?
+
+Answer:
+- **Props** come from parent, and **state** is local data managed inside component.
+
+**When it comes to props**
+- Props are read-only, so child should not change them directly.
+- They are used to pass data and callbacks from parent to child.
+- So basically props help in component communication.
+
+**Coming to state**
+- State is owned by component and can change over time.
+- When state changes, component re-renders.
+- We normally use it for UI data, form values, toggles, API response, these type of things.
+
+**Here the main difference is**
+- **Props** are external input.
+- **State** is internal memory of component.
+- So props flow one way from parent, but state is managed inside component.
+
+Answer 70:
+Question:
+- Can you please clarify the question about "extra drops of drilling"?
+
+Answer:
+- I’m not sure what you mean by that phrase, so I need a little more context.
+
+**Coming to clarification**
+- If you mean something from **drilling** in mechanical or oil field context, please tell exact term.
+- If it is from another domain, like a project name or a process step, just say that.
+- Then I can answer properly in interview style.
+
+Answer 71:
+Question:
+- Okay, drop the drilling part and continue.
+
+Answer:
+- Sure, I’ll ignore that part and continue from the current topic.
+
+Answer 72:
+Question:
+- What is **props drilling** in React?
+
+Answer:
+- **Props drilling** means passing props through multiple intermediate components just to reach a child component.
+
+**When it comes to props drilling**
+- So here data goes from parent to child, then child to next child, like this chain.
+- Intermediate components may not need that data, but still they forward it.
+- This becomes little messy when component tree is deep.
+
+**Coming to why it is a problem**
+- It makes code harder to maintain and read.
+- If same data is needed in many places, then passing through many levels is not good.
+- In that case we normally use **Context API** or state management, depending on project need.
+
+Answer 73:
+Question:
+- You mean **props drilling**, like passing data from one component to another through props, right?
+
+Answer:
+- Yes, exactly. It is passing data from parent to child component using **props**, and if it goes through many levels, that is called **props drilling**.
+
+**When it comes to props drilling**
+- So basically parent component sends data to child component through props.
+- If final component needs that data, but middle components only forward it, then that is props drilling.
+- It works fine for small component tree, but for deep tree it becomes difficult.
+
+**Coming to the issue**
+- Main problem is intermediate components get unnecessary props.
+- Code becomes little bulky and maintenance also becomes harder.
+- For that case, we normally use **Context API** or other state management.
+
+Answer 74:
+Question:
+- Is there any issue with **props drilling**?
+
+Answer:
+- Yes, main issue is it becomes messy when data has to pass through many component levels.
+
+**When it comes to the problem**
+- Middle components get props even if they do not use that data.
+- So code becomes harder to read and maintain.
+- Also if component structure changes, then many props need to be updated.
+
+**Coming to practical impact**
+- It increases unnecessary coupling between components.
+- Debugging also becomes little difficult because data is moving through many layers.
+- For that reason, in bigger React apps we normally prefer **Context API** or state management.
+
+Answer 75:
+Question:
+- What techniques or libraries we can use to avoid **props drilling**?
+
+Answer:
+- Yes, we have few common ways to handle it in React.
+
+**When it comes to React techniques**
+- The standard one is **Context API**, where data can be shared without passing through every level.
+- For bigger apps, people also use **Redux Toolkit** for centralized state.
+- If state is only for one feature, then sometimes lifting state up is enough.
+
+**Coming to libraries**
+- **Redux Toolkit** is very common in production for global state.
+- **React Context** is built-in, so no extra library needed.
+- In my projects, depending on data sharing need, I would choose **Context API** for simple shared data and **Redux Toolkit** for more complex app state.
+
+Answer 76:
+Question:
+- What is the difference between **useMemo** hook and **useCallback** hook?
+
+Answer:
+- Yes, both are for performance optimization, but they work on different things.
+
+**When it comes to useMemo**
+- **useMemo** memoizes a **value**.
+- So if calculation is costly, React stores the result and recomputes only when dependency changes.
+- Example is filtering list, sorting data, or heavy calculation.
+
+**Coming to useCallback**
+- **useCallback** memoizes a **function**.
+- So same function reference is reused unless dependency changes.
+- This is useful when passing function to child component and want to avoid unnecessary re-render.
+
+**Here the main difference is**
+- **useMemo** gives cached result, **useCallback** gives cached function.
+- So one is for value, another one is for function reference.
+- In simple words, if you want to store output, use **useMemo**; if you want to store function, use **useCallback**.
+
+Answer 77:
+Question:
+- Can you explain **useEffect** hook and its lifecycle behavior?
+
+Answer:
+- Yes, **useEffect** is used for side effects in React functional components.
+
+**When it comes to useEffect**
+- It runs after render, so it is good for API calls, subscriptions, timers, and manual DOM related work.
+- In class component, similar thing was done using lifecycle methods like **componentDidMount**, **componentDidUpdate**, and **componentWillUnmount**.
+- In functional component, **useEffect** covers all these based on dependency array.
+
+**Coming to lifecycle behavior**
+- If dependency array is empty, it works like **componentDidMount** and runs only once after first render.
+- If dependency array has values, it runs again when those values change, like **componentDidUpdate**.
+- If we return a cleanup function, it works like **componentWillUnmount** and clears things like timer or subscription.
+
+**Here the main idea is**
+- So basically **useEffect** combines multiple lifecycle behaviors in one place.
+- It helps keep side effects in a clean way inside functional components.
+- In my projects, I use it for data fetching, cleanup, and syncing UI with backend response.
+
+Answer 78:
+Question:
+- Why are **keys** important in React list rendering?
+
+Answer:
+- Yes, keys are very important for proper list rendering and efficient updates.
+
+**When it comes to keys**
+- React uses **key** to identify each item uniquely in a list.
+- So when list changes, React can understand which item is added, removed, or updated.
+- This helps React do efficient **reconciliation**.
+
+**Coming to why it matters**
+- Without proper key, React may re-render wrong item or reuse DOM in wrong way.
+- That can create UI bugs, especially when list is dynamic.
+- Normally we use a unique id from data, not index, if list can change.
+
+**Here the main point is**
+- Key should be stable and unique for each item.
+- If list order changes, using index can cause issue.
+- In my projects, whenever I render dynamic data, I always prefer proper unique key from backend record.
+
+Answer 79:
+Question:
+- If we have a list with 10 items and we change the 6th or 7th item, what happens in rendering?
+
+Answer:
+- Yes, React will check that changed item and update only what is needed, if keys are proper.
+
+**When it comes to React rendering**
+- React compares old list and new list using **key**.
+- So if only 6th or 7th item changes, React tries to update that specific item in DOM.
+- That is the main benefit of using stable unique keys.
+
+**Coming to what happens if key is not proper**
+- If we use index as key and list order changes, React can get confused.
+- Then wrong item may get reused, and UI can show unexpected data.
+- So for dynamic list, unique id is always better.
+
+**Here the practical point is**
+- Change in one item does not mean full list re-render in DOM.
+- React still re-renders component logic, but DOM update is optimized.
+- In real projects, this is why we keep keys stable for tables, cards, and repeated records.
+
+Answer 80:
+Question:
+- What are **hierarchical components** in React?
+
+Answer:
+- Hierarchical components means components arranged in parent-child structure.
+
+**When it comes to component structure**
+- One main component can contain smaller child components inside it.
+- So data flows from parent to child through **props**.
+- This makes UI more modular and easy to manage.
+
+**Coming to why we use it**
+- It helps to break big UI into small reusable parts.
+- Each child component can handle one specific piece of UI.
+- So maintenance becomes easier, especially in large screens.
+
+**For example**
+- A dashboard page can be parent component.
+- Inside that, header, sidebar, table, and card can be child components.
+- In my projects, I use this structure in React to keep code clean and reusable.
+
+Answer 81:
+Question:
+- What are **Higher Order Components** in React?
+
+Answer:
+- Higher Order Component, or **HOC**, is a function that takes one component and returns another enhanced component.
+
+**When it comes to HOC**
+- It is basically a pattern for reusing component logic.
+- So same logic like authentication, loading, or permission check can be shared.
+- It wraps original component and adds extra behavior.
+
+**Coming to how it works**
+- HOC does not change original component directly.
+- It creates a new component with added props or added functionality.
+- This is useful when same logic is needed in many screens.
+
+**For example**
+- If one page should open only for logged-in user, we can wrap it with auth HOC.
+- Then that check is reused across multiple pages.
+- In React projects, this is a common way to avoid duplicate code.
+
+Answer 82:
+Question:
+- Can you explain **Redux Toolkit flow**, like how data comes from the UI and how we update data in a slice?
+
+Answer:
+- Yes, basically data flow in Redux Toolkit is one-way, from UI to action to slice to store, and then back to UI.
+
+**When it comes to the UI side**
+- Component first reads data from **Redux store** using **useSelector**.
+- If user does some action, like button click or form submit, component calls **dispatch**.
+- So UI never changes store directly.
+
+**Coming to the slice**
+- In **slice**, we define initial state, reducers, and actions together.
+- When dispatched action comes, reducer updates state in a controlled way.
+- In Redux Toolkit, we use **createSlice**, so update logic becomes simpler.
+
+**How data gets updated**
+- First, action is dispatched from component.
+- Then reducer inside slice receives that action and updates state.
+- Redux Toolkit uses **Immer** internally, so we can write direct-looking mutation like `state.value = ...`, but actually it creates immutable update.
+
+**For example**
+- If we have counter slice, and user clicks increment button, component dispatches `increment()`.
+- Then slice reducer increases count in store.
+- After that component re-renders automatically with new value from store.
+
+**In my projects**
+- I used this flow in React applications where state had to be shared across multiple components.
+- It helped to keep data centralized and avoid prop drilling.
+
+Answer 83:
+Question:
+- What is the difference between **store** and **slice** in Redux Toolkit?
+
+Answer:
+- **Store** is the central place where whole application state is kept, and **slice** is one small part of that state with its own reducers and actions.
+
+**When it comes to store**
+- Store holds complete Redux state for app.
+- It is created once, normally using **configureStore**.
+- So all slices get combined there.
+
+**Coming to slice**
+- Slice manages one feature state, like user, cart, or counter.
+- It is created using **createSlice**.
+- Here we define initial state, reducers, and generated actions together.
+
+**Here the main difference is**
+- Store is like full container for all state.
+- Slice is like one section inside that container.
+- Store connects everything, slice handles feature-level logic.
+
+**For example**
+- If app has auth slice and product slice, both are added into one store.
+- Then each slice updates only its own part of state.
+- In my React projects, this separation helped to keep state clean and easy to maintain.
+
+Answer 84:
+Question:
+- What **optimization techniques** have you used in your application?
+
+Answer:
+- Yes, in my application I used few practical optimization techniques mainly on API response, database access, and repeated data handling.
+
+**When it comes to API and backend**
+- I used **Redis caching** for frequently accessed data, so repeated calls do not hit backend again and again.
+- This helped to improve response time for common requests.
+- In FastAPI services, I also kept response handling clean and lightweight.
+
+**Coming to database side**
+- I used **PostgreSQL indexing** on commonly searched columns.
+- That reduced query time for filter and lookup type operations.
+- I also tried to keep queries simple and avoid unnecessary joins where not needed.
+
+**For event and processing flow**
+- In some places I used **Apache Kafka** for asynchronous processing.
+- So heavy work can go in background instead of blocking user request.
+- That improves overall application responsiveness.
+
+**For frontend**
+- In React side, I used proper component structure and avoided unnecessary re-renders.
+- I also used **Redux Toolkit** style state handling where shared state was needed.
+- So data flow stays cleaner and UI becomes easier to manage.
+
+**In my projects**
+- In **Trade News Analyser**, Redis and backend tuning helped improve API response times.
+- In **Enterprise Insurance Management System**, validation, logging, and structured API flow helped system run more reliably.
+- So basically I focus on caching, indexing, async processing, and clean state handling depending on where bottleneck is.
+
+Answer 85:
+Question:
+- Can you explain **virtualization in React**?
+
+Answer:
+- Yes, virtualization in React means rendering only visible items on screen, instead of loading full long list at once.
+
+**When it comes to the main idea**
+- Normally if list has many rows, all DOM nodes get created, and that makes UI slow.
+- With **virtualization**, only items inside viewport are rendered.
+- So performance becomes better, especially for large tables or long lists.
+
+**Coming to how it works**
+- As user scrolls, React replaces old visible items with new ones.
+- So DOM size stays small.
+- This reduces memory usage and improves scrolling smoothness.
+
+**For example**
+- If list has 10,000 records, we do not render all 10,000 at once.
+- We render only visible part plus small buffer.
+- In React, common approach is using **react-window** or **react-virtualized**.
+
+**In my projects**
+- In data-heavy UI screens, this kind of approach is useful when records are large.
+- It helps keep frontend responsive and avoids lag during scrolling.
+
+Answer 86:
+Question:
+- Can you explain **lazy loading in React**?
+
+Answer:
+- Yes, lazy loading in React means loading component only when it is actually needed, not at initial page load.
+
+**When it comes to the main idea**
+- So normally all components bundle gets loaded together.
+- With **lazy loading**, heavy component is split and loaded later.
+- This reduces initial load time.
+
+**Coming to React implementation**
+- We usually use **React.lazy** with **Suspense**.
+- `React.lazy` loads component on demand, and `Suspense` shows fallback UI until it comes.
+- This is useful for routes, modals, or heavy dashboard components.
+
+**For example**
+- If admin page is not opened, its code need not load at first.
+- Only when user clicks that route, component gets fetched.
+- So app feels faster in start.
+
+**In my projects**
+- In React-based screens, this approach helps when some pages are not used immediately.
+- It improves user experience and keeps main bundle lighter.
+
+Answer 87:
+Question:
+- What is the difference between **useEffect** hook and **useLayoutEffect**?
+
+Answer:
+- Main difference is **useEffect** runs after paint, but **useLayoutEffect** runs before browser paints the screen.
+
+**When it comes to useEffect**
+- It is used for side effects like API call, subscriptions, logging, timers.
+- It runs asynchronously after render is shown to user.
+- So it does not block UI painting.
+
+**Coming to useLayoutEffect**
+- It runs synchronously after DOM updates, but before paint.
+- It is useful when we need to measure DOM size or do layout correction.
+- Because it blocks paint, it should be used carefully.
+
+**Here the main difference is**
+- If effect is not related to visual layout, I prefer **useEffect**.
+- If I need to read layout and immediately adjust UI before user sees it, then **useLayoutEffect**.
+- So basically **useEffect** is safer for normal side effects, and **useLayoutEffect** is for layout-sensitive work.
+
+Answer 88:
+Question:
+- Can you write a React component that fetches an API and displays user details?
+
+Answer:
+- Yes, I can do it with **useEffect** for fetching and **useState** for storing response data.
+
+**When it comes to the component flow**
+- First I keep one state for user data and one state for loading or error.
+- Then inside **useEffect**, I call API once when component mounts.
+- After response comes, I update state and render details on screen.
+
+**Example:**
+```jsx
+import { useEffect, useState } from "react";
+
+function UserDetails() {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://api.example.com/user/1")
+      .then((res) => res.json())
+      .then((data) => {
+        setUser(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (!user) return <p>No user found</p>;
+
+  return (
+    <div>
+      <h2>User Details</h2>
+      <p>Name: {user.name}</p>
+      <p>Email: {user.email}</p>
+    </div>
+  );
+}
+
+export default UserDetails;
+```
+
+**Coming to why this way**
+- So here **useEffect** with empty dependency array makes API call only one time.
+- **useState** helps to re-render when data comes.
+- This is simple and standard way for fetching in React.
+
+Answer 89:
+Question:
+- How will you fetch data from API and display it in React?
+
+Answer:
+- I will keep it simple: call API in **useEffect**, store response in **useState**, and render the data.
+
+**When it comes to fetching**
+- So first I create one state for data.
+- Then in **useEffect**, I call API when component loads.
+- After response comes, I set that data into state.
+
+**Coming to display**
+- Once state updates, React automatically re-renders.
+- Then I just map or print fields like name, email, or whatever API gives.
+- If data is not there, I can show loading or empty message.
+
+**Example:**
+```jsx
+import { useEffect, useState } from "react";
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.example.com/users")
+      .then((res) => res.json())
+      .then((data) => setUsers(data));
+  }, []);
+
+  return (
+    <div>
+      {users.map((user) => (
+        <p key={user.id}>{user.name}</p>
+      ))}
+    </div>
+  );
+}
+
+export default UserList;
+```
+
+**In simple words**
+- **useEffect** is for API call.
+- **useState** is for storing data.
+- Then UI shows whatever comes from API.
+
+Answer 90:
+Question:
+- What is the difference between **flex** and **grid** in CSS?
+
+Answer:
+- Main difference is **flex** is for one-dimensional layout, and **grid** is for two-dimensional layout.
+
+**When it comes to flex**
+- I use **flexbox** when items need to align in one row or one column.
+- It is good for small UI parts like navbar, button group, card actions.
+- So basically it handles either horizontal or vertical flow very well.
+
+**Coming to grid**
+- I use **CSS Grid** when layout has both rows and columns together.
+- It is better for full page structure, dashboard, gallery, complex sections.
+- Here I can control exact placement of items in both directions.
+
+**Here the main difference is**
+- **Flex** works along one axis, **grid** works on two axes.
+- If I want simple alignment, I go with **flex**.
+- If I want full layout control, I go with **grid**.
+
+Answer 91:
+Question:
+- Have you used any test case frameworks?
+
+Answer:
+- Yes, I have used **PyTest** for unit testing and integration testing in my Python projects.
+
+**When it comes to testing**
+- I used **PyTest** to write test cases for API endpoints and business logic.
+- It helps me keep tests simple, readable, and easy to maintain.
+- In my projects, I also used **Postman** for API validation during manual testing.
+
+**Coming to how I use it**
+- So normally I write test functions with clear input and expected output.
+- For API testing, I check status code, response body, and error handling.
+- If needed, I also use fixtures in **PyTest** for common setup data.
+
+**In my projects**
+- In the insurance project, I used testing for API validation and integration checks.
+- That helped us catch issues early before QA and UAT.
+- It also improved reliability when we were doing production support.
+
+Answer 92:
+Question:
+- Have you used any **CSS frameworks**?
+
+Answer:
+- Yes, I have used **responsive CSS** with **HTML5**, **CSS3**, and layout techniques like **Flexbox** and **Grid**.
+
+**When it comes to UI styling**
+- I mainly worked on **custom CSS** for responsive web design.
+- So I used **Flexbox** for alignment and **Grid** for structured layouts.
+- This helped me make pages proper on different screen sizes.
+
+**Coming to framework part**
+- In my resume, I have not mentioned a specific CSS framework like **Bootstrap** or **Tailwind**.
+- So I can say I worked more on **core CSS** and responsive design concepts.
+- If project needs, I can adapt to a framework, but my hands-on is mainly with **CSS3**.
+
+**In my projects**
+- In the React frontend work, I used CSS for forms, tables, and dashboard sections.
+- I focused on clean layout, spacing, and responsive behavior.
+- That was enough for the UI screens I handled.

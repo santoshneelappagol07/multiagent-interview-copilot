@@ -1,0 +1,500 @@
+Transcripts:
+Q1: Hi, Santosh. Good morning. Welcome on behalf of Nexuvo Digital Engineering. Santosh, please tell me about yourself, your as a Python developer and full stack developer. Santosh, can you tell when building a full stack application with FastAPI and his team lead UI, how would you structure your project to ensure loose coupling and facilitate modular development across UI API, and database layer.
+Q2: Pretty slow. And, Tosh, have you worked on for Streamlit UI?
+Q3: Okay. Let's move to another question. Just a moment. Let me note it down. So, PostgreSQL, briefly describe how would you manage environment is specific configurations such as API endpoint or credential in Python for the stack to ensure security, maintainability, and ease of deployment.
+Q4: Okay. Santosh, how would you leverage Python dependency pattern to improve the testability and modularity in full stack application using FastAPI streamed in PostgreSQL.
+Q5: Okay. Santosh, briefly explain how would you structures SQL query and index strategies in a PostgreSQL to both optimize read performance and ensure scalability in rapid growth multi talent SaaS application.
+Q6: Okay. Santosh, explain how would you ensure SQL query in multi tenant PostgreSQL application? Are protected against accidental data leads between the tenants, when dynamic query are generated in Python.
+Q7: Okay. I am sharing you a code editor. You will see a black color coded there on your You need to write up Python fast API endpoint that allow our dynamic creation of new tenant. By inserting a row in tenant table and create a separate schema for tenant Use SQL and ensure proper error handling. Yeah. Yeah. Yeah. You can import. It is not a compiler. It is only an editor. So you will see the color and everything So you have... It took in this time to write the book. Yes. You can write. Yes. You can write. But you should write all the... All other full logic with exception handling and everything. Okay. Please write. I will discuss later. You have another five minutes to go. Let me know once you're done. We're adding create. Okay. Are you done? Thank you. Let me see. Okay. Okay. Let's move to the question. Give me one minute. So in terms of what is CT in PostgreSQL and when you would use CPE instead of subquery, provide one where CPE offer clear advantage.
+Q8: And what is it? So... And what is the compared to subquery?
+Q9: Okay. Briefly explain how Streamlit handle component modularity and code readability best practice. Would you follow to ensure the custom UI element or in the interactive widget or might maintain across application model?
+Q10: Okay. Any idea about this how to see... Scalable and maintainable thing?
+Q11: Yeah. I I was asking something different. What is one effective way to handle session management in the stream based on multi tenant important for the tenant isolation and security?
+
+Answers:
+Answer 1:
+Question:
+- Give self introduction for 4 minutes without any specific project explanation
+
+Answer:
+- Sure, I will give a brief introduction about my background, skills, and overall experience, without going into project details.
+
+**Starting with my background**
+- My name is Santosh Neelappagol, and I have around **4 years of experience** in **Python Full Stack and AI development**.
+- I am currently working as **Software Engineer at True Blue Technology Pvt Ltd, Bengaluru**.
+- Before that, I worked as **Full Stack AI Developer at Axa Insurance** and also as **Full Stack / AI Backend Developer at Nexuvo**.
+
+**Coming to my technical background**
+- My main work is around **Python**, **FastAPI**, **React.js**, **REST APIs**, and **microservices**.
+- On backend side, I have worked with **PostgreSQL**, **MongoDB**, **Redis**, and **Apache Kafka**.
+- I also have hands-on experience in **Generative AI**, **LLM**, **RAG**, **LangChain**, and **Prompt Engineering**.
+
+**About my way of working**
+- I usually work on building backend services, integrating APIs, handling data flow, and making sure application is stable and scalable.
+- I also do frontend work in **React.js** when needed, so I can handle full stack tasks end to end.
+- I am comfortable with **debugging**, **unit testing**, **integration testing**, and **API validation** using **Swagger** and **Postman**.
+
+**On deployment and delivery**
+- I have worked with **Docker**, **Jenkins**, **CI/CD pipelines**, and **AWS** for deployment and release process.
+- I follow **Agile** and **Scrum** practices, so I am used to sprint planning, code review, and team collaboration.
+- I also focus on clean code, proper exception handling, logging, and production support.
+
+**What I bring to the team**
+- So basically, I am a developer who can work on both **application development** and **AI-enabled solutions**.
+- I try to understand business requirement first, then convert it into a stable technical solution.
+- I am quick in learning new tools, and I like to take ownership of work till it reaches production.
+
+**Closing about myself**
+- Overall, I would say I am a **Python full stack engineer with AI exposure**, good in backend development, API design, and modern AI-based application development.
+- I am looking for a role where I can use my current skills, contribute to product development, and keep growing technically.
+- That is a short introduction about me.
+
+Answer 2:
+Question:
+- Explain Nexuvo AI Chatbot project in detail, with problem statement, and what LLM models you used in it and why you chose those LLM models
+
+Answer:
+- Sure, I will explain it in a simple way from problem side, my role, and then the LLM part.
+
+**So first, the problem statement**
+- In Nexuvo, the main need was to build a **scalable AI chatbot service** which can handle user queries and business workflow automation in a faster way.
+- The challenge was, normal rule-based chatbot was not giving proper flexibility, so for different user questions and internal workflows, we needed more intelligent response generation.
+- Also, system had to support **real-time data retrieval**, session handling, and reliable API response management.
+
+**Coming to my role in this**
+- I was working as **Full Stack / AI Backend Developer**.
+- My main responsibility was to build **Python FastAPI** services, integrate **LLM-based chatbot logic**, handle **REST APIs**, and support **RAG** and **Prompt Engineering** part.
+- I also worked on **PostgreSQL** and **MongoDB** side for structured data and conversational session data.
+
+**How we approached the solution**
+- So basically, we designed backend in **FastAPI microservices**, because it is lightweight and good for API-based AI applications.
+- For chatbot intelligence, we used **Generative AI / LLM APIs** with **RAG** so that model can answer using both prompt context and retrieved business data.
+- We also kept **logging, validation, exception handling, and response management** properly, because chatbot system should not fail in production easily.
+
+**Coming to the LLM models**
+- In this project, we used **OpenAI GPT-based LLM APIs** for response generation and conversational understanding.
+- We chose that because it was giving better language understanding, good response quality, and it was suitable for business chatbot style answers.
+- For retrieval-augmented flow, we used **LangChain** with the LLM, so context from internal data can be added before generating final response.
+
+**Why we chose those LLM models**
+- First reason was **response quality**. For chatbot use case, model should understand user intent properly and generate natural answer.
+- Second reason was **integration ease**. OpenAI APIs were easy to connect with our **FastAPI** backend and workflow.
+- Third reason was **accuracy with RAG**. Since business data was coming from internal sources, we needed model which can work well with retrieved context instead of only generic answer.
+- Also, for production side, we needed something stable and widely used, so that maintenance and support becomes easier.
+
+**How the flow worked**
+- User query comes to **FastAPI** endpoint.
+- Then we do **validation** and fetch required context from **PostgreSQL** or **MongoDB** depending on data type.
+- After that, **RAG pipeline** prepares prompt with retrieved context.
+- Then **LLM API** generates response, and final answer goes back to frontend.
+
+**What I handled in implementation**
+- I worked on API layer, request and response structure, and chatbot integration points.
+- I also supported **prompt tuning** so that model gives more relevant and business-oriented answers.
+- For session data and conversational history, we used **MongoDB**, and for structured business data we used **PostgreSQL**.
+
+**Challenges and how we handled**
+- One challenge was making responses more relevant and less generic, so we improved prompt structure and retrieval context.
+- Another challenge was handling invalid or incomplete user queries, so we added proper validation and fallback handling.
+- We also focused on performance and reliability by using proper logging and response management in backend.
+
+**Result side**
+- So overall, the chatbot became more reliable for business workflow automation and user interaction.
+- It helped in improving application reliability and supported production issue troubleshooting and workflow performance optimization.
+- The main value was, users got faster and more intelligent responses compared to simple rule-based approach.
+
+**In short**
+- So the full flow was **FastAPI backend + PostgreSQL/MongoDB + RAG + OpenAI GPT-based LLM + prompt engineering + production logging**.
+- That is how we built Nexuvo AI chatbot solution in a scalable way.
+
+Answer 3:
+Question:
+- Tell me about yourself as a Python developer and full stack developer, and how would you structure a full stack application with FastAPI and React UI to ensure loose coupling and modular development across UI, API, and database layer
+
+Answer:
+- Sure, good morning. I am Santosh, and I have around **4 years of experience** in **Python full stack and AI development**, mainly working on **FastAPI**, **React.js**, **REST APIs**, **PostgreSQL**, **MongoDB**, and **AWS**.
+
+**About myself**
+- I started my career working on backend and full stack development, and slowly I moved into **AI-enabled applications** also.
+- My main strength is, I can work on **backend services**, **frontend integration**, and also **LLM-based features** when project needs it.
+- I usually focus on writing clean code, proper API design, and making system easy to maintain and scale.
+
+**How I structure a full stack application**
+- So basically, I keep **UI, API, and database layer** clearly separated, because that gives better maintainability and loose coupling.
+- On frontend side, I keep **React components** modular, like separate components for pages, forms, tables, and shared UI elements.
+- On backend side, I keep **FastAPI routes**, **service layer**, **repository layer**, and **schema layer** separate, so each part has one responsibility.
+
+**Coming to UI and API separation**
+- UI should only talk to backend through **REST APIs**, not directly with database or business logic.
+- In React, I normally keep API calls in a separate service file, so components stay clean and reusable.
+- This way, if backend changes internally, UI impact will be less as long as API contract remains same.
+
+**Coming to backend design**
+- In FastAPI, I prefer to keep **routers** only for request handling, and business logic in **service classes**.
+- For database access, I keep separate **repository or DAO layer** using **SQLAlchemy** or direct query layer depending on project need.
+- This separation helps in testing also, because I can unit test service logic without depending on UI or database directly.
+
+**For database layer**
+- I keep database models and schema definitions separate from business logic.
+- For structured data, I use **PostgreSQL**, and for flexible or session-type data, I use **MongoDB** when needed.
+- If there is heavy read traffic, I also use **Redis** for caching, so backend does not hit database every time.
+
+**How this helps loose coupling**
+- So the main idea is, each layer should communicate only through well-defined interface.
+- UI should know only API contract, API should know only service contract, and service should know only repository contract.
+- That way, if one layer changes, other layers do not break easily.
+
+**For modular development**
+- We can assign different team members for UI, API, and database work in parallel.
+- For example, frontend team can build screens using mock APIs, while backend team can complete endpoints separately.
+- This improves development speed and also reduces dependency between teams.
+
+**My practical approach**
+- In my projects, I also use **Swagger/OpenAPI** for API documentation, so frontend team can integrate easily.
+- I use **Postman** for API testing and **PyTest** for backend unit and integration testing.
+- For deployment, I keep everything containerized using **Docker**, so environment stays same across development and production.
+
+**Final view**
+- So basically, my approach is to keep application **layered, modular, and contract-driven**.
+- That gives loose coupling, easier testing, easier maintenance, and smoother team collaboration.
+- This is the structure I normally follow in **FastAPI and React-based full stack applications**.
+
+Answer 4:
+Question:
+- Have you worked on Streamlit UI?
+
+Answer:
+- Yes, I have worked on **React.js UI** in my projects, and for **Streamlit UI** I have not used it in production so far.
+
+**About my UI work**
+- My frontend work is mainly on **React.js**, where I build modular screens, forms, dashboards, and API integration flows.
+- I usually connect UI with **FastAPI** backend through REST APIs and keep components reusable.
+- So my hands-on UI experience is more on **React-based enterprise applications**.
+
+**About Streamlit**
+- I know **Streamlit** is commonly used for quick AI demos, internal tools, and simple data apps.
+- From my understanding, it is good when we want fast UI development with less frontend code.
+- But in my projects, I have not worked on Streamlit in production, so I cannot say I used it hands-on.
+
+**If needed in future**
+- If project asks for quick AI prototype or internal dashboard, I can learn and work on **Streamlit**.
+- Since I already work with **Python** and backend logic, I can adapt to it faster.
+- But currently my direct experience is with **React.js** UI.
+
+Answer 5:
+Question:
+- Briefly describe how you would manage environment-specific configurations like API endpoints or credentials in Python for the stack to ensure security, maintainability, and easy deployment
+
+Answer:
+- Yes, basically I manage those values outside code, so secrets and environment details do not go inside source files.
+
+**How I handle it**
+- I keep API endpoints, database URLs, and credentials in **environment variables**.
+- For Python backend, I normally load them using **python-dotenv** in local development, and in deployment I use server or cloud environment settings.
+- So code remains same, only config changes based on **dev**, **test**, or **production** environment.
+
+**Why this approach**
+- First, it improves **security**, because sensitive values like passwords or API keys are not hardcoded.
+- Second, it improves **maintainability**, because if endpoint changes, I do not need to change application logic.
+- Third, it helps **deployment**, because same build can run in different environments with different config values.
+
+**In FastAPI projects**
+- I usually keep a separate config file or settings class, and read values from environment at startup.
+- For example, **PostgreSQL connection string**, **OpenAI API key**, or **AWS credentials** are loaded from environment.
+- Then application uses those values through config object, not directly from code.
+
+**For production**
+- In production, I prefer using cloud or container level secret management, not plain text files.
+- So if app is on **AWS**, I would keep secrets in environment setup or managed secret store, and inject them during deployment.
+- That way, source code stays clean and safe.
+
+Answer 6:
+Question:
+- How would you leverage Python dependency pattern to improve testability and modularity in a full stack application using FastAPI and PostgreSQL?
+
+Answer:
+- Yes, basically I use **dependency injection** in FastAPI so components are loosely coupled and easy to test.
+
+**How I use it**
+- In FastAPI, I define dependencies using **Depends()** for things like database session, authentication, or service objects.
+- So route handler does not create objects by itself, it receives them from dependency layer.
+- This keeps code modular, and same dependency can be reused across multiple APIs.
+
+**Why it helps testability**
+- Because business logic is not tightly bound with database or external service, I can mock dependency in unit test.
+- For example, I can replace real **PostgreSQL session** with test session or fake repository during testing.
+- That makes **PyTest** based testing much easier and faster.
+
+**How it helps modularity**
+- I usually separate **router**, **service**, and **repository** layers.
+- Router only handles request and response, service handles business logic, and repository handles database query.
+- Dependency injection connects these layers cleanly without hard coding inside route functions.
+
+**In PostgreSQL based app**
+- For database access, I inject **SQLAlchemy session** as dependency and close it properly after request.
+- So each request gets its own session lifecycle, and it avoids connection leak.
+- This pattern is very useful in **FastAPI** projects where multiple APIs are sharing same database layer.
+
+**Practical benefit**
+- So overall, dependency pattern gives better **unit testing**, better **code reuse**, and easier **maintenance**.
+- If one implementation changes, I can update dependency provider without touching all route files.
+- That is how I normally keep FastAPI application clean and scalable.
+
+Answer 7:
+Question:
+- Briefly explain how you would structure SQL queries and index strategies in PostgreSQL to optimize read performance and ensure scalability in a rapidly growing multi-tenant SaaS application
+
+Answer:
+- Yes, basically I keep query design simple and index design aligned with access pattern, so read performance stays good even when data grows.
+
+**When it comes to SQL query structure**
+- I write queries with only required columns, not `SELECT *`, because less data means less I/O.
+- I keep filters on indexed columns, and I avoid unnecessary joins in hot paths.
+- For multi-tenant app, I always include **tenant_id** in where clause, so data scan stays limited to that tenant.
+
+**Coming to index strategy**
+- I usually create **B-tree indexes** on columns used in frequent filters, joins, and sorting.
+- For multi-tenant tables, a composite index like **tenant_id + status + created_at** is useful when query pattern follows that order.
+- If table is very large and mostly append-only, I also think about index maintenance cost, because too many indexes slow down writes.
+
+**For scalability**
+- I check query plan using **EXPLAIN ANALYZE** to see whether PostgreSQL is using index scan or sequential scan.
+- For very large tables, I prefer proper partitioning by tenant or date if access pattern supports it.
+- So the idea is, query should touch minimum rows, and index should match real filter pattern, not just create blindly.
+
+**In my projects**
+- In **PostgreSQL** based backend, I normally keep structured tables for transactional data and tune queries based on actual API usage.
+- This helps in faster response for read-heavy screens like dashboard, search, and listing APIs.
+- So overall, right query shape plus right index order is what gives both performance and scalability.
+
+Answer 8:
+Question:
+- Explain how you would ensure SQL queries in a multi-tenant PostgreSQL application are protected against accidental data leaks between tenants when dynamic queries are generated in Python
+
+Answer:
+- Yes, basically I make tenant isolation part of query design itself, so one tenant data never mixes with another tenant data.
+
+**When it comes to tenant isolation**
+- I always pass **tenant_id** from authenticated context, not from user input directly.
+- Every read, update, and delete query includes that **tenant_id** condition.
+- So even if dynamic query is generated, it still stays inside tenant boundary.
+
+**Coming to safe dynamic query generation**
+- I avoid string concatenation for SQL, because that can create both security and tenant leakage issue.
+- In Python, I use **parameterized queries** or **SQLAlchemy ORM / Core** so values are bound safely.
+- That way query structure stays fixed, only parameters change.
+
+**For stronger protection**
+- I keep a common repository layer where tenant filter is added by default.
+- So route or service layer cannot forget tenant condition by mistake.
+- In some cases, I also validate ownership before update or delete, especially for sensitive records.
+
+**In PostgreSQL**
+- I prefer composite indexes with **tenant_id** as leading column, so tenant-scoped queries are fast and also naturally aligned with isolation.
+- For very sensitive SaaS data, I would also consider **Row Level Security**, because database itself can enforce tenant access.
+- That gives extra safety even if application layer has a bug.
+
+**In practice**
+- So overall, combination of **authenticated tenant context**, **parameterized SQL**, **centralized query layer**, and optionally **Row Level Security** is what I use.
+- This reduces accidental cross-tenant access and keeps dynamic queries safe in Python backend.
+
+Answer 9:
+Question:
+- Write a Python FastAPI endpoint that dynamically creates a new tenant by inserting a row in tenant table and creating a separate schema for that tenant, using SQL and proper error handling
+
+Answer:
+- Yes, basically I would keep this as one transactional flow, so tenant row insert and schema creation stay consistent.
+
+**When it comes to endpoint design**
+- I will take tenant name in request body, then first insert into **tenant** table.
+- After that, I create separate PostgreSQL schema using **CREATE SCHEMA**.
+- If any step fails, I rollback and return proper error response.
+
+**Coming to the FastAPI code**
+- I use **FastAPI** with **SQLAlchemy** session and **parameterized SQL** for safe execution.
+- For schema creation, I run raw SQL through session, because **CREATE SCHEMA** is a DDL operation.
+- I also wrap whole logic in **try-except** so database error and unexpected error both are handled cleanly.
+
+**Example:**
+```python
+from fastapi import FastAPI, HTTPException, Depends
+from pydantic import BaseModel
+from sqlalchemy.orm import Session
+from sqlalchemy import text
+
+app = FastAPI()
+
+class TenantCreateRequest(BaseModel):
+    tenant_name: str
+
+def get_db():
+    # session dependency
+    pass
+
+@app.post("/tenants")
+def create_tenant(payload: TenantCreateRequest, db: Session = Depends(get_db)):
+    schema_name = payload.tenant_name.lower().replace(" ", "_")
+
+    try:
+        # insert tenant row
+        insert_sql = text("""
+            INSERT INTO tenant (tenant_name, schema_name)
+            VALUES (:tenant_name, :schema_name)
+            RETURNING id
+        """)
+        result = db.execute(insert_sql, {
+            "tenant_name": payload.tenant_name,
+            "schema_name": schema_name
+        })
+        tenant_id = result.scalar_one()
+
+        # create schema
+        create_schema_sql = text(f'CREATE SCHEMA "{schema_name}"')
+        db.execute(create_schema_sql)
+
+        db.commit()
+
+        return {
+            "message": "Tenant created successfully",
+            "tenant_id": tenant_id,
+            "schema_name": schema_name
+        }
+
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Tenant creation failed: {str(e)}")
+```
+
+**Why this structure**
+- I keep **tenant insert** first, so metadata is stored before schema setup.
+- I use **schema_name** derived from tenant name, but in real project I would validate it properly to avoid invalid identifier issue.
+- If schema creation fails, **rollback** ensures tenant row does not stay half-created.
+
+**One more thing**
+- In production, I would also add checks for duplicate tenant name and schema name before insert.
+- I would log the exception properly, and return only safe message to client, not full database error.
+- So overall this gives clean tenant onboarding flow with **FastAPI**, **PostgreSQL**, and proper error handling.
+
+Answer 10:
+Question:
+- What is CTE in PostgreSQL, when would you use CTE instead of subquery, and provide one case where CTE offers clear advantage
+
+Answer:
+- Yes, basically **CTE** means **Common Table Expression**, so it is like temporary named result set inside one SQL query.
+
+**When it comes to CTE**
+- I use **WITH** clause to define a temporary result, then reuse it in main query.
+- It makes query more readable when logic is complex, like multiple filtering or aggregation steps.
+- So instead of writing same subquery again and again, I can name it once and use it.
+
+**Coming to CTE vs subquery**
+- I prefer **CTE** when query has multiple steps and I want better readability.
+- A subquery is fine for small one-time logic, but if nesting becomes deep, it becomes hard to maintain.
+- In PostgreSQL, CTE is also useful when I want to break query into logical blocks for debugging.
+
+**One clear advantage**
+- Suppose I need top customers by total order value, first I aggregate orders in one CTE, then join with customer table.
+- That is cleaner than repeating aggregation inside join condition.
+- So here **CTE** gives clear advantage in readability and structured flow.
+
+**In PostgreSQL**
+- Example pattern is like `WITH order_summary AS (...) SELECT ... FROM order_summary`.
+- I use it when intermediate result is needed for next step in same query.
+- So overall, **CTE** is better for complex readable query, and subquery is better for simple inline logic.
+
+Answer 11:
+Question:
+- What is the difference between CTE and subquery?
+
+Answer:
+- Yes, basically **CTE** is a named temporary result set, and **subquery** is a query written inside another query.
+
+**When it comes to CTE**
+- It starts with **WITH** clause, so the logic becomes more readable.
+- I can reuse same CTE multiple times in main query if needed.
+- It is good when query has step-by-step processing.
+
+**Coming to subquery**
+- Subquery is written inside **SELECT**, **FROM**, or **WHERE** clause.
+- It is useful for small and direct logic, where extra naming is not needed.
+- But if nesting becomes too much, it becomes difficult to read and debug.
+
+**Here the main difference is**
+- **CTE** gives better readability and structure, while **subquery** is more compact.
+- In PostgreSQL, CTE is better when I want to split complex query into logical parts.
+- Subquery is better when I need quick inline filtering or calculation.
+
+Answer 12:
+Question:
+- Briefly explain how Streamlit handles component modularity and code readability, and what best practices you would follow to keep custom UI elements or interactive widgets maintainable across the application
+
+Answer:
+- Yes, basically in **Streamlit** I keep UI logic and business logic separate, so app stays readable and easy to maintain.
+
+**When it comes to modularity**
+- I split app into small functions, like one function for data loading, one for transformation, one for UI rendering.
+- For custom UI, I keep that part in a separate component or helper function, so main script does not become messy.
+- If same widget or layout is used multiple places, I reuse it instead of copy-pasting.
+
+**Coming to readability best practice**
+- I keep file structure clean, like separate module for pages, utilities, and reusable components.
+- I use clear variable names and simple flow, because Streamlit reruns script on interaction.
+- So if code is not modular, it becomes difficult to debug and maintain.
+
+**For interactive widgets**
+- I use **session state** when widget value needs to persist across reruns.
+- I keep widget keys unique, otherwise Streamlit can create conflict in dynamic UI.
+- For custom element, I make sure input-output contract is clear, so other parts of app can use it easily.
+
+**One more thing**
+- In my understanding, best practice is to keep each page small, reusable, and focused on one responsibility.
+- That way custom UI element or widget can be maintained across application without touching whole codebase.
+- So overall, modular functions, reusable components, and **session state** are main things I follow.
+
+Answer 13:
+Question:
+- How do you make Streamlit app scalable and maintainable?
+
+Answer:
+- Yes, basically I make it scalable by keeping code modular, reusable, and easy to extend.
+
+**When it comes to maintainability**
+- I separate app into pages, components, and utility functions, so each part has one responsibility.
+- I avoid putting all logic in one file, because later it becomes very hard to change.
+- I keep common things like data loading, formatting, and validation in shared functions.
+
+**Coming to scalability**
+- I use **session state** properly, so user interaction does not break app flow on rerun.
+- I keep heavy processing outside UI layer, like in backend service or helper module, so Streamlit page stays light.
+- If same component is needed in multiple places, I reuse it instead of duplicating code.
+
+**For example**
+- If dashboard has filters, charts, and table, I keep filter logic separate and chart rendering separate.
+- Then if new chart or new page comes, I can add it without disturbing existing flow.
+- So this approach makes app easier to scale and maintain.
+
+**One more thing**
+- I also follow clear naming, small functions, and proper folder structure.
+- That way another developer can understand code quickly and support it later.
+
+Answer 14:
+Question:
+- What is one effective way to handle session management in Streamlit for multi-tenant apps, especially for tenant isolation and security?
+
+Answer:
+- Yes, one effective way is to keep **tenant context** inside **session state** and always validate it on every request.
+
+**When it comes to tenant isolation**
+- I store tenant id, user id, and role in **st.session_state**, so each user session stays separate.
+- I never share tenant data in global variables, because that can leak data across users.
+- For every data fetch, I filter by tenant id at backend level, not only in UI.
+
+**Coming to security**
+- I use authenticated login first, then map user to correct tenant before showing any page.
+- I keep access control checks in backend API, so even if UI is bypassed, data still stays protected.
+- Sensitive tokens or credentials I do not keep in plain session state; I keep them in secure backend or environment level.
+
+**For example**
+- If one tenant opens dashboard, only that tenant’s records should come from PostgreSQL query with tenant filter.
+- So even if same Streamlit app is used by many tenants, data remains isolated.
+- This is the main thing I would follow for multi-tenant security.

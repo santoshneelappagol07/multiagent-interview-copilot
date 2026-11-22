@@ -1,0 +1,1674 @@
+Transcripts:
+Q1: Okay. Okay. Yeah. Yep. Yep. Thanks. Thanks for explaining and providing your brief background on all of these items. So so so what LLM you have used? What LLM models you have used?
+Q2: Okay. Okay. And... Okay. And and how about the embedding model? So all through this OpenAI only?
+Q3: Okay. Okay. So you mentioned four o. Right? So what is the
+Q4: Yeah. Yeah. But what exactly is that? Okay. So how?
+Q5: No. No. I asked, like, how... I mean, how exactly will you... Are you defining it? Knowing the code?
+Q6: No. Let's have data source. Won't I have to define anything?
+Q7: Let's see if I have a MS file, then in that case, I just need to provide the image. That's it. Right? It's what you are saying.
+Q8: K. No. What I'm saying is you mentioned it's multimodal. Right? Okay. So is it, like, it will automatically process or we need to do something?
+Q9: Are you are are you reading it from somewhere? So so how exactly is the process? Let's say, a scanned PDF document.
+Q10: So you mentioned it will first, take the type. Right? Type something you mentioned initially, you will try to extract.
+Q11: So, I mean, we know that's a scanned PDF. Right? So why do we need to have to type in there? Type of the PDF or type of the document?
+Q12: So... Yeah. I mean, by using what, will you do that? I mean, you mentioned by PDF.
+Q13: Okay. So how how can I use that? How can I use that in my code?
+Q14: Yeah. Like, how exactly will it be? But I if it's a scanned PDF, right, we cannot use PY PDF in that. Does it have that support to process the scanned PDF pages and then convert that to image using py PDF? Or is it, like, there are some other libraries for that?
+Q15: So how do I use... Let's say, if I have to use that
+Q16: Yeah. Do we need to install any packages
+Q17: Okay. Have you heard about FITS model or only PYMO PDF module will be sufficient for that
+Q18: Okay. So five of medium... Let's say if you have table that will also extract or you need PYM PDF for that, only for the table
+Q19: Okay. So mean, how exactly will I use it?
+Q20: No. You mentioned, like, for... You have specific table extraction tools. Right?
+Q21: No. Let's say if if I have a... If I'm processing a page, right, in that we have text and we have tables, So you are saying by using Paimo PDF, I will extract the text and by using another tool, maybe something like Lattice, I will try to extract the tables is what you were saying. Yeah. Lattice method. Okay. Yeah. So so how how do you make sure that, okay, when you're extracting all the contents from the page, how will it know that, okay, this is like, there is a table, so I need to skip it. And for that, we have another that will process it. And similar in the latest method, have to know that, okay, these are all the text, but I need to maybe extract only this part
+Q22: Table is present. So just for the processing, one PDF, let's say, one image, I mean, how can we have, like, these many tools or these many packages working together? Don't you think that is going to just overcomplicate or bloated your overall pipeline
+Q23: So you have used it, AWS text. Right?
+Q24: Okay. So how exactly I can use it?
+Q25: In the No. Why call? I mean, you would be having something in AWS console, right, where you can just upload the file to the AWS Textract and it will give you the output, right, Isn't it in that way? Like, how exactly will you be doing it?
+Q26: So so what AWS SDK, how how are you doing it? How will you connect?
+Q27: What APIs? Okay. So why we need that?
+Q28: No. Which API? Like, any names do you have?
+Q29: Can you write it?
+Q30: Like, did you send the message? Yeah. But how exactly we write it is what I was asking. Yep. So, like, I mean, you were writing something. Did you post it? Or... Because I did not see any messages, so that's what I was asking. Okay. I don't see it. Okay. You see in the top... I mean, in the bottom right there is a chat of some red. Do you see my thing? Like, I have sent you something. Okay. Okay. Your message wasn't delivered. It's what it is showing to you. Okay. So what do you do after that once you call it?
+Q31: Sorry. What is that written job? What method you have used in this?
+Q32: So what kind of document were you processing? Was it, like, unstructured
+Q33: You have used any chunking method?
+Q34: So let's say... Okay. So let's say that you know about q and a. I think you kind of documents.
+Q35: Yeah. Yeah. No. No. I'm asking for the chunking. What will you use?
+Q36: Okay. K. You can see again in the chat. Right? What do you think? What is the output of this? Okay. Okay. Have you used PyDentic? So what exactly is that?
+
+Answers:
+Answer 1:
+Question:
+- Tell me about yourself in 3 to 4 minutes, without explaining projects
+
+Answer:
+- Sure, I am Santosh, and I have around **4 years of experience** in **Python full stack and AI development**. I mainly work on **Python**, **FastAPI**, **Django**, **React.js**, **PostgreSQL**, **MongoDB**, and **AWS**, so my work is mostly around building backend services, APIs, and also supporting frontend where needed.
+
+**Coming to my background**
+- I started with strong hands-on in **Python development**, **REST APIs**, and **database work**, and slowly moved into full stack side also.
+- Over time I got exposure to **microservices**, **event-driven flow**, **Docker**, **Jenkins CI/CD**, and cloud deployment on **AWS**.
+- I also worked on **AI and LLM-based features** like **OpenAI APIs**, **RAG**, **prompt engineering**, and **LangChain**, so I am comfortable in both application development and AI integration.
+
+**What I usually focus on**
+- I normally pay attention to writing clean and maintainable code, proper **API design**, validation, exception handling, and logging.
+- I also work on **performance** side, like query optimization, indexing, and caching using **Redis** when response time matters.
+- From testing side, I use **PyTest**, **Postman**, and **Swagger/OpenAPI** to make sure APIs are working properly and easy to consume.
+
+**How I work in a team**
+- I am used to working in **Agile** setup, so I participate in sprint planning, code review, and regular collaboration with frontend, backend, and QA teams.
+- I try to understand business requirement first, then convert that into technical solution in a simple and reliable way.
+- Basically, I like to take ownership from development till deployment, and make sure feature is stable in lower environment and production also.
+
+**What I am looking for**
+- At this stage, I am looking for a role where I can continue working on **Python**, **FastAPI**, **React**, and **AI-enabled applications**.
+- I want to contribute in building scalable systems, and at same time keep learning better design, cloud, and production practices.
+- So overall, I would say I am a hands-on engineer with full stack and AI background, and I am comfortable working across backend, frontend, database, and deployment side.
+
+Answer 2:
+Question:
+- Tell me about your recent **Nexuvo AI Chatbots** project in detail, including the problem statement.
+
+Answer:
+- Sure. My recent project was **Nexuvo AI Chatbots**, where I worked as a **Full Stack and AI Backend Developer**. The main purpose was to build scalable chatbot services which could understand user questions, retrieve useful business information, and also support business workflows and transactions.
+
+**So first, the problem statement was**
+- Basically, users were depending on manual support or separate business systems for getting information and completing common workflows.
+- The requirement was to provide one conversational interface which can answer questions, retrieve real-time data, call enterprise APIs, and support workflow automation.
+- Main challenge was chatbot should not give only generic AI answers. It should provide relevant response based on internal data, current system data, and user conversation context.
+
+**Coming to my role**
+- I worked mainly on **Python backend**, **FastAPI microservices**, **LLM integration**, **RAG workflows**, database handling, and REST API development.
+- I also supported **React.js** side for chatbot interaction and API integration, and I was involved in logging, testing, Docker deployment, and production support.
+- So my responsibility was not only creating prompt; I handled complete flow from request validation up to response generation and API response management.
+
+**For the backend design**
+- We used **FastAPI** to create separate backend services, because microservices made the chatbot components easier to develop, deploy, and maintain independently.
+- I used **Pydantic request models** for input validation, so invalid or incomplete user requests were rejected before reaching the LLM or business service.
+- The services exposed **REST APIs**, and I maintained proper exception handling, structured logging, and consistent response format.
+
+**So the first implementation step was user request handling**
+- When user sends a question, the **FastAPI endpoint** receives the request along with session information and validates it using **Pydantic**.
+- This validation was important because chatbot request can have missing session ID, empty message, or invalid workflow parameters.
+- After validation, request was passed to the conversation service, and we tracked the request using application logs for debugging and monitoring.
+
+**Coming to conversation and session management**
+- We stored conversational session data in **MongoDB**, because chatbot messages are unstructured and conversation history can change frequently.
+- A session record contains user interaction details, previous messages, and workflow context, so the system can maintain continuity between messages.
+- For structured business data and transactional information, we used **PostgreSQL**, because policy-like or workflow-related records need relational consistency and proper querying.
+
+**After that, for knowledge retrieval**
+- We used **RAG with LangChain** so the model could first retrieve relevant information and then generate answer based on that context.
+- This was done to reduce unsupported answers and improve response accuracy for business-specific questions.
+- We applied **prompt engineering** to clearly separate system instructions, retrieved context, user question, and expected response format before sending request to the **LLM API**.
+
+**For LLM response generation**
+- The **OpenAI API** was integrated through a separate service layer, so model-related logic was not directly mixed with controller code.
+- I prepared prompts based on user intent and available context, and handled cases like empty retrieval result, LLM timeout, or invalid model response.
+- We also made sure sensitive or internal information was not blindly exposed, and business actions were performed only through validated backend APIs.
+
+**Coming to real-time data and workflow integration**
+- For live information, chatbot service called internal and third-party **REST APIs** instead of depending only on old conversation data.
+- The response from those APIs was validated and then converted into a clear conversational response.
+- For transaction-related actions, we kept validation and business processing in backend services, because LLM should decide the conversation flow but should not directly modify database records.
+
+**On the frontend side**
+- We used **React.js** to build the chatbot interface, where user could send messages, see response status, and continue the same session.
+- The frontend called backend REST APIs and displayed success, validation, or error responses in a user-friendly way.
+- I focused mainly on backend and AI logic, but also supported API integration and response handling on the React side.
+
+**For reliability and error handling**
+- We added structured **exception handling** for validation errors, third-party API failures, database issues, and LLM timeout cases.
+- We used **application logging** with request and session details, which helped during debugging and production support.
+- If an external service failed, we returned a controlled response instead of exposing a raw stack trace or allowing the complete workflow to fail silently.
+
+**For testing and release**
+- I tested APIs using **Postman** and maintained API contracts through **Swagger/OpenAPI** documentation.
+- For automated testing, I used **PyTest** for unit and integration testing, especially for request validation, service logic, response formatting, and failure scenarios.
+- The application was containerized using **Docker**, and CI/CD automation was handled through the project pipeline before deployment on **AWS**.
+
+**One challenge I handled**
+- One important challenge was making sure chatbot responses were relevant and also connected with real business data.
+- A plain LLM response could sound correct but may not match actual internal information, so we used **RAG**, controlled prompts, and backend API integration.
+- Another challenge was handling different types of failures separately, like invalid user input, database failure, and third-party API failure, so structured error handling and logging were important.
+
+**Coming to the result**
+- The solution enabled automated conversational workflows, real-time data retrieval, and transaction processing through chatbot services.
+- It improved API and workflow performance and supported reliable releases across development, testing, and production environments.
+- From my side, I got strong hands-on experience in combining **FastAPI**, **React.js**, **MongoDB**, **PostgreSQL**, **LLM APIs**, **RAG**, **Docker**, and **AWS** in one production-oriented application.
+
+**So, in one flow**
+- The complete flow was: **user message → FastAPI validation → session lookup in MongoDB → intent and context processing → RAG retrieval or business API call → OpenAI response generation → logging and session update → response to React UI**.
+
+Answer 3:
+Question:
+- Which **LLM models** have you used?
+
+Answer:
+- I have worked with **OpenAI LLM APIs** for response generation, summarization, document analysis, and chatbot workflows.
+
+**Coming to the exact model**
+- In my project work, the resume records the usage as **OpenAI APIs**, but it does not specify one exact model name, so I don’t want to claim a model which I have not directly mentioned.
+- My responsibility was mainly integrating the LLM service, preparing prompts, passing retrieved context, handling the response, and managing timeout or failure cases.
+
+**Where I used the LLM**
+- In **RAG**, the application first retrieves relevant business information, then sends that context with the user question to the LLM for grounded response generation.
+- I also used **prompt engineering** for chatbot responses, claim summarization, document analysis, and extracting useful information from unstructured content.
+
+**How I selected the model**
+- My understanding is model selection depends on the required balance between **response quality, latency, cost, context size, and privacy**.
+- For production, I would validate the selected model using business test cases, checking answer accuracy, unsupported responses, response time, and token usage before finalizing it.
+
+Answer 4:
+Question:
+- How did you handle the **embedding model** in your RAG flow? Was everything using OpenAI?
+
+Answer:
+- For the **LLM generation**, I worked with **OpenAI APIs**. But the exact **embedding model** is not specified in my project details, so I should not claim a particular embedding model name.
+
+**Coming to the RAG flow**
+- In **RAG**, documents or business content are converted into vector embeddings, stored in a vector index, and relevant chunks are retrieved for the user query.
+- Then that retrieved context is passed to the **OpenAI LLM API** for final answer generation.
+
+**About whether everything was OpenAI**
+- So, OpenAI was used for the LLM-based generation, but embedding and vector-search components are separate parts of the architecture.
+- In my documented project experience, I can confidently say **OpenAI APIs**, **LangChain**, and **RAG** were used, but the specific embedding provider and vector database are not mentioned.
+
+**My understanding**
+- If OpenAI embeddings are selected, a standard production choice is **text-embedding-3-small**, because it gives a good balance of retrieval quality, latency, and cost.
+- But for my actual project, I would present that as a possible implementation choice, not as a confirmed model I personally used.
+
+Answer 5:
+Question:
+- Are you asking what **GPT-4o** is?
+
+Answer:
+- **GPT-4o** is an OpenAI multimodal model. The “o” means **omni**, so it can work with text, images, and audio, depending on the API capability being used.
+
+**Coming to my project experience**
+- In my project, I worked with **OpenAI APIs**, but the exact model name, such as GPT-4o, was not specified in the project details.
+- So I can explain GPT-4o conceptually, but I should not claim that I used GPT-4o specifically in production.
+
+Answer 6:
+Question:
+- What exactly is **GPT-4o**, and how does it work?
+
+Answer:
+- **GPT-4o** is OpenAI’s **omni multimodal model**, which means it can understand and generate different types of input, mainly text, image, and audio through the supported API.
+
+**How it works basically**
+- We send a user prompt, and if required, we also send supporting context like retrieved documents, claim details, or financial news content.
+- The model processes this input and generates a response based on its learned patterns and the context provided in the request.
+
+**In a RAG application**
+- First, the user question is converted into a search query and relevant content is retrieved from the application data.
+- Then that retrieved content is added to the prompt, and **GPT-4o** generates the final grounded answer or summary.
+
+**Important point from my experience**
+- In my projects, I integrated **OpenAI APIs** for chatbot responses, document analysis, and summarization. The project details do not confirm that the exact model was GPT-4o, so I explain GPT-4o as my understanding, not as a specific production claim.
+
+Answer 7:
+Question:
+- How exactly do you define and use **GPT-4o** in code?
+
+Answer:
+- We don’t define the model ourselves. We select it in the **OpenAI API request** by passing the model name, like `gpt-4o`.
+
+**In the backend code**
+- In a **FastAPI** service, I create the OpenAI client and pass the model name in the request.
+- The system prompt gives the behaviour, and user message contains the actual question or retrieved context.
+
+Example:
+
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="gpt-4o",  # selects the OpenAI model
+    messages=[
+        {"role": "system", "content": "Answer using provided context only."},
+        {"role": "user", "content": "Summarize this insurance claim document."}
+    ],
+    temperature=0
+)
+
+answer = response.choices[0].message.content
+```
+
+**When using it with RAG**
+- First, **LangChain** or our retrieval logic gets relevant document chunks from the knowledge store.
+- Then I add those chunks into the prompt and send the complete prompt to `gpt-4o`.
+
+```python
+context = "\n".join(retrieved_chunks)
+
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "Answer only from the context."},
+        {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {question}"}
+    ],
+    temperature=0
+)
+```
+
+**One important clarification**
+- So basically, **`model="gpt-4o"`** is how we select it; we are not implementing GPT-4o internally.
+- In my project details, the exact deployed model name is not confirmed. I can show this as the standard integration pattern, but I should not claim GPT-4o was definitely used in production.
+
+Answer 8:
+Question:
+- If I want GPT-4o to answer from my own data, do I need to define the data source?
+
+Answer:
+- Yes, correct. **GPT-4o does not automatically know our application data**. We have to define where data is coming from and pass the required data in the API request.
+
+**First, I define the source**
+- Source can be **PostgreSQL**, **MongoDB**, an internal API, or documents loaded by the application.
+- In my projects, structured policy and claims data was in **PostgreSQL**, while raw news and conversation data was stored in **MongoDB**.
+
+**Then I retrieve required data**
+- For a direct lookup, backend queries the database using **SQLAlchemy** or the MongoDB client.
+- For a RAG flow, **LangChain** retrieves relevant document content first, and only that context is sent to the LLM.
+
+Example:
+
+```python
+claim = db.query(Claim).filter(
+    Claim.claim_id == claim_id
+).first()
+
+prompt = f"""
+Summarize this claim using only the data below:
+{claim.description}
+"""
+
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "Give a concise claim summary."},
+        {"role": "user", "content": prompt}
+    ],
+    temperature=0
+)
+```
+
+**For a RAG data source**
+- I first load documents, split them into chunks, create **embeddings**, and store them in a searchable vector index.
+- During the user request, relevant chunks are retrieved and added into the prompt. So model is generating answer based on retrieved source, not guessing from general knowledge.
+
+**The main point**
+- So yes, I need to define the **data source**, retrieval logic, and prompt format in my backend.
+- The model is only responsible for understanding the prompt and generating response; database connection and data retrieval are handled by our application.
+
+Answer 9:
+Question:
+- If I have a Microsoft Word file, can I just provide its image to the LLM?
+
+Answer:
+- Not exactly. If it is a normal **Word document**, I would extract the text and tables directly. I would use image input only when the required information is inside a scanned image or document snapshot.
+
+**For a normal Word file**
+- I can read the `.docx` file using **python-docx**, extract paragraphs and tables, and then send the relevant content to the LLM.
+- This is better than converting the complete file into an image, because text extraction is more searchable, cheaper, and easier for **RAG**.
+
+**If the file is scanned**
+- In that case, the pages may contain only images, so I use **OCR**, such as **Tesseract**, to convert the image into text.
+- If layout, signature, or visual details are important, then I can send the page image also, depending on model support.
+
+**In the actual flow**
+- So first I identify document type, extract text or OCR content, clean it, split it into chunks, and store it for retrieval.
+- At question time, I retrieve only relevant chunks and pass those chunks as context to the **LLM**. So, simply providing an image is not always required.
+
+Answer 10:
+Question:
+- Since the model is **multimodal**, will it automatically process my file, or do I need to do something?
+
+Answer:
+- It can understand image content, but it will not automatically access a file from my system. My application must first upload the file and send the image in the correct **multimodal API request**.
+
+**What the model handles**
+- Once I send the image, the vision capability can read text, tables, forms, and visual content from that image.
+- I don’t need to separately run **OCR** for normal image understanding, but I still need OCR when I require searchable text, bulk processing, or a stable document pipeline.
+
+**What my application must handle**
+- My backend needs to receive the file, convert the required page into an image if needed, and pass the image URL or base64 data in the request.
+- For a `.docx` file, I should first extract text and tables using **python-docx**. If it is a scanned document, I render the page as an image and send that image.
+
+Example:
+
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="vision-capable-model",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "Read this claim form and summarize the important fields."},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": "data:image/png;base64,<encoded_image>"
+                    }
+                }
+            ]
+        }
+    ]
+)
+
+answer = response.choices[0].message.content
+```
+
+**So the exact understanding is**
+- **We provide the image and instructions; the model processes the visual content.**
+- It does not automatically discover files, connect to our **PostgreSQL** or **MongoDB**, or decide which document to use.
+- Also, in my project details, the exact vision model name is not specified, so I would configure the deployed model according to the API capability.
+
+Answer 11:
+Question:
+- For a scanned PDF, where does the model read the information from, and what is the exact processing flow?
+
+Answer:
+- It reads from the **PDF file that our application uploads**. It is not automatically reading from internet or any database.
+
+**First, my application receives the PDF**
+- User uploads the scanned PDF through a **FastAPI** endpoint, and backend validates file type and size.
+- Then I store the original file in **AWS S3**, so we have the source document safely available.
+
+**Then I convert pages into images**
+- A scanned PDF normally contains page images, not selectable text, so I render each page using a PDF processing library like **PyMuPDF**.
+- If the PDF has many pages, I process page by page instead of sending the complete file blindly.
+
+**After that, I extract the content**
+- I can send the page image to a **vision-capable LLM**, with an instruction like, “Extract claim number, customer name, date, and amount.”
+- For a searchable and repeatable pipeline, I can also use **OCR** such as **Tesseract** to convert the scanned page into text.
+
+**Then I clean and store it**
+- I clean OCR errors, preserve important fields and tables, split the text into chunks, and create **embeddings**.
+- Those embeddings are stored in a vector index, while the original document and metadata remain linked to the source file.
+
+**When user asks a question**
+- User asks something like, “What is the claim amount?”
+- Backend retrieves the relevant page or text chunk, sends that context with the question to the **LLM**, and the model generates the answer from that provided content.
+
+**So the exact point is**
+- The model reads the scanned PDF only after our application uploads it and passes page content as image or extracted text.
+- The model can understand the image, but **file upload, page conversion, OCR, storage, retrieval, and security** are handled by our application.
+
+Answer 12:
+Question:
+- When you said it will first take the type, do you mean the application identifies the document type before extraction?
+
+Answer:
+- Yes, exactly. I mean first we identify the **file type** and check whether the PDF has selectable text or only scanned images.
+
+**First, we check the document**
+- Backend checks the extension and MIME type, like **PDF**, DOCX, or image file, using **FastAPI** validation.
+- For a PDF, I check whether a text layer is available by trying text extraction with **PyMuPDF**.
+
+**If text is available**
+- Then I directly extract the text and tables, because this is faster and more reliable than converting every page into an image.
+- After that, I clean the text and send relevant content to the **LLM** or use it in the **RAG** pipeline.
+
+**If it is a scanned PDF**
+- Text extraction will return empty or very little content, so I identify it as an image-based document.
+- Then I render the PDF pages as images using **PyMuPDF** and pass those images to a vision-capable **LLM**, or process them with **OCR** when searchable text is required.
+
+**So the flow is**
+- **Identify file type → check text layer → extract text if available → otherwise use OCR or vision processing.**
+- So yes, the system first checks the document type and document content format; it does not directly assume every PDF is a normal text PDF.
+
+Answer 13:
+Question:
+- If we already know it is a scanned PDF, why do we need to identify the type? Do we mean PDF file type or business document type?
+
+Answer:
+- If we already know it is a **scanned PDF**, we do not need to detect the PDF format again. We mainly need to identify the **business document type**, like claim form, invoice, or policy document.
+
+**Coming to the PDF format**
+- The application already knows the file is **PDF**, and because it is scanned, we directly render its pages as images using **PyMuPDF**.
+- So here, no extra format classification is required; we can go directly for **OCR** or vision processing.
+
+**Coming to the document type**
+- Document type means what the PDF represents, for example an insurance claim form or a medical bill.
+- This is useful because extraction fields will change. For a claim form, I may extract claim number, policy number, incident date, and claim amount.
+
+**Why document type is useful**
+- Based on the identified type, backend can select the correct **prompt**, extraction schema, and validation rules.
+- For example, with **Pydantic**, I can validate that claim number and incident date are present and amount is in correct format.
+
+**So the actual flow is**
+- **Known scanned PDF → render pages → OCR or vision extraction → identify business document type → extract relevant fields.**
+- If document type is already selected by the user, then we can skip classification also and directly use that document’s extraction rules.
+
+Answer 14:
+Question:
+- For a scanned PDF, what exactly will you use to read and extract the content?
+
+Answer:
+- I will use **AWS Textract** for extracting text and form fields from the scanned PDF, while **FastAPI** handles the upload request.
+
+**First, for the PDF upload**
+- The user uploads the scanned PDF through a **FastAPI** endpoint, and I validate that it is a PDF file.
+- Then I store the original document in **Amazon S3**, because Textract can process documents from S3.
+
+**Then, for scanned content**
+- **AWS Textract** reads the scanned page image and performs OCR, so it converts the image content into machine-readable text.
+- For forms, I can use Textract’s **AnalyzeDocument** operation to extract key-value pairs and tables, not only plain text.
+
+**After extraction**
+- I take the extracted text and pass only the required content to the **LLM API** for tasks like claim summarization or field understanding.
+- Then I validate the output using a structured schema, for example with **Pydantic**, before saving it in **PostgreSQL**.
+
+**So basically**
+- **FastAPI** is for upload, **Amazon S3** is for document storage, **AWS Textract** is for scanned PDF OCR, and the **LLM API** is for summarization or intelligent analysis.
+- In my insurance document use case, this is the approach I understand for extracting claim and policy information from scanned documents.
+
+Answer 15:
+Question:
+- How can I use **AWS Textract** in Python code for extracting text from a scanned PDF?
+
+Answer:
+- I can upload the scanned PDF to **Amazon S3**, start an asynchronous **Textract** job, and then read the extracted text from the job result.
+
+**First, I upload the PDF**
+- In a **FastAPI** endpoint, I receive the file and upload it to S3 using **boto3**.
+- For production, I keep the bucket name and AWS region in environment variables, not directly in code.
+
+**Then, I start Textract**
+- For a scanned PDF, I use **StartDocumentTextDetection**, because PDF processing is asynchronous.
+- The API returns a **JobId**, which I use to check the processing status.
+
+```python
+import boto3
+from fastapi import FastAPI, UploadFile, File
+
+app = FastAPI()
+
+s3 = boto3.client("s3", region_name="us-east-1")
+textract = boto3.client("textract", region_name="us-east-1")
+
+BUCKET = "my-document-bucket"
+
+@app.post("/extract-text")
+async def extract_text(file: UploadFile = File(...)):
+    key = f"uploads/{file.filename}"
+
+    # Store scanned PDF in S3
+    s3.upload_fileobj(file.file, BUCKET, key)
+
+    # Start asynchronous OCR job
+    response = textract.start_document_text_detection(
+        DocumentLocation={
+            "S3Object": {
+                "Bucket": BUCKET,
+                "Name": key
+            }
+        }
+    )
+
+    job_id = response["JobId"]
+
+    # In production, I normally check this through SNS/SQS
+    result = textract.get_document_text_detection(JobId=job_id)
+
+    return {
+        "job_id": job_id,
+        "status": result["JobStatus"]
+    }
+```
+
+**Coming to the result handling**
+- The first response may show **IN_PROGRESS**, so I do not assume text is ready immediately.
+- In production, **Amazon SNS** sends completion notification, and an **SQS** consumer reads that notification and fetches the result using `get_document_text_detection`.
+
+**After Textract completes**
+- I collect only **LINE** blocks from the response and join them into one text value.
+- Then I can send that text to the **LLM API** for claim summarization or structured field extraction.
+
+- This exact **AWS Textract** implementation is my understanding for scanned-document processing; my resume experience mentions AWS and LLM document analysis, but not Textract specifically.
+
+Answer 16:
+Question:
+- How can I use **pypdf** in my Python code to read a PDF?
+
+Answer:
+- I use **pypdf** to open an existing PDF and extract text, page details, or merge and split PDF files. But for a scanned PDF, **pypdf alone cannot read image text**; I need OCR also.
+
+**For extracting normal PDF text**
+
+```python
+from pypdf import PdfReader
+
+reader = PdfReader("claim_document.pdf")
+
+pages_text = []
+
+for page in reader.pages:
+    text = page.extract_text() or ""
+    pages_text.append(text)
+
+full_text = "\n".join(pages_text)
+
+print(full_text)
+```
+
+- Here, **PdfReader** reads the PDF, and `extract_text()` works when the PDF has an actual text layer.
+- I use `or ""` because some pages may not contain extractable text.
+
+**For using it with FastAPI**
+
+```python
+from fastapi import FastAPI, UploadFile, File
+from pypdf import PdfReader
+from io import BytesIO
+
+app = FastAPI()
+
+@app.post("/extract-pdf-text")
+async def extract_pdf_text(file: UploadFile = File(...)):
+    content = await file.read()
+
+    reader = PdfReader(BytesIO(content))
+
+    text = "\n".join(
+        page.extract_text() or ""
+        for page in reader.pages
+    )
+
+    return {
+        "file_name": file.filename,
+        "page_count": len(reader.pages),
+        "text": text
+    }
+```
+
+- So **FastAPI** receives the file, `BytesIO` keeps it in memory, and **pypdf** extracts the available text.
+
+**For a scanned PDF**
+
+- If `extract_text()` returns empty text, it means PDF is probably image-based, so **pypdf** cannot perform OCR.
+- In that case, I would use **AWS Textract** or **Tesseract OCR** first, then pass the extracted text for document processing.
+
+**One more use case**
+
+```python
+from pypdf import PdfReader
+
+reader = PdfReader("claim_document.pdf")
+
+for page_number, page in enumerate(reader.pages, start=1):
+    print(f"Page {page_number}")
+    print(page.extract_text() or "No text layer found")
+```
+
+- This helps me identify which pages have readable text and which pages need **OCR**.
+
+Answer 17:
+Question:
+- Can **pypdf** process scanned PDF pages, convert them into images, and extract the text?
+
+Answer:
+- No, **pypdf** can read the PDF structure and text layer, but it does not render scanned pages into images and it does not perform OCR.
+
+**Where pypdf is useful**
+- If PDF has selectable text, I use **pypdf** and `extract_text()`.
+- If PDF is only scanned images, `extract_text()` normally returns empty or incomplete text.
+
+**For converting scanned pages to images**
+- I can use **PyMuPDF**, also called `fitz`, to render every PDF page as an image.
+- Then I pass that image to an OCR library like **pytesseract**.
+
+```python
+import fitz
+import pytesseract
+from PIL import Image
+from io import BytesIO
+
+def extract_scanned_pdf(pdf_path: str):
+    document = fitz.open(pdf_path)
+    extracted_text = []
+
+    for page in document:
+        # Render PDF page as image
+        pixmap = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+
+        # Convert image bytes into PIL image
+        image = Image.open(BytesIO(pixmap.tobytes("png")))
+
+        # Extract text using OCR
+        text = pytesseract.image_to_string(image)
+        extracted_text.append(text)
+
+    return "\n".join(extracted_text)
+```
+
+**Why these libraries are separate**
+- **PyMuPDF** converts each scanned PDF page into an image.
+- **pytesseract** performs OCR on that image.
+- **pypdf** is not required for this scanned-PDF flow, because it cannot understand text inside the page image.
+
+**For a production application**
+- For insurance or financial documents, I would prefer **AWS Textract** instead of running local Tesseract, especially when documents have tables and forms.
+- The flow will be: **PDF upload → Amazon S3 → AWS Textract → extracted text and fields → LLM summarization**.
+
+**If PDF can be normal or scanned**
+- First I can try **pypdf** text extraction.
+- If extracted text is empty, then I treat it as scanned and use **AWS Textract**, or **PyMuPDF plus pytesseract** for a local OCR solution.
+- This is called a hybrid approach, so normal PDFs are processed faster and scanned PDFs are sent through OCR.
+
+Answer 18:
+Question:
+- If I have a scanned PDF, how exactly can I use **PyMuPDF** and **pytesseract** to convert pages into images and extract text?
+
+Answer:
+- I convert each PDF page into an image using **PyMuPDF**, then pass that image to **Tesseract OCR** for text extraction.
+
+**First, install the libraries**
+
+```bash
+pip install pymupdf pytesseract pillow
+```
+
+- Also, **Tesseract OCR** itself must be installed in the system because `pytesseract` is only the Python wrapper.
+
+**Then, process the scanned PDF**
+
+```python
+import fitz
+import pytesseract
+from PIL import Image
+from io import BytesIO
+
+def extract_text_from_scanned_pdf(file_bytes: bytes) -> str:
+    document = fitz.open(stream=file_bytes, filetype="pdf")
+    extracted_pages = []
+
+    for page_number, page in enumerate(document, start=1):
+        # Render PDF page as PNG image
+        pixmap = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+
+        # Convert image bytes into PIL image
+        image = Image.open(
+            BytesIO(pixmap.tobytes("png"))
+        )
+
+        # Run OCR on the scanned page
+        page_text = pytesseract.image_to_string(
+            image,
+            lang="eng",
+            config="--psm 6"
+        )
+
+        extracted_pages.append(
+            f"Page {page_number}\n{page_text}"
+        )
+
+    return "\n\n".join(extracted_pages)
+```
+
+**Using it in FastAPI**
+
+```python
+from fastapi import FastAPI, UploadFile, File
+
+app = FastAPI()
+
+@app.post("/extract-scanned-pdf")
+async def extract_scanned_pdf(file: UploadFile = File(...)):
+    file_bytes = await file.read()
+
+    text = extract_text_from_scanned_pdf(file_bytes)
+
+    return {
+        "file_name": file.filename,
+        "text": text
+    }
+```
+
+- Here, **FastAPI** receives the uploaded PDF, **PyMuPDF** renders every page, and **pytesseract** extracts the text.
+- I use `--psm 6` because it works well when page content is arranged as a regular block of text.
+
+**If I need to support both normal and scanned PDFs**
+
+- First I try **pypdf** text extraction, because it is faster for PDFs having a text layer.
+- If the extracted text is empty, I send the PDF through the **PyMuPDF plus Tesseract OCR** flow.
+
+```python
+from pypdf import PdfReader
+from io import BytesIO
+
+def extract_text_from_pdf(file_bytes: bytes) -> str:
+    reader = PdfReader(BytesIO(file_bytes))
+
+    normal_text = "\n".join(
+        page.extract_text() or ""
+        for page in reader.pages
+    ).strip()
+
+    if normal_text:
+        return normal_text
+
+    return extract_text_from_scanned_pdf(file_bytes)
+```
+
+**For production document processing**
+
+- For insurance documents having tables, forms, and claim fields, I would prefer **AWS Textract** because it gives better document structure than local OCR.
+- After extraction, I can pass the text to an **LLM API** for claim summarization or structured field extraction.
+- This local OCR code is my implementation understanding; my resume experience includes AWS and LLM-based document analysis, but not specifically **pytesseract**.
+
+Answer 19:
+Question:
+- Do we need to install any packages for processing scanned PDFs?
+
+Answer:
+- Yes, for scanned PDF processing we need packages for **PDF rendering**, **OCR**, and **image handling**.
+
+**For the local OCR approach**
+
+```bash
+pip install pymupdf pytesseract pillow
+```
+
+- **PyMuPDF** converts each PDF page into an image.
+- **pytesseract** connects Python code with the Tesseract OCR engine.
+- **Pillow** opens and handles the generated images.
+
+**One system installation is also required**
+
+- Installing `pytesseract` is not enough; we must install the **Tesseract OCR application** separately on the machine.
+- On Ubuntu, I can install it like this:
+
+```bash
+sudo apt-get update
+sudo apt-get install tesseract-ocr
+```
+
+- On Windows, I install the Tesseract application and configure its executable path if it is not automatically detected.
+
+**For normal PDF text extraction**
+
+```bash
+pip install pypdf
+```
+
+- I use **pypdf** when PDF already has a selectable text layer.
+- For scanned PDF, `pypdf` alone is not enough because the content is stored as image pixels.
+
+**For the AWS production approach**
+
+```bash
+pip install boto3
+```
+
+- Then I use **Amazon Textract** for OCR and structured extraction.
+- In production, the PDF can be uploaded to **Amazon S3**, and Textract can process it asynchronously, especially for multi-page documents.
+
+**My practical setup**
+
+- For a simple local implementation: **PyMuPDF + pytesseract + Pillow**.
+- For an enterprise insurance document flow: **Amazon S3 + Amazon Textract + boto3**.
+- After text extraction, I can pass the content to the **LLM API** for summarization or claim analysis.
+
+Answer 20:
+Question:
+- Have I heard about the **FITS model**, and is **PyMuPDF** alone sufficient for scanned PDF processing?
+
+Answer:
+- I think you mean **fitz**, which is the Python module name used by **PyMuPDF**. It is sufficient for opening the PDF and converting each page into an image, but not sufficient for reading text from scanned images.
+
+**Coming to fitz or PyMuPDF**
+- With **PyMuPDF**, I can open the PDF and render each page at a selected resolution, for example using a **2x matrix**.
+- It can also extract text when the PDF already has a text layer.
+- But for a scanned PDF, the page is basically an image, so **PyMuPDF alone will not perform OCR**.
+
+**For scanned document text extraction**
+- After rendering the page, I need an OCR engine like **Tesseract OCR** through the `pytesseract` package.
+- So the local flow is: **PDF → PyMuPDF page image → Tesseract OCR → extracted text**.
+- For production insurance documents, I would use **AWS Textract**, especially when I need tables, forms, or structured claim fields.
+
+**The practical difference**
+- If the requirement is only to convert PDF pages into images, **PyMuPDF** is enough.
+- If the requirement is to extract text from scanned pages, I need **PyMuPDF plus OCR**.
+- If the PDF has selectable text, then **pypdf** or **PyMuPDF text extraction** can be enough, and OCR is not required.
+
+Answer 21:
+Question:
+- If the PDF contains a table, can **PyMuPDF** extract it, or do we need another tool only for tables?
+
+Answer:
+- **PyMuPDF** can read table text, but it may not preserve proper rows and columns. For reliable table extraction, I normally use a dedicated table-extraction tool.
+
+**If the PDF is a normal digital PDF**
+- PyMuPDF can extract words with their **coordinates**, so we can try reconstructing rows and columns based on the position.
+- But for a clean table structure, **Camelot** is commonly used when the table has visible borders.
+- For tables without borders, **pdfplumber** is generally more suitable because it can use text position and layout.
+
+**If the PDF is scanned**
+- PyMuPDF only converts the page into an image; it does not understand the table structure.
+- In this case, I would use **Amazon Textract**, especially its **AnalyzeDocument** API with the **TABLES** feature.
+- The flow is: **PDF image → OCR → table cells, rows, and columns**.
+
+**So the practical answer is**
+- For simple text or page rendering, **PyMuPDF** is sufficient.
+- For digital tables, use **Camelot** or **pdfplumber** depending on the table layout.
+- For scanned insurance documents and forms, I would prefer **AWS Textract** because it returns structured table information, not only plain text.
+- In my resume projects, I worked with AWS and LLM-based document analysis; this exact table-extraction implementation is my technical understanding, not a specific project metric.
+
+Answer 22:
+Question:
+- How exactly will I use **PyMuPDF** or a table-extraction tool for extracting tables from a PDF?
+
+Answer:
+- First I check whether PDF is digital or scanned. For a digital table I use **pdfplumber** or **Camelot**; for a scanned table I use **PyMuPDF** for rendering and **OCR**, preferably **AWS Textract** for structured cells.
+
+**For a digital PDF table**
+
+- If table has clear borders, I use **Camelot** with the `lattice` method.
+- If table has no borders, I use **pdfplumber** because it works better with text positions and layout.
+
+Example:
+
+```python
+import pdfplumber
+
+with pdfplumber.open("financial_report.pdf") as pdf:
+    page = pdf.pages[0]
+
+    # Extract tables from the first page
+    tables = page.extract_tables()
+
+    for table in tables:
+        for row in table:
+            print(row)
+```
+
+**Coming to table cleanup**
+
+- The extracted result normally comes as rows and columns, but some cells can be empty or split because of PDF layout.
+- I clean the values, remove extra spaces, handle `None`, and then convert it into a **Pandas DataFrame** for further processing.
+
+```python
+import pandas as pd
+
+table = tables[0]
+
+df = pd.DataFrame(table[1:], columns=table[0])
+df = df.fillna("")
+print(df)
+```
+
+**For a scanned table**
+
+- Here **PyMuPDF**, also called `fitz`, is used only to open the PDF and render the page as an image.
+- Then I send that image to **AWS Textract** with the **TABLES** feature, because normal PDF table tools cannot understand image pixels properly.
+
+```python
+import fitz
+
+document = fitz.open("scanned_claim.pdf")
+page = document[0]
+
+# Render page as an image
+pixmap = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+pixmap.save("page_1.png")
+```
+
+- After this, I pass `page_1.png` to **Amazon Textract** and read its `TABLE`, `CELL`, `WORD`, `RowIndex`, and `ColumnIndex` blocks.
+
+**So the complete decision is**
+
+- Digital PDF with borders: **Camelot** using `lattice`.
+- Digital PDF without borders: **pdfplumber**.
+- Scanned PDF: **PyMuPDF + OCR**, and for production structured tables, **AWS Textract TABLES**.
+- After extraction, I convert the result into **Pandas DataFrame**, validate important fields, and then send only cleaned text or table data to the **LLM API** for summarization.
+
+Answer 23:
+Question:
+- You mentioned specific tools for extracting tables, right?
+
+Answer:
+- Yes, correct. I use dedicated table-extraction tools depending on the PDF type.
+
+**For digital PDF tables**
+- For tables with clear borders, I use **Camelot** with the **lattice** method.
+- For tables without clear borders, I use **pdfplumber**, because it uses text position and page layout.
+
+**For scanned PDF tables**
+- For scanned documents, I use **AWS Textract** with the **TABLES** feature.
+- Here **PyMuPDF** is only used to open the PDF or convert the page into an image; it is not the main table-extraction tool.
+
+**So the simple answer is**
+- **Camelot** for bordered digital tables.
+- **pdfplumber** for layout-based digital tables.
+- **AWS Textract** for scanned tables and structured forms.
+- Then I convert extracted rows and columns into a **Pandas DataFrame** for validation and further processing.
+
+Answer 24:
+Question:
+- If one page has both normal text and a table, how do we identify the table area, skip it from **PyMuPDF** text extraction, and process it separately with the **lattice** method?
+
+Answer:
+- Correct, we should not blindly extract all page text. First we detect the table region using **Camelot**, get its bounding box, then extract normal text from PyMuPDF while excluding that table area.
+
+**First, we detect the table region**
+
+- I run **Camelot** with `flavor="lattice"` on that page, because the table has visible cell borders.
+- Camelot returns the table data and also its **bounding box**, meaning the table coordinates on the page.
+- So now system knows, for example, this rectangle is table area and remaining page area is normal text.
+
+```python
+import camelot
+
+tables = camelot.read_pdf(
+    "report.pdf",
+    pages="1",
+    flavor="lattice"
+)
+
+table = tables[0]
+table_data = table.df
+table_bbox = table._bbox
+```
+
+**Then I extract normal text**
+
+- Using **PyMuPDF**, I extract text as individual blocks or words with their coordinates, not only as one complete string.
+- For every text block, I check whether its coordinates are inside the table bounding box.
+- If it is inside table area, I skip it from normal text extraction. Otherwise, I keep it as page text.
+
+```python
+import fitz
+
+document = fitz.open("report.pdf")
+page = document[0]
+
+table_x1, table_y1, table_x2, table_y2 = table_bbox
+normal_text = []
+
+for block in page.get_text("blocks"):
+    x1, y1, x2, y2, text = block[:5]
+
+    # Skip blocks falling inside detected table region
+    inside_table = (
+        x1 >= table_x1 and
+        y1 >= table_y1 and
+        x2 <= table_x2 and
+        y2 <= table_y2
+    )
+
+    if not inside_table:
+        normal_text.append(text)
+```
+
+**One important coordinate check**
+
+- **Camelot** and **PyMuPDF** can represent PDF coordinates differently, especially for the vertical axis.
+- So before applying the filter, I normalize the coordinates using the page height and verify it with one sample page.
+- Otherwise, table bounding box can be correct but exclusion can happen in the wrong location.
+
+**Finally, I combine both outputs**
+
+- From PyMuPDF, I keep headings, paragraphs, and other normal page text.
+- From Camelot, I keep structured table rows and columns as a **Pandas DataFrame**.
+- Then I combine them in page order, like: paragraph, table, next paragraph, so table content is not duplicated.
+
+**So the main point is**
+
+- **Camelot** identifies and extracts the bordered table region.
+- **PyMuPDF** extracts text using coordinates.
+- The table **bounding box** is used as an exclusion area for PyMuPDF.
+- This exact combined implementation is my technical understanding; in my resume projects, I worked with document analysis and LLM workflows, but this specific Camelot-PyMuPDF flow is not listed as a project metric.
+
+Answer 25:
+Question:
+- If one PDF page has text and tables, won’t using **PyMuPDF**, **Camelot**, and OCR together make the pipeline overcomplicated?
+
+Answer:
+- Yes, if we use all tools for every page, it will be bloated. I would keep one main extraction path and use a second tool only when the document actually needs it.
+
+**How I would keep the pipeline simple**
+
+- First I identify document type: whether it is a **digital PDF** or a scanned image.
+- For a normal digital PDF, I can use **pdfplumber** as the main parser for both text and table extraction, so separate PyMuPDF and Camelot processing is not compulsory.
+- For a scanned PDF, I use one OCR service like **AWS Textract**, because it can return both text and table structure.
+
+**When Camelot is really required**
+
+- I use **Camelot with the lattice flavor** only when the digital table has clear borders and pdfplumber is not giving reliable columns.
+- In that case, I extract the table region through Camelot and extract the remaining text through the main parser.
+- So Camelot is an exception or fallback, not something running on every page.
+
+**How I decide table and text**
+
+- For a digital PDF, the parser reads text positions and table lines from the PDF layout.
+- If a table is detected, its **bounding box** is marked, and the table content is not added again as normal paragraph text.
+- The output is then one structured page result: normal text separately and tables separately, instead of sending duplicate content to the LLM.
+
+**My practical design choice**
+
+- For a simple document: **pdfplumber only**.
+- For a scanned document: **AWS Textract only**.
+- For a difficult bordered table: add **Camelot** as a targeted fallback.
+- So basically, I agree with your point: using every package together by default is unnecessary. I would choose the smallest toolset based on the PDF type and extraction quality. This is my technical understanding; the specific PDF extraction pipeline is not listed as a production project in my resume.
+
+Answer 26:
+Question:
+- Have I used **AWS Textract** specifically?
+
+Answer:
+- No, **AWS Textract** is not mentioned in my project experience, so I should not claim hands-on production usage of it.
+
+**What I have actually used**
+
+- I have worked with **AWS**, mainly for deploying and supporting applications, along with **Docker**, **FastAPI microservices**, and CI/CD pipelines.
+- In my projects, document analysis was handled through **AI/LLM APIs**, especially for insurance documents and claim summarization.
+- So, Textract is my understanding of an AWS service for OCR and table extraction, not a tool I have directly used in the listed projects.
+
+**How I would approach it**
+
+- If scanned-document extraction is required, I would evaluate **AWS Textract** for OCR and table detection.
+- But I would first validate accuracy on sample documents, especially merged cells, headers, and scanned table layouts, before adding it into production.
+
+Answer 27:
+Question:
+- How exactly can I use **AWS Textract** for extracting text and tables from a PDF or image?
+
+Answer:
+- My understanding is, I upload the document to **Amazon S3**, call **Textract** with the required feature, and then separate normal text and table cells from the response.
+
+**First, I store the document**
+
+- I place the PDF or image in an **S3 bucket**, because asynchronous Textract processing reads documents from S3.
+- I keep document name, page information, and processing status in the application database, like **PostgreSQL**.
+
+**Then I start table analysis**
+
+- For table extraction, I use **StartDocumentAnalysis** with `FeatureTypes=["TABLES"]`.
+- Textract returns a **JobId**, so my **FastAPI** service can track the processing without keeping the request open.
+
+```python
+import boto3
+
+textract = boto3.client("textract", region_name="eu-west-1")
+
+response = textract.start_document_analysis(
+    DocumentLocation={
+        "S3Object": {
+            "Bucket": "documents-bucket",
+            "Name": "claim.pdf"
+        }
+    },
+    FeatureTypes=["TABLES"]
+)
+
+job_id = response["JobId"]
+```
+
+**After that, I collect the result**
+
+- I call **GetDocumentAnalysis** using that job ID and wait until job status becomes `SUCCEEDED`.
+- The response contains **Blocks**, where `PAGE`, `LINE`, `WORD`, `TABLE`, and `CELL` represent different document elements.
+- I use `NextToken` until all result blocks are collected, because one response may not contain the complete document.
+
+**Coming to table and text separation**
+
+- For normal content, I collect text from `LINE` blocks that are not part of table cell relationships.
+- For tables, I read the `TABLE` block and follow its **CHILD relationships** to get related `CELL` blocks.
+- Each cell gives row and column information, so I reconstruct the table into a **Pandas DataFrame** instead of sending raw blocks directly to the LLM.
+
+**How I would connect this with my application**
+
+- My **FastAPI** endpoint accepts the document and starts the Textract job.
+- A background worker or event-driven flow checks the job status, processes the output, and stores structured text and tables in **PostgreSQL** or **MongoDB**.
+- After extraction, the cleaned content can go into the existing **LLM** or **RAG** pipeline for summarization and question answering.
+
+**One important limitation**
+
+- For a single image, I can use synchronous **AnalyzeDocument** directly.
+- For a multi-page PDF, asynchronous **StartDocumentAnalysis** is more suitable, especially when table extraction is required.
+- I have used **AWS**, FastAPI, Docker, and LLM document-analysis workflows, but **AWS Textract itself is not listed as a hands-on production tool in my resume**. So this is how I would implement and evaluate it, not a claim that I already used Textract in production.
+
+Answer 28:
+Question:
+- Can I upload the file directly in the **AWS Textract console**, or should my application call Textract through an API?
+
+Answer:
+- Yes, in the **AWS console** I can manually upload a document and view extracted text or tables. But for a real application, I would not depend on manual console upload; my **FastAPI service** would call Textract through AWS SDK.
+
+**For a quick console check**
+
+- I open **Amazon Textract**, select the document analysis option, upload one PDF or image, and choose features like **Tables** or **Forms**.
+- Textract shows extracted text, detected tables, and confidence values in the console.
+- This is useful for testing document quality and checking whether Textract is suitable.
+
+**For the actual application flow**
+
+- User uploads document through my **React.js** frontend, and the **FastAPI** backend stores it in an **S3 bucket**.
+- Then backend calls Textract using **boto3**, normally with `StartDocumentAnalysis` for a multi-page PDF.
+- Textract processes the file asynchronously and returns a **JobId**.
+
+**After processing is complete**
+
+- My backend checks the job status using `GetDocumentAnalysis`, or I can use an AWS notification flow to know when processing is completed.
+- Then I read Textract **Blocks**, reconstruct text and tables, and save the structured result in **PostgreSQL** or **MongoDB**.
+- After that, the cleaned content can go to the **LLM** service for claim summarization or document analysis.
+
+**So the main difference is**
+
+- **AWS console:** manual upload, mainly for testing or one-time analysis.
+- **Application API:** upload through the product, process automatically, save the result, and continue with the business workflow.
+- I have used **AWS**, FastAPI, Docker, and LLM-based document analysis, but **Textract itself is not listed as a production tool in my resume**, so I would present this as the implementation approach I understand, not as previous hands-on Textract experience.
+
+Answer 29:
+Question:
+- How do I connect my **FastAPI** application with **AWS Textract** using the AWS SDK?
+
+Answer:
+- In Python, I use **boto3**, configure AWS credentials through an **IAM role or environment variables**, create a Textract client, and then call Textract APIs.
+
+**First, I configure AWS access**
+
+- I create an **IAM policy** with permissions like `textract:StartDocumentAnalysis`, `textract:GetDocumentAnalysis`, and required **S3 read access**.
+- In AWS deployment, I prefer attaching an **IAM role** to the EC2 instance or container, instead of hardcoding access keys.
+- For local development, I can use the AWS CLI profile or environment variables.
+
+**Then I create the SDK client**
+
+- I install the **boto3** package and create the client with the AWS region.
+- Boto3 automatically picks credentials from the configured IAM role, AWS profile, or environment variables.
+
+```python
+import boto3
+
+textract = boto3.client(
+    "textract",
+    region_name="eu-west-1"
+)
+```
+
+**Then I give Textract the S3 document**
+
+- First, the application uploads the file into an **S3 bucket**.
+- Then I call `start_document_analysis`, passing the bucket name, file key, and feature type like **TABLES** or **FORMS**.
+
+```python
+response = textract.start_document_analysis(
+    DocumentLocation={
+        "S3Object": {
+            "Bucket": "my-documents-bucket",
+            "Name": "claims/claim.pdf"
+        }
+    },
+    FeatureTypes=["TABLES", "FORMS"]
+)
+
+job_id = response["JobId"]
+```
+
+**After that, I get the output**
+
+- Textract returns a **JobId**, because multi-page PDF processing is asynchronous.
+- My backend checks the status using `get_document_analysis`, and after status becomes `SUCCEEDED`, I read the returned **Blocks**.
+
+```python
+result = textract.get_document_analysis(
+    JobId=job_id
+)
+
+blocks = result["Blocks"]
+```
+
+**How it fits in my application**
+
+- My **React.js** frontend sends the document to a **FastAPI** endpoint.
+- FastAPI uploads it to **S3**, starts the Textract job, and stores the `JobId` in **PostgreSQL**.
+- After extraction, I process the text and tables, then pass cleaned content to the **LLM** service for summarization or claim analysis.
+
+**One important point**
+
+- The AWS console is useful for manually testing a document, but application integration happens through **boto3**, **IAM**, **S3**, and Textract APIs.
+- I have worked with AWS and Python backend services, but **AWS Textract is not listed as a production tool in my resume**, so this is the correct implementation approach I understand, not a claim of previous Textract hands-on usage.
+
+Answer 30:
+Question:
+- Why do we need the **Textract APIs**, and what exactly are they doing?
+
+Answer:
+- We need them because our application cannot depend on manually uploading every document in the AWS console; the API lets our backend send documents to Textract and receive the extraction result automatically.
+
+**Coming to the main APIs**
+
+- **StartDocumentAnalysis** starts processing a PDF or image from **Amazon S3**, mainly when we need **tables** or **forms**.
+- It returns a **JobId**, which identifies that particular document-processing job.
+- **GetDocumentAnalysis** uses that JobId to read the processing status and final extracted blocks.
+
+**Why the API is required**
+
+- Suppose an insurance user uploads a claim document from the **React.js** application; the backend must process that file without a developer opening AWS console.
+- So the **FastAPI** service uploads the document to **S3**, calls Textract API, and continues the workflow automatically.
+- After output comes, backend can store extracted data and send it to an **LLM** for claim summarization.
+
+**For simple document extraction**
+
+- If I only need text from one image, I can use **DetectDocumentText**.
+- If I need table or form structure, I use **AnalyzeDocument** for synchronous processing or **StartDocumentAnalysis** for asynchronous PDF processing.
+- The API response gives **Blocks**, confidence values, page details, and relationships between table and cell elements.
+
+**Simple end-to-end flow**
+
+- **React.js upload → FastAPI → S3 → Textract API → extracted blocks → PostgreSQL or MongoDB → LLM workflow**.
+- So, console is mainly useful for manual testing, but APIs are required for a real product workflow.
+- My resume shows AWS, FastAPI, and LLM document-analysis work, but **Textract itself is not listed as production experience**, so this is my implementation understanding.
+
+Answer 31:
+Question:
+- Which exact **AWS Textract APIs** would I use?
+
+Answer:
+- Main APIs are **StartDocumentAnalysis** and **GetDocumentAnalysis** for asynchronous document processing.
+
+**For plain text extraction**
+
+- **DetectDocumentText** extracts only text from an image or single-page document.
+- It returns text lines and words with confidence values.
+
+**For forms and tables**
+
+- **AnalyzeDocument** processes a document synchronously and supports **FORMS** and **TABLES**.
+- For a multi-page PDF, I use **StartDocumentAnalysis**, which starts the job and gives a **JobId**.
+
+**For reading the result**
+
+- **GetDocumentAnalysis** takes that JobId and returns the extracted text, forms, tables, and relationships.
+- If I use **StartDocumentTextDetection**, then I read its output using **GetDocumentTextDetection**.
+
+**In Python application**
+
+- Through **boto3**, these are called as `start_document_analysis()` and `get_document_analysis()`.
+- So the basic flow is: **S3 upload → StartDocumentAnalysis → JobId → GetDocumentAnalysis**.
+- These exact Textract APIs are my implementation understanding; **Textract is not listed as a production tool in my resume**.
+
+Answer 32:
+Question:
+- Can I write the **AWS Textract API integration** in Python?
+
+Answer:
+- Yes, basically the flow is **S3 upload**, then **StartDocumentAnalysis**, and after that **GetDocumentAnalysis** using the returned JobId.
+
+**First, I create the AWS client**
+
+- I use **boto3**, and credentials come from an **IAM role** in AWS deployment or AWS profile during local development.
+
+```python
+import boto3
+
+textract = boto3.client(
+    "textract",
+    region_name="eu-west-1"
+)
+```
+
+**Then I start document analysis**
+
+- Here I pass the **S3 bucket**, document key, and required feature types like **TABLES** and **FORMS**.
+
+```python
+def start_analysis(bucket_name: str, file_key: str) -> str:
+    response = textract.start_document_analysis(
+        DocumentLocation={
+            "S3Object": {
+                "Bucket": bucket_name,
+                "Name": file_key
+            }
+        },
+        FeatureTypes=["TABLES", "FORMS"]
+    )
+
+    return response["JobId"]
+```
+
+**After that, I read the result**
+
+- Using the **JobId**, I call **GetDocumentAnalysis** and check whether status is `SUCCEEDED`.
+
+```python
+def get_analysis(job_id: str) -> dict:
+    response = textract.get_document_analysis(
+        JobId=job_id
+    )
+
+    if response["JobStatus"] != "SUCCEEDED":
+        return {
+            "status": response["JobStatus"],
+            "blocks": []
+        }
+
+    return {
+        "status": response["JobStatus"],
+        "blocks": response.get("Blocks", [])
+    }
+```
+
+**How I connect it with FastAPI**
+
+- In a real **FastAPI** service, one endpoint starts the job, stores the JobId in **PostgreSQL**, and another process checks the result and sends extracted content to the **LLM** workflow.
+- So the complete flow is **S3 → StartDocumentAnalysis → JobId → GetDocumentAnalysis → extracted blocks**.
+- I have worked with **AWS**, **FastAPI**, and LLM document-analysis workflows; **Textract itself is not listed as production experience in my resume**, so this is my implementation understanding.
+
+Answer 33:
+Question:
+- After calling **StartDocumentAnalysis**, what do I do next?
+
+Answer:
+- I take the returned **JobId**, track the job status, then fetch and process the extracted document data.
+
+**First, I save the JobId**
+
+- After calling **StartDocumentAnalysis**, AWS returns a **JobId**.
+- I save that JobId with document name and processing status in **PostgreSQL**, so I can track the request properly.
+
+```python
+job_id = response["JobId"]
+
+save_document_job(
+    file_key=file_key,
+    job_id=job_id,
+    status="IN_PROGRESS"
+)
+```
+
+**Then I check the result**
+
+- I call **GetDocumentAnalysis** with the same JobId.
+- If status is `IN_PROGRESS`, I wait and check again; if it is `SUCCEEDED`, I read the blocks.
+
+```python
+result = textract.get_document_analysis(JobId=job_id)
+
+if result["JobStatus"] == "SUCCEEDED":
+    blocks = result.get("Blocks", [])
+```
+
+**After getting the blocks**
+
+- I separate **LINE** and **WORD** blocks for normal text, and use **TABLE**, **CELL**, and **KEY_VALUE_SET** blocks for structured data.
+- Then I store the extracted content in **PostgreSQL** or **MongoDB**, based on whether it is structured or raw document data.
+
+**Then I send it for business processing**
+
+- For an insurance document, extracted text can go to the **LLM API** for claim summarization or field analysis.
+- Before sending it, I validate required fields, handle low-confidence extraction, and keep the original document reference in **S3**.
+
+**So the complete flow is**
+
+- **StartDocumentAnalysis → JobId → GetDocumentAnalysis → parse Blocks → save extracted data → LLM processing**.
+- In production, I would use **Amazon SNS** notification with **Amazon SQS** instead of continuously polling, because asynchronous notification is more reliable for document jobs.
+- **Textract is not listed as my production tool in the resume**, so this is my implementation understanding based on AWS and document-analysis workflows.
+
+Answer 34:
+Question:
+- What do I do after calling **StartDocumentAnalysis**?
+
+Answer:
+- After that call, I take the returned **JobId**, wait for processing to complete, and then call **GetDocumentAnalysis** using that JobId.
+
+**Right after the API response**
+
+- First I read `response["JobId"]` and store it with document ID and status as **IN_PROGRESS**.
+- I do not expect the document result in the first response, because this is an **asynchronous API**.
+
+**Then I check the job status**
+
+- I can use **GetDocumentAnalysis** to check the status for that JobId.
+- If status is `IN_PROGRESS`, I wait and check again; if it is `SUCCEEDED`, I process the returned **Blocks**.
+
+```python
+response = textract.start_document_analysis(
+    DocumentLocation={
+        "S3Object": {
+            "Bucket": bucket_name,
+            "Name": file_key
+        }
+    },
+    FeatureTypes=["FORMS", "TABLES"]
+)
+
+job_id = response["JobId"]
+
+result = textract.get_document_analysis(JobId=job_id)
+
+if result["JobStatus"] == "SUCCEEDED":
+    blocks = result.get("Blocks", [])
+```
+
+**After I receive the result**
+
+- I parse the **LINE** blocks for text, **TABLE** and **CELL** blocks for tables, and **KEY_VALUE_SET** blocks for form fields.
+- If there are more results, I use the returned **NextToken** and call `GetDocumentAnalysis` again to fetch remaining pages.
+
+**Then I pass it to next processing**
+
+- I store the extracted result, validate important fields, and then send the cleaned text to the **LLM workflow** for summarization or document analysis.
+- If the job fails, I update status as **FAILED**, log the error, and handle it through the application response.
+
+Answer 35:
+Question:
+- What is that **JobId**, and which method am I using here?
+
+Answer:
+- **JobId** is a unique identifier returned by **StartDocumentAnalysis**. I use that ID to get the document-processing result later.
+
+**Coming to the JobId**
+
+- This is not a job description; it is just an AWS tracking ID for one document-analysis request.
+- AWS processes the document asynchronously, so the first call gives me `JobId`, not the final extracted data.
+
+**The methods I use**
+
+- First, I call **`start_document_analysis()`** with the S3 document location.
+- After that, I call **`get_document_analysis()`** with the same JobId to check status and read the result.
+
+```python
+start_response = textract.start_document_analysis(
+    DocumentLocation={
+        "S3Object": {
+            "Bucket": bucket_name,
+            "Name": file_key
+        }
+    },
+    FeatureTypes=["FORMS", "TABLES"]
+)
+
+job_id = start_response["JobId"]
+
+result = textract.get_document_analysis(JobId=job_id)
+```
+
+**What happens after that**
+
+- If status is `IN_PROGRESS`, I check again after a delay; if it is `SUCCEEDED`, I process the returned **Blocks**.
+- For production, I prefer **SNS/SQS notification** instead of continuously polling, because AWS can notify my service when processing is completed.
+
+**One clarification**
+
+- **Textract is not mentioned as production experience in my resume**, so this is my understanding of the AWS asynchronous document-analysis method, based on my experience with **FastAPI**, **AWS**, and LLM document workflows.
+
+Answer 36:
+Question:
+- What kind of documents were you processing, and were they unstructured?
+
+Answer:
+- In my insurance project, documents were mainly **unstructured insurance documents**, like claim-related documents, where the content was not coming in fixed database fields.
+
+**Coming to the document type**
+
+- We handled insurance documents used for **claim analysis and claim summarization**.
+- These documents can contain normal text, customer details, policy information, incident description, and supporting details in different formats.
+
+**How the data was handled**
+
+- First, the document content was extracted and converted into text.
+- Then the text was sent to **AI/LLM APIs** for document analysis and summarization, with validation before saving the result.
+
+**Structured and unstructured data**
+
+- Customer, policy, and claim master data was stored as structured data in **PostgreSQL**.
+- The uploaded insurance document content was unstructured, so we treated it separately from the relational policy and claim records.
+
+**In my project**
+
+- The purpose was to reduce manual review effort by giving claims teams a summarized view of the document.
+- I should clarify, **Amazon Textract was not listed as the specific tool in my project resume**; my actual project experience was with **AI/LLM document analysis**, **FastAPI**, **PostgreSQL**, and **AWS**.
+
+Answer 37:
+Question:
+- What type of database queries have I used in the project?
+
+Answer:
+- I used mainly **CRUD queries** in PostgreSQL, along with joins, filtering, aggregation, and pagination queries based on the business flow.
+
+**Coming to PostgreSQL queries**
+
+- For customer, policy, and claims data, I used **parameterized SQL queries** through **SQLAlchemy**.
+- We used `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, with joins between policy, customer, and claim tables.
+
+```python
+claims = db.query(Claim).filter(
+    Claim.policy_id == policy_id,
+    Claim.status == "OPEN"
+).all()
+```
+
+**For performance**
+
+- For frequently searched fields like `policy_id`, `claim_id`, and `status`, I used **database indexing**.
+- I also checked query performance and avoided fetching unnecessary columns, especially in list APIs.
+
+**For MongoDB data**
+
+- For unstructured news or conversation data, I used **MongoDB find queries** and filtering based on document ID, session ID, and timestamp.
+- For reporting-type requirements, MongoDB **aggregation pipelines** were useful.
+
+**In my projects**
+
+- So overall, PostgreSQL was used for transactional data and relational queries, while MongoDB was used for flexible unstructured data.
+- I also used **Redis caching** for frequently requested results, so same query was not hitting database every time.
+
+Answer 38:
+Question:
+- Have I used any **chunking method** for the documents?
+
+Answer:
+- Yes, in **RAG** workflow I used document chunking before creating embeddings, so relevant smaller content could be retrieved for the LLM.
+
+**Coming to the chunking method**
+
+- I used **LangChain RecursiveCharacterTextSplitter**, because it tries to split at paragraphs and sentences before breaking text further.
+- I normally kept **chunk size** as 1,000 characters with **200-character overlap**, so important context is not lost between chunks.
+
+**Why I used this method**
+
+- If the complete document is sent to the LLM, token usage becomes high and retrieval becomes less accurate.
+- Smaller chunks help retrieve only the relevant policy, claim, or conversation content for generating the answer.
+
+**In my project**
+
+- In the chatbot and insurance document workflows, the flow was: document text, chunking, embeddings, vector retrieval, and then **LLM response generation**.
+- The exact vector database or embedding model is not mentioned in my resume, so I would not claim a specific one as project experience.
+
+Answer 39:
+Question:
+- If we have documents, how do we build a **document question-answering** system?
+
+Answer:
+- Basically, user asks a question, system retrieves relevant document content using **RAG**, and then **LLM** generates answer based on that content.
+
+**First, preparing the documents**
+
+- We extract text from the insurance or business document and split it using **LangChain RecursiveCharacterTextSplitter**.
+- This is done because complete document may be large, and smaller chunks give more relevant retrieval.
+
+**Coming to the question flow**
+
+- User question is received through a **FastAPI** endpoint and validated.
+- The question is converted into a search representation, then relevant chunks are retrieved from the document knowledge base; the exact vector database is not specified in my project experience.
+
+**How answer is generated**
+
+- Retrieved chunks are added into a controlled prompt using **Prompt Engineering**, and sent to the **LLM API**.
+- I instruct model to answer only from provided context, and if information is not present, it should clearly say that it is not available in the document.
+
+**For example**
+
+- If user asks, “Why was this insurance claim rejected?”, system retrieves claim reason, policy condition, and related document section.
+- Then LLM gives a short claim summary based on those retrieved sections, instead of answering from general knowledge.
+
+**In my project**
+
+- I worked with **RAG**, **LLM APIs**, **FastAPI**, and document analysis for insurance and chatbot workflows.
+- Main benefit was reducing manual document review and supporting faster, context-based responses.
+
+Answer 40:
+Question:
+- What chunking method will I use for the documents?
+
+Answer:
+- I will use **LangChain RecursiveCharacterTextSplitter** for document chunking.
+
+**How I will configure it**
+
+- I will keep **chunk size** at 1,000 characters and **chunk overlap** at 200 characters.
+- It first tries to split by paragraphs and sentences, so meaning is preserved better than blindly cutting text.
+
+**Why I will use this**
+
+- For insurance documents, policies, or claim reports, one complete document can be very large.
+- This method creates smaller meaningful sections, and overlap helps when a sentence or policy condition comes at the boundary.
+
+**The flow I will follow**
+
+- Basically: extract text, clean it, apply **RecursiveCharacterTextSplitter**, create embeddings for each chunk, and use those chunks in the **RAG retrieval** step.
+- For tables or very structured documents, I would first preserve the table or section structure before applying normal chunking.
+
+Answer 41:
+Question:
+- Have I used **Pydantic**, and what exactly is it?
+
+Answer:
+- Yes, I used **Pydantic** with **FastAPI** for request validation, response structure, and data type checking.
+
+**What Pydantic does**
+
+- Basically, Pydantic allows us to define a data model using Python classes and type hints.
+- When request comes to API, it checks fields, data types, required values, and gives validation error if input is wrong.
+
+**Small example**
+
+```python
+from pydantic import BaseModel
+
+class ClaimRequest(BaseModel):
+    policy_id: str
+    claim_amount: float
+    description: str
+```
+
+- Here **FastAPI** uses this model to validate incoming claim data before passing it to business logic.
+- If `claim_amount` is missing or invalid, FastAPI returns structured validation response automatically.
+
+**Where I used it**
+
+- In insurance and chatbot APIs, I used Pydantic models for request validation, response schemas, and consistent API contracts.
+- It also works with **Swagger/OpenAPI**, so request and response format becomes visible for frontend and API testing teams.
+
+**Main benefit**
+
+- It avoids writing manual validation everywhere and keeps bad data away from database or business processing.
+- So flow is basically: request comes, **Pydantic validates**, then FastAPI calls service logic, and finally response model formats output.

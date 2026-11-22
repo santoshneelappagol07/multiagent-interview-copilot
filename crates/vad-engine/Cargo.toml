@@ -1,0 +1,9 @@
+[package]
+name = "vad-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared-types = { path = "../shared-types" }
+anyhow = { workspace = true }
+tracing = { workspace = true }

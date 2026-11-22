@@ -1,0 +1,597 @@
+Transcripts:
+Q1: Okay. Can you tell me what is the memory management and Python?
+Q2: What is g I l?
+Q3: Okay. Like, explain what is it for async and await in the
+Q4: Okay. Let's say you have an application. Okay, in which you have a long run LLM request. You have to, like, handle that so that other request cannot be conducted.
+Q5: I'm sick. Okay. Okay. What is the dependency injection for is dependency injection in FastAPI?
+Q6: Okay. How could you implement the authentication and role based authorization?
+Q7: How would you implement rate limit and request time? An application. Okay.
+Q8: Okay. How would you language. Hello? Hello? How would you debug or highlight and see it in memory? And memory leakage.
+Q9: What is... Right. Okay. Like, what is retrieval quality answer quality?
+Q10: Let's say you have a application. We have to new applications, direct application. Then how would you choose the chunk size and the chunk over there? Yeah.
+Q11: Okay. Like, what some buildings and how would you, like, the... How would you embedding model factor retrieval if everything?
+Q12: You have to give me the range of the pages. Okay? Like, three, four. Are in the sequence. The range should be two to four. Then yeah. Then five is not there. Sequent... And then this sequence is brained. The next sequence should be six seven eight... Six two eight. Because they are in sequence. The eight, we don't have nine and ten. The... Again, the sequence is break. So the range should be 11. But, again, is not that. The s why only 11 is a single alignment. There is no range. Eleven thirteen and fifteen. So you have to write a code. I want response as your code responses. Yeah.
+Q13: Any any method is Is it good? Like, you have only 30. Can You have only thirty seconds. No. Actually, first line is question. Right? Can remove that. First line. First line. Okay. Now, trust me. You can paste your code in the chat. Okay. Ten thirteen. Yeah. Thank you so much. Sir. There's any question
+Q14: We cannot commit to a different meeting in the telling you, like, something where we can look on the AI domains and FastAPI. You
+
+Answers:
+Answer 1:
+Question:
+- Tell me about yourself in 3 to 4 minutes, without talking about projects
+
+Answer:
+- Sure, I am Santosh, and I have around **4 years of experience** in **Python full stack and AI development**. I have been working mainly on backend services, API development, and frontend integration, so my profile is more on building complete business applications with Python and React.
+
+**Coming to my core work**
+- My main strength is in **Python**, **FastAPI**, **REST APIs**, and **microservices**. So basically I work on building backend logic, request validation, exception handling, and making services stable and easy to integrate.
+- On frontend side, I have worked with **React.js**, **JavaScript**, **TypeScript**, **Redux Toolkit**, **HTML5**, and **CSS3**, so I can also handle UI integration and responsive screens when needed.
+- I also work with **PostgreSQL** and **MongoDB**, so I am comfortable with both relational and non-relational data handling, query writing, and basic optimization.
+
+**Coming to AI and automation part**
+- I have hands-on exposure in **Generative AI**, **LLM APIs**, **RAG**, **LangChain**, and **Prompt Engineering**. Here I usually focus on improving response quality, extracting useful information, and making the application more intelligent for business use cases.
+- I also have worked with **NLP**, **Scikit-learn**, **Pandas**, and **NumPy**, so I can support data processing and model-related backend work where required.
+- From my experience, I like to keep AI features practical, meaning it should solve real business problem and not just look fancy.
+
+**Coming to delivery and engineering practices**
+- I have worked with **Docker**, **Git**, **GitHub**, **Jenkins**, and **CI/CD pipelines**, so I am used to proper deployment flow and version control process.
+- I also have exposure to **Apache Kafka**, **Redis**, **AWS**, and **Azure**, so I understand event-driven flow, caching, and cloud deployment side as well.
+- For quality, I use **PyTest**, **Postman**, and **Swagger**, and I usually focus on testing, debugging, and making sure APIs are working properly before release.
+
+**A little about my working style**
+- I am comfortable working in **Agile** and **Scrum** environment, attending sprint planning, code review, and coordinating with QA and other team members.
+- I usually take ownership of my tasks, and if there is any issue in backend or integration, I try to analyse logs, isolate the root cause, and fix it properly instead of doing temporary patch.
+- So overall, I am a hands-on developer who can work on backend, frontend integration, database, and AI-based features, and I am looking for a role where I can contribute in building scalable applications and also keep learning more in Python and AI space.
+
+Answer 2:
+Question:
+- Tell me about your **Trade News Analyser** project in detail, with problem statement and challenges you faced
+
+Answer:
+- Sure, this was an **AI-powered financial news analysis platform** where main goal was to collect real-time market news from multiple sources, process it fast, and give useful insights like **summary, key entities, sentiment, and trend signals** for traders and analysts.
+
+**When it comes to the problem statement**
+- In financial domain, news comes very fast from many sources, and manually reading all articles is not practical, so the problem was to reduce that manual effort and give quick decision-support information in one place.
+- Another issue was news data was coming in both structured and unstructured form, so we needed a way to store raw content, process it, and still keep it searchable and usable for analysis.
+- Also, the platform had to handle near real-time ingestion, so latency and freshness of data were important, because in finance even small delay can reduce value of the insight.
+
+**Coming to my role in this**
+- I worked as **Python Full Stack AI Developer**, so I was handling backend services, API integration, AI workflow support, and also frontend coordination where needed.
+- My focus was on building **FastAPI** services, connecting data flow between ingestion, processing, and storage layers, and making sure output was usable for the UI and analysis layer.
+- I also worked on improving backend response time, monitoring logs, and supporting model output refinement with data and business team inputs.
+
+**So first, the data collection part**
+- We were pulling news from multiple online sources using **Requests** and **BeautifulSoup**, because the first step was to capture article content reliably from different websites.
+- This step was important because source formats were not same, so we had to clean and normalize content before sending it for analysis.
+- We used **Apache Kafka** for event-driven ingestion, so incoming news could be processed asynchronously without blocking the main API flow.
+
+**Coming to storage and processing**
+- For structured data like article metadata and application records, we used **PostgreSQL**, and for raw unstructured news content we used **MongoDB**.
+- This separation was useful because relational data needed consistency, while raw article text was better stored in document form for flexible processing.
+- I also worked with **Redis** for caching frequently accessed results, which helped improve API response time for repeated queries.
+
+**Then for AI and analysis layer**
+- We used **OpenAI / LLM APIs** and **LangChain** for summarization and extraction tasks, so the system could generate short summaries and pull out important entities from news text.
+- For classification and trend-related analysis, we used **Scikit-learn**, and for text preparation we used NLP preprocessing like cleaning, tokenizing, and normalizing content.
+- The idea was to make output more useful for financial users, not just raw text, so we focused on sentiment and relevance.
+
+**Challenges I encountered**
+- One big challenge was **data quality**, because news from different sources had noise, duplicate content, and inconsistent formatting, so we had to clean it properly before analysis.
+- Another challenge was **latency**, because if ingestion or processing became slow, then platform value goes down, so we used **Kafka** and **Redis** to keep flow responsive.
+- Also, getting good AI output was not always straight, because financial language is sensitive, so we had to do **prompt engineering** and refine outputs with feedback from analysts.
+
+**How I handled those challenges**
+- For noisy content, I added preprocessing and validation steps before sending data to AI layer, so only cleaner text went for summarization and classification.
+- For performance, I monitored logs and optimized backend response paths, and caching helped reduce repeated load on services.
+- For AI accuracy, I worked with data scientists and financial analysts to refine prompts and outputs, because domain context is very important in finance.
+
+**What was the impact**
+- The platform helped in reducing manual reading effort and gave faster access to summarized financial news and sentiment signals.
+- We also improved backend response time with **Redis caching**, and overall system became more usable for real-time analysis.
+- So in short, flow was **news ingestion → cleaning → Kafka processing → storage in PostgreSQL and MongoDB → AI analysis → summary and sentiment output**.
+
+Answer 3:
+Question:
+- Tell me about your **Nexuvo AI Chatbots** project in detail, with problem statement and challenges you faced
+
+Answer:
+- Sure, this project was basically about building a **scalable AI chatbot and conversational service** which can handle user interactions, business workflow requests, and backend automation in a more intelligent way.
+
+**When it comes to the problem statement**
+- The main problem was users were interacting through different systems and many requests were repetitive, so manual handling was taking time and creating dependency on support or backend team.
+- Another issue was chatbot should not only reply, it should also understand context, route the request properly, and trigger backend services when needed.
+- So the goal was to make conversation flow smoother, reduce manual effort, and give faster response with proper business action behind it.
+
+**Coming to my role in this**
+- I worked as **Full Stack / AI Backend Developer**, so I was mainly handling **FastAPI** services, backend workflow logic, API integration, and AI response handling.
+- I also worked on **React.js** side where needed, especially for integrating chatbot UI with backend services and making sure session flow was working properly.
+- My responsibility also included logging, monitoring, debugging, and supporting deployment and production issues.
+
+**So first, the conversation handling part**
+- We used **Python FastAPI** and **REST APIs** to manage chatbot requests, because backend needed to be fast and easy to integrate with other systems.
+- This step was important because every user message had to be processed, validated, and routed to correct business flow without delay.
+- I worked on request handling logic so that session data and user context could be maintained properly during conversation.
+
+**Coming to AI response generation**
+- For intelligent replies, we used **Generative AI / LLM APIs**, because simple rule-based replies were not enough for business conversations.
+- We also used **Prompt Engineering** and **RAG** to improve response accuracy, especially when chatbot had to answer from internal or external knowledge sources.
+- This helped in making responses more relevant and less generic, which is very important in production chatbot.
+
+**Then for workflow automation**
+- Some user requests were not just chat replies, they had to trigger backend actions, so I built business workflow logic for routing and service calls.
+- Here the main thing was to connect conversation with actual backend process, so chatbot could support automation instead of only text response.
+- We used **PostgreSQL** for structured data and **MongoDB** for conversational session data, because session history and business records had different storage needs.
+
+**Coming to deployment and support**
+- We used **Docker** for containerization and deployed on **Azure**, so environment consistency was maintained across development and production.
+- I also worked with application logging and monitoring, because chatbot systems need good traceability when something goes wrong in live usage.
+- For testing, we supported **unit testing** and **integration testing**, and also handled debugging during deployment and production support.
+
+**Challenges I encountered**
+- One challenge was **maintaining conversation context**, because if session data is not handled properly, chatbot can give unrelated answers.
+- Another challenge was **response accuracy**, because LLM output can vary, so prompt tuning and RAG were needed to keep answers more stable.
+- Also, integrating chatbot with backend workflows was tricky, because some requests needed immediate response while some needed asynchronous processing and proper routing.
+
+**How I handled those challenges**
+- For context, I used proper session tracking and stored conversational data in **MongoDB**, so previous interaction could be reused when needed.
+- For accuracy, I refined prompts and used **RAG** so chatbot could pull more relevant information before generating response.
+- For workflow issues, I added validation, logging, and proper error handling in **FastAPI**, so failures could be traced and fixed quickly.
+
+**What was the outcome**
+- The chatbot became more useful for business users because it could handle both conversation and workflow automation.
+- We also improved operational visibility through logging and monitoring, which helped in troubleshooting and support.
+- So overall flow was **user message → FastAPI request handling → context check → LLM/RAG response or backend workflow trigger → response back to user**.
+
+Answer 4:
+Question:
+- Can you tell me what is memory management in Python?
+
+Answer:
+- Yes, basically in Python memory management means how Python allocates memory for objects, uses it, and then frees it when object is no longer needed.
+
+**When it comes to allocation**
+- Python creates objects in memory automatically when we assign variables, create lists, dictionaries, strings, like all these things.
+- Here we as developer normally do not manage memory manually like in C or C++, Python runtime takes care of it.
+- The main memory area used for Python objects is **heap memory**.
+
+**Coming to cleanup**
+- Python uses **reference counting** to track how many references are pointing to an object.
+- When reference count becomes zero, object becomes eligible for cleanup, so memory can be released.
+- For cyclic references, Python also has **garbage collector** to clean objects which reference each other and are no longer needed.
+
+**One more thing**
+- Python also has **memory manager** inside interpreter which handles private heap, object allocation, and reuse of memory blocks.
+- So from developer side, we just need to avoid unnecessary object creation and keep references only when needed.
+- In practice, if we use large data structures or long-running services, then memory usage should be monitored properly.
+
+Answer 5:
+Question:
+- What is **GIL** in Python?
+
+Answer:
+- **GIL** means **Global Interpreter Lock**. It is a lock in **CPython** which allows only one thread to execute Python bytecode at a time.
+
+**When it comes to threading**
+- So even if we create multiple threads, only one thread can run Python code at a time inside same process.
+- This is mainly there to protect internal memory management and make object handling safe.
+- Because of this, Python threads are not very useful for CPU-heavy work.
+
+**Where it helps**
+- For **I/O-bound** tasks like file handling, network calls, API requests, threads can still help because thread can wait during I/O.
+- In that case, other threads can get chance to run while one thread is waiting.
+- So for web apps or API calls, threading can still give benefit.
+
+**For CPU-heavy work**
+- If task is heavy computation, like data processing or number crunching, then **multiprocessing** is better than threading.
+- Because multiprocessing uses separate processes, each process has its own Python interpreter and its own GIL.
+- So real parallel execution is possible there.
+
+**In short**
+- GIL is a limitation for parallel CPU execution in Python, but it is useful for keeping interpreter internals safe.
+- In my understanding, for backend services we normally use threads for I/O and processes for CPU-heavy jobs.
+
+Answer 6:
+Question:
+- Explain what **async** and **await** are in Python
+
+Answer:
+- Yes, basically **async** and **await** are used to write asynchronous code in Python, so we can handle I/O tasks without blocking the whole program.
+
+**When it comes to async**
+- We define a function with **async def** when that function may do waiting work like API call, database call, or file operation.
+- This tells Python that function can pause and give control back to event loop.
+- So it is useful when we want better concurrency for I/O-bound tasks.
+
+**Coming to await**
+- **await** is used inside async function to wait for another async operation to complete.
+- While waiting, event loop can run other tasks, so program does not sit idle.
+- This is the main reason async code can handle many requests efficiently.
+
+**For example**
+- In a FastAPI service, if one request is waiting for external API response, another request can still be processed by event loop.
+- So here we use **async/await** to improve responsiveness in backend services.
+- But if code is CPU-heavy, async will not help much, because it is mainly for waiting operations.
+
+**In short**
+- **async** defines asynchronous function, and **await** pauses that function until awaited task is done.
+- So together they help in non-blocking execution, especially for network and database type operations.
+
+Answer 7:
+Question:
+- How would you handle a long-running **LLM request** in an application so other requests do not get blocked?
+
+Answer:
+- Yes, for that case I will not keep that long LLM call in main request thread. I will move it to **background processing** or **asynchronous flow**, so API can respond fast and other requests can continue.
+
+**When it comes to request handling**
+- If LLM call is taking long, then main API should only accept request, validate it, and return a **job id** or status immediately.
+- Then actual LLM processing can happen in background worker, so web server thread is not blocked.
+- This is better for user experience and also for server scalability.
+
+**Coming to the implementation**
+- In my kind of backend work, I would use **FastAPI** with **async endpoints** for the request layer.
+- For long processing, I would push job into **Apache Kafka** or a background queue, depending on architecture.
+- Then a separate consumer or worker will process LLM call and store result in **PostgreSQL** or **MongoDB**.
+
+**Why this approach**
+- So main reason is, if one request waits for long LLM response, it can reduce throughput and affect other users.
+- By separating request intake and processing, we keep API responsive.
+- Also we can add retry, logging, and failure handling properly in worker side.
+
+**In my projects**
+- In my AI backend work, I used event-driven style with **Kafka**, **FastAPI**, and database storage for such asynchronous processing.
+- For chatbot or document summarization type flows, this pattern helps to avoid blocking and keep system stable.
+- So basically user gets quick acknowledgement, and result comes later when processing is completed.
+
+Answer 8:
+Question:
+- What is **dependency injection** in **FastAPI**?
+
+Answer:
+- Yes, basically **dependency injection** in FastAPI means we give required things like database session, auth check, or common service into endpoint automatically, instead of creating them again and again inside every route.
+
+**When it comes to the idea**
+- So here FastAPI uses **Depends()** to inject dependency into path operation or another dependency.
+- This makes code more clean, reusable, and easy to test.
+- Also same dependency can be shared across many endpoints without repeating logic.
+
+**Coming to a practical use**
+- For example, we can inject **database session**, **current user**, or **request validation logic** through dependency.
+- In my backend work, this is useful for common things like auth, logging, and DB connection handling.
+- So endpoint stays focused only on business logic.
+
+**Why it is useful**
+- It improves **modularity**, because each piece has single responsibility.
+- It also helps in **unit testing**, because we can override dependency during test.
+- And in FastAPI, it is very natural way to manage shared resources.
+
+**In short**
+- Dependency injection means FastAPI provides required object or function automatically using **Depends()**.
+- So instead of hardcoding inside route, we inject it from outside and keep code cleaner.
+
+Answer 9:
+Question:
+- How would you implement **authentication** and **role-based authorization** in a FastAPI application?
+
+Answer:
+- Yes, basically first I will verify user identity with **authentication**, and after that I will check user role for **authorization** before allowing access to protected APIs.
+
+**When it comes to authentication**
+- I will use **JWT token** based login flow, so after user login, backend returns access token.
+- Then for every protected request, frontend sends token in **Authorization** header.
+- In FastAPI, I can validate token in a dependency and extract user details from it.
+
+**Coming to role-based authorization**
+- After authentication, I will check user role like **admin**, **agent**, **underwriter**, or **user** based on project need.
+- So if role is not matching, I will return **403 Forbidden**.
+- This check can be done in a separate dependency, so same logic can be reused across routes.
+
+**How I would structure it**
+- First, login API verifies credentials against database.
+- Then token is created with user id and role claims.
+- After that, protected endpoints call dependency like **get_current_user** and **require_role** to control access.
+- This keeps authentication and authorization separate, which is cleaner.
+
+**In my projects**
+- In insurance and backend workflows, this kind of pattern is useful because different users have different access.
+- For example, claims admin can access claim processing screens, but policyholder should only see own policy data.
+- So basically authentication says who user is, and authorization says what user can do.
+
+Answer 10:
+Question:
+- How would you implement **rate limiting** and **request timeout** in an application?
+
+Answer:
+- Yes, I would handle both at API level and infrastructure level, so system does not get overloaded and slow requests do not block other users.
+
+**When it comes to rate limiting**
+- I would set limit per user, per IP, or per API key depending on application type.
+- In FastAPI backend, I can use **Redis** to store request count and window time, because it is fast and good for distributed setup.
+- If limit is crossed, I will return **429 Too Many Requests**.
+
+**Coming to request timeout**
+- For long-running calls, I would set timeout at client side, server side, and also for external services like LLM API or third-party API.
+- In Python backend, I can use timeout settings in HTTP client and also configure reverse proxy like **Nginx** or gateway timeout.
+- This avoids hanging requests and frees resources faster.
+
+**How I would implement it**
+- For rate limit, I will track request count in **Redis** with expiry, so count resets automatically after time window.
+- For timeout, I will keep strict timeout for external calls and use background processing if task is too long.
+- If request still fails, I will log it and return proper error response.
+
+**In my projects**
+- In AI and backend services, this is important because LLM and external API calls can be slow sometimes.
+- So rate limiting protects system from abuse, and timeout protects system from waiting too long on one request.
+- Basically both together keep application stable and responsive.
+
+Answer 11:
+Question:
+- How would you debug a **memory leak** and check what is happening in memory?
+
+Answer:
+- Yes, first I will confirm whether memory is really increasing continuously, and then I will isolate which part of code or request flow is holding objects in memory.
+
+**When it comes to first check**
+- I will monitor process memory using server logs, container metrics, or system tools like **top** and **ps**.
+- If memory keeps growing after same request pattern, then it is a strong sign of leak.
+- In backend services, I also check whether garbage collection is not releasing objects because references are still alive.
+
+**Coming to debugging approach**
+- I will take **heap dump** or memory snapshot and compare object growth over time.
+- Then I will look for repeated objects, large collections, cached data, or unclosed resources.
+- In Python, I usually check for things like global lists, open file handles, DB sessions not closed, or large response objects kept in memory.
+
+**What I check in code**
+- I will inspect long-lived objects, background tasks, and caches, because these are common places where memory stays retained.
+- I will also check circular references and event listeners if applicable.
+- If issue is from third-party library or external call, I will isolate that path and test with smaller load.
+
+**How I fix it**
+- I remove unnecessary object retention, close resources properly, and use streaming or pagination for large data.
+- If needed, I will add limits on cache size and clear unused data.
+- After fix, I again monitor memory under same load to confirm it is stable.
+
+**In my projects**
+- In backend and AI services, this kind of issue can happen when response payloads or session data are kept too long.
+- So I normally debug by observing memory trend first, then tracing object retention, and finally validating fix with repeated requests.
+- That way I can find whether it is real leak or just normal memory growth.
+
+Answer 12:
+Question:
+- What is **RAG**?
+
+Answer:
+- Yes, **RAG** means **Retrieval-Augmented Generation**, basically model first retrieves relevant information and then generates answer using that context.
+
+**When it comes to retrieval**
+- Here system searches relevant documents, chunks, or knowledge base using **embeddings** and similarity search.
+- This helps because model does not depend only on its internal training data.
+- In my kind of projects, this is useful for chatbot or document-based answer generation.
+
+**Coming to generation**
+- After retrieval, the selected context is passed to **LLM** with proper prompt.
+- Then model generates answer based on that retrieved content, so response becomes more accurate.
+- This also reduces hallucination compared to plain generation.
+
+**Why it is useful**
+- It is good when data changes frequently, like policies, support docs, or internal business data.
+- So instead of retraining model every time, we just update documents in knowledge base.
+- That makes system more practical and easier to maintain.
+
+**In my projects**
+- In chatbot and AI backend work, I used **RAG** with **prompt engineering** to improve response quality.
+- Basically retrieval gives right context, and generation gives natural answer on top of it.
+- So it is a very useful pattern for enterprise AI applications.
+
+Answer 13:
+Question:
+- What is **retrieval quality** and **answer quality** in RAG?
+
+Answer:
+- Yes, retrieval quality means how good documents are getting selected, and answer quality means how correct and useful final response is.
+
+**When it comes to retrieval quality**
+- Here we check whether system is pulling the most relevant chunks from knowledge base.
+- If retrieval is weak, even good LLM will give wrong answer because context itself is bad.
+- So main focus is relevance, coverage, and whether top results actually match user query.
+
+**Coming to answer quality**
+- This is about final generated response, like correctness, completeness, and clarity.
+- Even if retrieval is good, answer can still be weak if prompt is not proper or model is not following context.
+- So here we check whether response is grounded in retrieved data and not hallucinating.
+
+**How I judge both**
+- For retrieval, I look at whether right source documents are coming in top results.
+- For answer, I check if final output is factually correct, concise, and aligned with retrieved content.
+- In practice, both are linked, because bad retrieval usually leads to bad answer.
+
+**In my projects**
+- In chatbot and document-based AI work, I would first tune retrieval with better chunking and relevant search.
+- Then I would improve answer quality using prompt structure and context filtering.
+- So basically retrieval quality is input quality, and answer quality is output quality.
+
+Answer 14:
+Question:
+- If I have a new application, how would I choose **chunk size** and **chunk overlap** for RAG?
+
+Answer:
+- Yes, I will choose it based on document structure, retrieval accuracy, and how much context one chunk needs to keep meaning intact.
+
+**When it comes to chunk size**
+- I usually start with a moderate size like **500 tokens**, because it keeps enough context without making retrieval too heavy.
+- If document has short sections like FAQ or policy points, smaller chunks work better.
+- If content is dense and meaning depends on surrounding lines, then slightly bigger chunk is better.
+
+**Coming to chunk overlap**
+- I keep overlap around **50 tokens** so important sentence boundary does not get cut in middle.
+- This helps when one idea continues from one chunk to next chunk.
+- Overlap is useful, but if it is too much, then same text repeats and retrieval becomes noisy.
+
+**How I decide in practice**
+- First I check document type, like whether it is structured, semi-structured, or long narrative text.
+- Then I test retrieval with sample queries and see whether top chunks are actually relevant.
+- If answers miss context, I increase overlap; if retrieval becomes too broad, I reduce chunk size.
+
+**In my projects**
+- In RAG-based chatbot work, I would tune chunking based on response quality and source traceability.
+- So basically goal is to keep each chunk semantically complete, but not too large for retrieval.
+- That way system gives better context to **LLM** and improves final answer quality.
+
+Answer 15:
+Question:
+- What are some **buildings** and how does the **embedding model** affect retrieval in RAG?
+
+Answer:
+- I think you mean **buildings** as in **buildings blocks** of RAG, and yes, embedding model directly affects how well retrieval works.
+
+**When it comes to main building blocks**
+- First is **document ingestion**, where we collect and clean data.
+- Then comes **chunking**, where text is split into smaller meaningful parts.
+- After that we create **embeddings** and store them in vector store for similarity search.
+
+**Coming to embedding model role**
+- **Embedding model** converts text into numerical vectors, so semantically similar text stays close in vector space.
+- If embedding model is weak, then even relevant chunks may not come in top search results.
+- So retrieval quality depends a lot on how well model understands domain language and context.
+
+**How it affects retrieval**
+- Better embeddings improve semantic matching, especially when user query words are different from document words.
+- For example, in financial or insurance domain, same meaning can be written in different ways, so embeddings help catch that.
+- If embeddings are not good, retrieval may bring irrelevant chunks and final answer quality also drops.
+
+**In my projects**
+- In RAG-based chatbot work, I would use proper chunking and then generate embeddings before retrieval.
+- Then I would test with real user queries and check whether top retrieved chunks are actually useful.
+- So basically embedding model is one of the key factors for retrieval accuracy.
+
+Answer 16:
+Question:
+- How does **embedding model** factor into retrieval in RAG?
+
+Answer:
+- Yes, embedding model is one of the main things that decides retrieval quality, because it controls how text meaning is represented.
+
+**When it comes to embeddings**
+- The model converts query and documents into vectors, so similarity search can work on meaning, not only exact words.
+- If embeddings are good, semantically related chunks come closer in vector space.
+- If embeddings are weak, retrieval may miss the right context even when wording is slightly different.
+
+**Coming to retrieval impact**
+- Better embedding model improves **top-k retrieval**, because relevant chunks rank higher.
+- It also helps when user query and document use different terms for same concept.
+- In domain work like finance or insurance, this is important because same idea can be written in different business language.
+
+**What I check in practice**
+- I test with real queries and see whether retrieved chunks are actually answering the intent.
+- If retrieval is poor, I check chunking first, then embedding model, then vector search settings.
+- So basically embedding model is not only one part, it directly affects search relevance and final answer quality.
+
+**In my projects**
+- In my **RAG** based chatbot work, I would use embeddings to map both user query and knowledge base text into same semantic space.
+- Then I would validate retrieval by checking whether top results are contextually correct.
+- So yes, embedding model is a core factor for retrieval performance.
+
+Answer 17:
+Question:
+- How would you write code to find continuous page ranges from a list of page numbers, and return single pages when sequence is broken?
+
+Answer:
+- Yes, I can do that by scanning sorted pages and grouping only continuous numbers into one range.
+
+**When it comes to logic**
+- If next page is exactly previous page plus **1**, then it is same sequence.
+- If sequence breaks, I close current range and start new one.
+- If only one page is there, I return it as single value, not as range.
+
+**Coming to the code**
+- I will first sort the pages, because input may not always come in order.
+- Then I keep **start** and **end** pointer for current sequence.
+- For output, I format continuous pages as `"2-4"` and single page as `"11"`.
+
+**Example**
+```python
+def page_ranges(pages):
+    pages = sorted(set(pages))  # remove duplicates and sort
+    result = []
+
+    start = end = pages[0]
+
+    for page in pages[1:]:
+        if page == end + 1:
+            end = page
+        else:
+            result.append(f"{start}-{end}" if start != end else str(start))
+            start = end = page
+
+    result.append(f"{start}-{end}" if start != end else str(start))
+    return result
+
+print(page_ranges([2, 3, 4, 6, 7, 8, 11, 13, 15]))
+# ['2-4', '6-8', '11', '13', '15']
+```
+
+**Why this works**
+- It handles broken sequence properly, like **4 to 6** gap or **8 to 11** gap.
+- It also keeps single pages separate, like **11**, **13**, **15**.
+- So output becomes clean and easy to read for page grouping.
+
+Answer 18:
+```python
+def page_ranges(pages):
+    pages = sorted(set(pages))
+    result = []
+
+    start = end = pages[0]
+
+    for page in pages[1:]:
+        if page == end + 1:
+            end = page
+        else:
+            result.append(f"{start}-{end}" if start != end else str(start))
+            start = end = page
+
+    result.append(f"{start}-{end}" if start != end else str(start))
+    return result
+
+print(page_ranges([2, 3, 4, 6, 7, 8, 11, 13, 15]))
+```
+
+Answer 19:
+```python
+def page_ranges(pages):
+    pages = sorted(set(pages))
+    result = []
+
+    start = end = pages[0]
+
+    for page in pages[1:]:
+        if page == end + 1:
+            end = page
+        else:
+            result.append(f"{start}-{end}" if start != end else str(start))
+            start = end = page
+
+    result.append(f"{start}-{end}" if start != end else str(start))
+    return result
+```
+
+Answer 20:
+Question:
+- Can you tell me something about AI domain and FastAPI, in a simple interview style?
+
+Answer:
+- Yes, basically I have worked in **AI domain** with **FastAPI** for building backend services, so I can explain that clearly.
+
+**Coming to AI domain**
+- In my projects, I used **LLM APIs**, **RAG**, and **prompt engineering** for things like chatbot responses, news summarization, and document analysis.
+- Main idea is, we take input data, process it, and then generate useful output from model or rules.
+- In real project, I also worked with **PostgreSQL**, **MongoDB**, and **Kafka** for storing data and handling events.
+
+**Coming to FastAPI**
+- **FastAPI** I used for building **REST APIs** and microservices, because it is fast and easy for validation.
+- It supports request validation, exception handling, and structured API design, so backend becomes clean.
+- I also used it with **Docker** and **Jenkins** in deployment flow, so service can run properly in environment.
+
+**How I connect both**
+- So basically **FastAPI** handles backend flow, and **AI services** handle intelligent part like summarization, classification, or chatbot response.
+- For example, one service can take user request, call LLM, and return processed result through API.
+- This kind of setup I used in my projects, especially in **financial news analysis** and **insurance** work.

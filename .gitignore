@@ -1,0 +1,58 @@
+# Target & Binaries
+target/
+*.exe
+*.dll
+*.dylib
+*.so
+dist/
+build/
+bin/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+
+# Node & Frontend
+node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tauri & Desktop
+src-tauri/target/
+.tauri/
+
+# Storage & Runtime Data (keep structure, ignore actual data)
+storage/documents/originals/*
+!storage/documents/originals/.gitkeep
+!storage/documents/originals/*.txt
+storage/documents/extracted/*
+!storage/documents/extracted/.gitkeep
+storage/database/*.db
+storage/database/*.db-journal
+storage/database/*.db-wal
+!storage/database/.gitkeep
+storage/vector-store/*
+!storage/vector-store/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Secrets & Environment
+.env
+.env.local
+.env.*.local
+*.pem
+*.key

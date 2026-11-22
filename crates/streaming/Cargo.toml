@@ -1,0 +1,16 @@
+[package]
+name = "streaming"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared-types = { path = "../shared-types" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+prost = { workspace = true }
+tonic = { workspace = true }
+tokio-stream = "0.1"
+
+[build-dependencies]
+tonic-build = "0.12"

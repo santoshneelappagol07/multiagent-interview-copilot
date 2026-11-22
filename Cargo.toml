@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/shared-types",
+    "crates/audio-capture",
+    "crates/audio-processing",
+    "crates/vad-engine",
+    "crates/stt-engine",
+    "crates/audio-engine",
+    "crates/streaming",
+    "apps/desktop/src-tauri",
+]
+
+[workspace.dependencies]
+tokio = { version = "1.38", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+prost = "0.13"
+tonic = "0.12"
+cpal = "0.15"

@@ -1,0 +1,17 @@
+[package]
+name = "audio-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared-types = { path = "../shared-types" }
+audio-capture = { path = "../audio-capture" }
+audio-processing = { path = "../audio-processing" }
+vad-engine = { path = "../vad-engine" }
+stt-engine = { path = "../stt-engine" }
+streaming = { path = "../streaming" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
