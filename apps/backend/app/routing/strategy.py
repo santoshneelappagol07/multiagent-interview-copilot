@@ -7,24 +7,26 @@ class AnswerMode(str, Enum):
     RESEARCH = "research"
 
 class RoutingStrategy:
-    """Defines ordered priority chains for each mode"""
+    """Defines ordered priority chains for each mode with verified active free models"""
     CHAINS = {
         AnswerMode.FAST: [
-            ("groq", "llama-3.1-8b-instant"),
-            ("cerebras", "llama3.1-8b"),
-            ("gemini", "gemini-2.0-flash"),
+            ("groq", "openai/gpt-oss-20b"),
+            ("openrouter", "meta-llama/llama-3.1-8b-instruct:free"),
+            ("gemini", "gemini-3.8-flash"),
+            ("groq", "qwen/qwen3.8-27b"),
             ("ollama", "llama3.1"),
         ],
         AnswerMode.REASONING: [
-            ("gemini", "gemini-2.0-flash"),
-            ("groq", "llama-3.3-70b-versatile"),
-            ("cerebras", "llama3.1-70b"),
+            ("groq", "openai/gpt-oss-120b"),
+            ("gemini", "gemini-3.8-flash"),
+            ("openrouter", "google/gemini-2.0-flash-exp:free"),
+            ("groq", "openai/gpt-oss-20b"),
             ("ollama", "llama3.1"),
         ],
         AnswerMode.RESEARCH: [
-            ("groq", "llama-3.3-70b-versatile"),
-            ("gemini", "gemini-2.0-flash"),
-            ("cerebras", "llama3.1-70b"),
+            ("groq", "openai/gpt-oss-120b"),
+            ("gemini", "gemini-3.8-flash"),
+            ("openrouter", "meta-llama/llama-3.1-8b-instruct:free"),
             ("ollama", "llama3.1"),
         ],
     }

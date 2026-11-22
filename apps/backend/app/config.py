@@ -4,7 +4,7 @@ from pathlib import Path
 import os
 
 # Project root: multiagent ai/ai-voice-copilot
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 STORAGE_DIR = PROJECT_ROOT / "storage"
 
 class Settings(BaseSettings):
@@ -18,17 +18,18 @@ class Settings(BaseSettings):
     gemini_api_key: str = Field(default="", alias="GEMINI_API_KEY")
     groq_api_key: str = Field(default="", alias="GROQ_API_KEY")
     cerebras_api_key: str = Field(default="", alias="CEREBRAS_API_KEY")
+    openrouter_api_key: str = Field(default="", alias="OPENROUTER_API_KEY")
     ollama_base_url: str = Field(default="http://localhost:11434/v1", alias="OLLAMA_BASE_URL")
 
     # Mode defaults
     default_fast_provider: str = Field(default="groq", alias="DEFAULT_FAST_PROVIDER")
-    default_fast_model: str = Field(default="llama-3.1-8b-instant", alias="DEFAULT_FAST_MODEL")
+    default_fast_model: str = Field(default="openai/gpt-oss-20b", alias="DEFAULT_FAST_MODEL")
 
-    default_reasoning_provider: str = Field(default="gemini", alias="DEFAULT_REASONING_PROVIDER")
-    default_reasoning_model: str = Field(default="gemini-2.0-flash", alias="DEFAULT_REASONING_MODEL")
+    default_reasoning_provider: str = Field(default="groq", alias="DEFAULT_REASONING_PROVIDER")
+    default_reasoning_model: str = Field(default="openai/gpt-oss-120b", alias="DEFAULT_REASONING_MODEL")
 
     default_research_provider: str = Field(default="groq", alias="DEFAULT_RESEARCH_PROVIDER")
-    default_research_model: str = Field(default="llama-3.3-70b-versatile", alias="DEFAULT_RESEARCH_MODEL")
+    default_research_model: str = Field(default="openai/gpt-oss-120b", alias="DEFAULT_RESEARCH_MODEL")
 
     enable_auto_routing: bool = Field(default=True, alias="ENABLE_AUTO_ROUTING")
     enable_fallback: bool = Field(default=True, alias="ENABLE_FALLBACK")
